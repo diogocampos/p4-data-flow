@@ -1,0 +1,641 @@
+{
+    "__meta__": {
+        "version": [
+            2,
+            5
+        ],
+        "compiler": "https://github.com/p4lang/p4c-bm"
+    },
+    "header_types": [
+        {
+            "name": "standard_metadata_t",
+            "id": 0,
+            "fields": [
+                [
+                    "ingress_port",
+                    9
+                ],
+                [
+                    "packet_length",
+                    32
+                ],
+                [
+                    "egress_spec",
+                    9
+                ],
+                [
+                    "egress_port",
+                    9
+                ],
+                [
+                    "egress_instance",
+                    32
+                ],
+                [
+                    "instance_type",
+                    32
+                ],
+                [
+                    "clone_spec",
+                    32
+                ],
+                [
+                    "_padding",
+                    5
+                ]
+            ],
+            "length_exp": null,
+            "max_length": null
+        },
+        {
+            "name": "ethernet_t",
+            "id": 1,
+            "fields": [
+                [
+                    "dest",
+                    48
+                ],
+                [
+                    "src",
+                    48
+                ],
+                [
+                    "etherType",
+                    16
+                ]
+            ],
+            "length_exp": null,
+            "max_length": null
+        },
+        {
+            "name": "arp_t",
+            "id": 2,
+            "fields": [
+                [
+                    "hw_type",
+                    16
+                ],
+                [
+                    "prot_type",
+                    16
+                ],
+                [
+                    "hw_size",
+                    8
+                ],
+                [
+                    "prot_size",
+                    8
+                ],
+                [
+                    "opcode",
+                    16
+                ],
+                [
+                    "sender_MAC",
+                    48
+                ],
+                [
+                    "sender_IP",
+                    32
+                ],
+                [
+                    "target_MAC",
+                    48
+                ],
+                [
+                    "target_IP",
+                    32
+                ]
+            ],
+            "length_exp": null,
+            "max_length": null
+        },
+        {
+            "name": "meta_t",
+            "id": 3,
+            "fields": [
+                [
+                    "egress",
+                    8
+                ],
+                [
+                    "temp",
+                    32
+                ]
+            ],
+            "length_exp": null,
+            "max_length": null
+        }
+    ],
+    "headers": [
+        {
+            "name": "standard_metadata",
+            "id": 0,
+            "header_type": "standard_metadata_t",
+            "metadata": true
+        },
+        {
+            "name": "ethernet",
+            "id": 1,
+            "header_type": "ethernet_t",
+            "metadata": false
+        },
+        {
+            "name": "arp",
+            "id": 2,
+            "header_type": "arp_t",
+            "metadata": false
+        },
+        {
+            "name": "meta",
+            "id": 3,
+            "header_type": "meta_t",
+            "metadata": true
+        }
+    ],
+    "header_stacks": [],
+    "parsers": [
+        {
+            "name": "parser",
+            "id": 0,
+            "init_state": "start",
+            "parse_states": [
+                {
+                    "name": "start",
+                    "id": 0,
+                    "parser_ops": [
+                        {
+                            "op": "extract",
+                            "parameters": [
+                                {
+                                    "type": "regular",
+                                    "value": "ethernet"
+                                }
+                            ]
+                        }
+                    ],
+                    "transition_key": [
+                        {
+                            "type": "field",
+                            "value": [
+                                "ethernet",
+                                "etherType"
+                            ]
+                        }
+                    ],
+                    "transitions": [
+                        {
+                            "type": "hexstr",
+                            "value": "0x0806",
+                            "mask": null,
+                            "next_state": "parse_arp"
+                        },
+                        {
+                            "type": "default",
+                            "value": null,
+                            "mask": null,
+                            "next_state": null
+                        }
+                    ]
+                },
+                {
+                    "name": "parse_arp",
+                    "id": 1,
+                    "parser_ops": [
+                        {
+                            "op": "extract",
+                            "parameters": [
+                                {
+                                    "type": "regular",
+                                    "value": "arp"
+                                }
+                            ]
+                        }
+                    ],
+                    "transition_key": [],
+                    "transitions": [
+                        {
+                            "type": "default",
+                            "value": null,
+                            "mask": null,
+                            "next_state": null
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "parse_vsets": [],
+    "deparsers": [
+        {
+            "name": "deparser",
+            "id": 0,
+            "order": [
+                "ethernet",
+                "arp"
+            ]
+        }
+    ],
+    "meter_arrays": [],
+    "actions": [
+        {
+            "name": "arp_present",
+            "id": 0,
+            "runtime_data": [],
+            "primitives": []
+        },
+        {
+            "name": "arp_request",
+            "id": 1,
+            "runtime_data": [],
+            "primitives": []
+        },
+        {
+            "name": "send_packet",
+            "id": 2,
+            "runtime_data": [],
+            "primitives": []
+        },
+        {
+            "name": "arp_reply",
+            "id": 3,
+            "runtime_data": [
+                {
+                    "name": "MAC",
+                    "bitwidth": 48
+                }
+            ],
+            "primitives": [
+                {
+                    "op": "modify_field",
+                    "parameters": [
+                        {
+                            "type": "field",
+                            "value": [
+                                "standard_metadata",
+                                "egress_spec"
+                            ]
+                        },
+                        {
+                            "type": "field",
+                            "value": [
+                                "standard_metadata",
+                                "ingress_port"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "op": "modify_field",
+                    "parameters": [
+                        {
+                            "type": "field",
+                            "value": [
+                                "arp",
+                                "opcode"
+                            ]
+                        },
+                        {
+                            "type": "hexstr",
+                            "value": "0x2"
+                        }
+                    ]
+                },
+                {
+                    "op": "modify_field",
+                    "parameters": [
+                        {
+                            "type": "field",
+                            "value": [
+                                "arp",
+                                "target_MAC"
+                            ]
+                        },
+                        {
+                            "type": "field",
+                            "value": [
+                                "arp",
+                                "sender_MAC"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "op": "modify_field",
+                    "parameters": [
+                        {
+                            "type": "field",
+                            "value": [
+                                "arp",
+                                "sender_MAC"
+                            ]
+                        },
+                        {
+                            "type": "runtime_data",
+                            "value": 0
+                        }
+                    ]
+                },
+                {
+                    "op": "modify_field",
+                    "parameters": [
+                        {
+                            "type": "field",
+                            "value": [
+                                "meta",
+                                "temp"
+                            ]
+                        },
+                        {
+                            "type": "field",
+                            "value": [
+                                "arp",
+                                "sender_IP"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "op": "modify_field",
+                    "parameters": [
+                        {
+                            "type": "field",
+                            "value": [
+                                "arp",
+                                "sender_IP"
+                            ]
+                        },
+                        {
+                            "type": "field",
+                            "value": [
+                                "arp",
+                                "target_IP"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "op": "modify_field",
+                    "parameters": [
+                        {
+                            "type": "field",
+                            "value": [
+                                "arp",
+                                "target_IP"
+                            ]
+                        },
+                        {
+                            "type": "field",
+                            "value": [
+                                "meta",
+                                "temp"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "op": "modify_field",
+                    "parameters": [
+                        {
+                            "type": "field",
+                            "value": [
+                                "ethernet",
+                                "dest"
+                            ]
+                        },
+                        {
+                            "type": "field",
+                            "value": [
+                                "ethernet",
+                                "src"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "op": "modify_field",
+                    "parameters": [
+                        {
+                            "type": "field",
+                            "value": [
+                                "ethernet",
+                                "src"
+                            ]
+                        },
+                        {
+                            "type": "runtime_data",
+                            "value": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "_no_op",
+            "id": 4,
+            "runtime_data": [],
+            "primitives": []
+        },
+        {
+            "name": "a_init_meta_egress",
+            "id": 5,
+            "runtime_data": [
+                {
+                    "name": "port",
+                    "bitwidth": 9
+                }
+            ],
+            "primitives": [
+                {
+                    "op": "modify_field",
+                    "parameters": [
+                        {
+                            "type": "field",
+                            "value": [
+                                "standard_metadata",
+                                "egress_spec"
+                            ]
+                        },
+                        {
+                            "type": "runtime_data",
+                            "value": 0
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "pipelines": [
+        {
+            "name": "ingress",
+            "id": 0,
+            "init_table": "init_meta_egress",
+            "tables": [
+                {
+                    "name": "init_meta_egress",
+                    "id": 0,
+                    "match_type": "exact",
+                    "type": "simple",
+                    "max_size": 16384,
+                    "with_counters": false,
+                    "direct_meters": null,
+                    "support_timeout": false,
+                    "key": [
+                        {
+                            "match_type": "exact",
+                            "target": [
+                                "standard_metadata",
+                                "ingress_port"
+                            ],
+                            "mask": null
+                        }
+                    ],
+                    "actions": [
+                        "a_init_meta_egress",
+                        "_no_op"
+                    ],
+                    "next_tables": {
+                        "a_init_meta_egress": "check_arp",
+                        "_no_op": "check_arp"
+                    },
+                    "base_default_next": "check_arp"
+                },
+                {
+                    "name": "check_arp",
+                    "id": 1,
+                    "match_type": "exact",
+                    "type": "simple",
+                    "max_size": 16384,
+                    "with_counters": false,
+                    "direct_meters": null,
+                    "support_timeout": false,
+                    "key": [
+                        {
+                            "match_type": "valid",
+                            "target": "arp",
+                            "mask": null
+                        }
+                    ],
+                    "actions": [
+                        "arp_present",
+                        "send_packet"
+                    ],
+                    "next_tables": {
+                        "arp_present": "check_opcode",
+                        "send_packet": null
+                    },
+                    "base_default_next": null
+                },
+                {
+                    "name": "check_opcode",
+                    "id": 2,
+                    "match_type": "exact",
+                    "type": "simple",
+                    "max_size": 16384,
+                    "with_counters": false,
+                    "direct_meters": null,
+                    "support_timeout": false,
+                    "key": [
+                        {
+                            "match_type": "exact",
+                            "target": [
+                                "arp",
+                                "opcode"
+                            ],
+                            "mask": null
+                        }
+                    ],
+                    "actions": [
+                        "arp_request",
+                        "send_packet"
+                    ],
+                    "next_tables": {
+                        "arp_request": "handle_arp_request",
+                        "send_packet": null
+                    },
+                    "base_default_next": null
+                },
+                {
+                    "name": "handle_arp_request",
+                    "id": 3,
+                    "match_type": "exact",
+                    "type": "simple",
+                    "max_size": 16384,
+                    "with_counters": false,
+                    "direct_meters": null,
+                    "support_timeout": false,
+                    "key": [
+                        {
+                            "match_type": "exact",
+                            "target": [
+                                "arp",
+                                "target_IP"
+                            ],
+                            "mask": null
+                        }
+                    ],
+                    "actions": [
+                        "arp_reply",
+                        "send_packet"
+                    ],
+                    "next_tables": {
+                        "arp_reply": null,
+                        "send_packet": null
+                    },
+                    "base_default_next": null
+                }
+            ],
+            "action_profiles": [],
+            "conditionals": []
+        },
+        {
+            "name": "egress",
+            "id": 1,
+            "init_table": null,
+            "tables": [],
+            "action_profiles": [],
+            "conditionals": []
+        }
+    ],
+    "calculations": [],
+    "checksums": [],
+    "learn_lists": [],
+    "field_lists": [],
+    "counter_arrays": [],
+    "register_arrays": [],
+    "force_arith": [
+        [
+            "standard_metadata",
+            "ingress_port"
+        ],
+        [
+            "standard_metadata",
+            "packet_length"
+        ],
+        [
+            "standard_metadata",
+            "egress_spec"
+        ],
+        [
+            "standard_metadata",
+            "egress_port"
+        ],
+        [
+            "standard_metadata",
+            "egress_instance"
+        ],
+        [
+            "standard_metadata",
+            "instance_type"
+        ],
+        [
+            "standard_metadata",
+            "clone_spec"
+        ],
+        [
+            "standard_metadata",
+            "_padding"
+        ]
+    ]
+}
