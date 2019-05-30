@@ -29,7 +29,7 @@ def do_headers(p4, flow):
         )
 
         fields = {}
-        for field_name, _, _ in header_type['fields']:
+        for field_name, *_ in header_type['fields']:
             fields[field_name] = []
 
         flow[header['name']] = fields
@@ -37,19 +37,46 @@ def do_headers(p4, flow):
 
 def do_parsers(p4, flow):
     parser = p4['parsers'][0]
-    init_state = find(
+    state = find(
         parser['parse_states'],
         lambda state: state['name'] == parser['init_state'],
     )
 
-    op, = init_state['parser_ops']
-    if op['op'] == 'extract':
-        param, = op['parameters']
-        if param['type'] == 'regular':
-            sequence = flow[param['value']]
-            for seq in sequence.values(): seq.append('D')
+    while state is not None:
+        print('STATE:', state['name'])
 
-    #...
+        op, *_ = state['parser_ops']
+        if op['op'] != 'extract':
+            raise NotImplementedError(f"op: {op['op']}")
+
+        param, = op['parameters']
+        if param['type'] != 'regular':
+            raise NotImplementedError(f"parameter type: {param['type']}")
+
+        sequence = flow[param['value']]
+        for seq in sequence.values(): seq.append('D')
+
+        for tk in state['transition_key']:
+            if tk['type'] != 'field':
+                raise NotImplementedError(f"transition_key type: {tk['type']}")
+
+            header, field = tk['value']
+            flow[header][field].append('U')
+
+        for transition in state['transitions']:
+            if 'type' not in transition:
+                break
+            elif transition['type'] == 'hexstr':
+                # if transition['value'] == vtf: break  # ???
+                break
+
+        next_state = transition['next_state']
+        if next_state is None: break
+
+        state = find(
+            parser['parse_states'],
+            lambda state: state['name'] == next_state
+        )
 
 
 def find(list, predicate):
