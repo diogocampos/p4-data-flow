@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-from pprint import pprint
 import json
 
 
@@ -11,7 +10,7 @@ def main(argv):
         p4 = json.load(fp)
 
     flow = get_flow(p4)
-    pprint(flow)
+    output(flow)
 
 
 def get_flow(p4):
@@ -134,6 +133,13 @@ def append(flow, field, du):
 def find(iterable, predicate):
     for item in iterable:
         if predicate(item): return item
+
+
+def output(flow):
+    for header_name, header in flow.items():
+        print(f'{header_name}:')
+        for field_name, sequence in header.items():
+            print(f"    {field_name}: {''.join(sequence)}")
 
 
 if __name__ == '__main__':
