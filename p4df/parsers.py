@@ -1,37 +1,4 @@
-#!/usr/bin/env python3
-
-import json
-
-
-def main(argv):
-    filename = argv[1]
-
-    with open(filename, 'r') as fp:
-        p4 = json.load(fp)
-
-    flow = get_flow(p4)
-    output(flow)
-
-
-def get_flow(p4):
-    flow = {}
-    do_headers(p4, flow)
-    do_parsers(p4, flow)
-    return flow
-
-
-def do_headers(p4, flow):
-    for header in p4['headers']:
-        header_type = find(
-            p4['header_types'],
-            lambda item: item['name'] == header['header_type'],
-        )
-
-        fields = {}
-        for field_name, *_ in header_type['fields']:
-            fields[field_name] = []
-
-        flow[header['name']] = fields
+from .util import append, find, operation
 
 
 def do_parsers(p4, flow):
@@ -104,44 +71,3 @@ def op_verify(op, flow):
     assertion, errno = op['parameters']
     operation(assertion, flow)
     operation(errno, flow)
-
-
-def operation(node, flow):
-    if node is None: return
-
-    if node['type'] == 'field':
-        append(flow, node['value'], 'U')
-
-    elif node['type'] == 'expression':
-        expression(node['value'], flow)
-
-
-def expression(expr, flow):
-    left = expr['left']
-    right = expr['right']
-    cond = expr['cond'] if 'cond' in expr else None
-
-    for part in (left, right, cond):
-        operation(part, flow)
-
-
-def append(flow, field, du):
-    header_name, field_name = field
-    flow[header_name][field_name].append(du)
-
-
-def find(iterable, predicate):
-    for item in iterable:
-        if predicate(item): return item
-
-
-def output(flow):
-    for header_name, header in flow.items():
-        print(f'{header_name}:')
-        for field_name, sequence in header.items():
-            print(f"    {field_name}: {''.join(sequence)}")
-
-
-if __name__ == '__main__':
-    import sys
-    sys.exit(main(sys.argv))
