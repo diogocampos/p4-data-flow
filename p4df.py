@@ -4,7 +4,7 @@ import json
 
 from p4df.headers import do_headers
 from p4df.parsers import do_parsers
-from p4df.ingress import do_ingress
+from p4df.pipelines import do_pipelines
 
 
 def main(argv):
@@ -21,7 +21,7 @@ def get_flow(p4):
     flow = {}
     do_headers(p4, flow)
     do_parsers(p4, flow)
-    do_ingress(p4, flow)
+    do_pipelines(p4, flow)
     return flow
 
 

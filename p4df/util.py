@@ -1,21 +1,26 @@
 
-def operation(node, flow):
+def operation(flow, node, action = None):
     if node is None: return
 
     if node['type'] == 'field':
-        append(flow, node['value'], 'U')
+        field = node['value']
+        append(flow, field, 'U')
+
+    elif node['type'] == 'runtime_data':
+        index = node['value']
+        data_name = action['runtime_data'][index]['name']
+        append(flow, [action['name'], data_name], 'D')
 
     elif node['type'] == 'expression':
-        _expression(node['value'], flow)
-
-
-def _expression(expr, flow):
-    left = expr['left']
-    right = expr['right']
-    cond = expr['cond'] if 'cond' in expr else None
-
-    for part in (left, right, cond):
-        operation(part, flow)
+        expression = node['value']
+        if 'type' in expression:
+            operation(flow, expression, action)
+        else:
+            left = expression['left']
+            right = expression['right']
+            cond = expression['cond'] if 'cond' in expression else None
+            for part in (cond, left, right):
+                operation(flow, part, action)
 
 
 def append(flow, field, du):
