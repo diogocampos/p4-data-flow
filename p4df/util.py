@@ -1,5 +1,5 @@
 
-def operation(flow, node, action = None):
+def operation(flow, node, action=None):
     if node is None: return
 
     if node['type'] == 'field':
@@ -30,6 +30,7 @@ def append(flow, field, du):
     flow[header_name][field_name].append(du)
 
 
-def find(iterable, predicate):
+def find(iterable, **kwargs):
     for item in iterable:
-        if predicate(item): return item
+        if all(item[key] == value for key, value in kwargs.items()):
+            return item

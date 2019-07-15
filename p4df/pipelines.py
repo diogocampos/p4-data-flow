@@ -7,17 +7,11 @@ def do_pipelines(p4, flow):
 
 
 def _pipeline(pipeline_name, p4, flow):
-    pipeline = find(
-        p4['pipelines'],
-        lambda item: item['name'] == pipeline_name,
-    )
+    pipeline = find(p4['pipelines'], name=pipeline_name)
     table_name = pipeline['init_table']
 
     while table_name is not None:
-        table = find(
-            pipeline['tables'],
-            lambda item: item['name'] == table_name,
-        )
+        table = find(pipeline['tables'], name=table_name)
 
         if table is not None:
             # TODO table['key'] pode ser uma lista vazia (mri.json)
@@ -30,10 +24,7 @@ def _pipeline(pipeline_name, p4, flow):
             # match_type true/false ??
 
             for action_name in table['actions']:
-                action = find(
-                    p4['actions'],
-                    lambda item: item['name'] == action_name,
-                )
+                action = find(p4['actions'], name=action_name)
 
                 flow[action_name] = {}
                 for item in action['runtime_data']:
@@ -61,10 +52,8 @@ def _pipeline(pipeline_name, p4, flow):
             break
 
         else:  # table não localizada
-            conditional = find(
-                pipeline['conditionals'],
-                lambda item: item['name'] == table_name,
-            )
+            conditional = find(pipeline['conditionals'], name=table_name)
+
             operation(flow, conditional['expression'])
 
             table_name = conditional['true_next']

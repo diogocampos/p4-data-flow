@@ -3,10 +3,7 @@ from .util import append, find, operation
 
 def do_parsers(p4, flow):
     parser = p4['parsers'][0]  # pode haver mais de um ???
-    state = find(
-        parser['parse_states'],
-        lambda state: state['name'] == parser['init_state'],
-    )
+    state = find(parser['parse_states'], name=parser['init_state'])
 
     while state is not None:
         op = state['parser_ops'][0]
@@ -43,10 +40,7 @@ def do_parsers(p4, flow):
         next_state = transition['next_state']
         if next_state is None: break
 
-        state = find(
-            parser['parse_states'],
-            lambda state: state['name'] == next_state
-        )
+        state = find(parser['parse_states'], name=next_state)
 
 
 def _extract(op, flow):
