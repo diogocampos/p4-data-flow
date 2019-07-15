@@ -2,6 +2,7 @@
 
 import json
 
+from p4df.compute_checksum import do_compute_checksum
 from p4df.headers import do_headers
 from p4df.parsers import do_parsers
 from p4df.pipelines import do_pipelines
@@ -22,12 +23,13 @@ def get_flow(p4):
     do_headers(p4, flow)
     do_parsers(p4, flow)
     do_pipelines(p4, flow)
+    do_compute_checksum(p4, flow)
     return flow
 
 
 def output(flow):
     for header_name, header in flow.items():
-        print(f'{header_name}:')
+        print(f"{header_name}:")
         for field_name, sequence in header.items():
             print(f"    {field_name}: {''.join(sequence)}")
 
