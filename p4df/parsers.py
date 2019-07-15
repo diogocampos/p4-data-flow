@@ -9,19 +9,18 @@ def do_parsers(p4, flow):
     )
 
     while state is not None:
-        op, *_ = state['parser_ops']
+        op = state['parser_ops'][0]
 
         if op['op'] == 'extract':
-            op_extract(op, flow)
+            _extract(op, flow)
         elif op['op'] == 'set':
-            op_set(op, flow)
+            _set(op, flow)
         elif op['op'] == 'verify':
-            op_verify(op, flow)
+            _verify(op, flow)
         else:
-            raise NotImplementedError(f"op: {op['op']}")
+            raise NotImplementedError('parsers - tarefa 2/5/6')
 
-        if len(state['transition_key']) != 1:
-            raise NotImplementedError(f'Multiple/missing transition_key items')
+        assert len(state['transition_key']) == 1
 
         tk, = state['transition_key']
         transition = None
@@ -39,7 +38,7 @@ def do_parsers(p4, flow):
                     pass
 
         else:
-            raise NotImplementedError(f"transition_key type: {tk['type']}")
+            raise NotImplementedError('parsers - tarefa 9/10/11')
 
         next_state = transition['next_state']
         if next_state is None: break
@@ -50,7 +49,7 @@ def do_parsers(p4, flow):
         )
 
 
-def op_extract(op, flow):
+def _extract(op, flow):
     param, = op['parameters']
 
     if param['type'] == 'regular':
@@ -58,16 +57,16 @@ def op_extract(op, flow):
         for seq in sequences.values(): seq.append('D')
 
     else:
-        raise NotImplementedError(f"parameter type: {param['type']}")
+        raise NotImplementedError('parsers - tarefa 7/8')
 
 
-def op_set(op, flow):
+def _set(op, flow):
     left, right = op['parameters']
+    operation(flow, right)
     append(flow, left['value'], 'D')
-    operation(right, flow)
 
 
-def op_verify(op, flow):
+def _verify(op, flow):
     assertion, errno = op['parameters']
-    operation(assertion, flow)
-    operation(errno, flow)
+    operation(flow, assertion)
+    operation(flow, errno)
