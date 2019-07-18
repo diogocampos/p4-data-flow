@@ -17,25 +17,31 @@ def do_parsers(p4, flow):
         else:
             raise NotImplementedError('parsers - tarefa 2/5/6')
 
-        assert len(state['transition_key']) == 1
+        for tk in state['transition_key']:
+            if tk['type'] == 'field':
+                append(flow, tk['value'], 'U')
 
-        tk, = state['transition_key']
-        transition = None
+        transition = state['transitions'][0]
 
-        if tk['type'] == 'field':
-            append(flow, tk['value'], 'U')
+        #assert len(state['transition_key']) == 1
 
-            #vtk = valor de tk['value']  # ???
+        #tk, = state['transition_key']
+        #transition = None
 
-            for transition in state['transitions']:
-                if 'type' not in transition or transition['type'] == 'default':
-                    break
-                elif transition['type'] == 'hexstr':
-                    # if transition['value'] == vtk: break  # ???
-                    pass
+        #if tk['type'] == 'field':
+        #    append(flow, tk['value'], 'U')
 
-        else:
-            raise NotImplementedError('parsers - tarefa 9/10/11')
+        #    #vtk = valor de tk['value']  # ???
+
+        #    for transition in state['transitions']:
+        #        if 'type' not in transition or transition['type'] == 'default':
+        #            break
+        #        elif transition['type'] == 'hexstr':
+        #            #if transition['value'] == vtk: break  # ???
+        #            pass
+
+        #else:
+        #    raise NotImplementedError('parsers - tarefa 9/10/11')
 
         next_state = transition['next_state']
         if next_state is None: break
