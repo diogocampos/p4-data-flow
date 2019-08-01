@@ -9,7 +9,7 @@ def operation(flow, node, action=None):
     elif node['type'] == 'runtime_data':
         index = node['value']
         data_name = action['runtime_data'][index]['name']
-        append(flow, [action['name'], data_name], 'D')
+        append(flow, [action['name'], data_name], 'U')
 
     elif node['type'] == 'expression':
         expression = node['value']
