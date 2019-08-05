@@ -31,7 +31,7 @@ def output(flow):
     for header_name, header in flow.items():
         print(f"{header_name}:")
         for field_name, sequence in header.items():
-            print(f"    {field_name}: {''.join(sequence)}")
+            if len(sequence) > 0: print(f"  {field_name}: {''.join(sequence)}")
 
 
 if __name__ == '__main__':
