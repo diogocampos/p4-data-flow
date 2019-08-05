@@ -25,7 +25,9 @@ def operation(flow, node, action=None):
 
 def append(flow, field, du):
     header_name, field_name = field
-    if field_name == '$valid$': return
+
+    if field_name not in flow[header_name]:
+        flow[header_name][field_name] = []
 
     flow[header_name][field_name].append(du)
 
