@@ -53,8 +53,9 @@ def _extract(op, flow):
     param, = op['parameters']
 
     if param['type'] == 'regular':
-        sequences = flow[param['value']]
-        for seq in sequences.values(): seq.append('D')
+        header_name = param['value']
+        for field_name in flow[header_name]:
+            append(flow, [header_name, field_name], 'D')
 
     else:
         raise NotImplementedError('parsers - tarefa 7/8')
