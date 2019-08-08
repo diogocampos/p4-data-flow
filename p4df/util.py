@@ -41,7 +41,7 @@ def find(iterable, **kwargs):
 
 
 def _caller_info():
-  caller_frame_record = inspect.stack()[2]
-  frame = caller_frame_record[0]
-  info = inspect.getframeinfo(frame)
-  return (info.filename, info.function, info.lineno)
+    caller_frame_record = inspect.stack()[2]
+    frame = caller_frame_record[0]
+    info = inspect.getframeinfo(frame)
+    return (os.path.basename(info.filename), info.function, info.lineno)

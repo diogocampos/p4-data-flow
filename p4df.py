@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import json
-import os
 
 from p4df.compute_checksum import do_compute_checksum
 from p4df.headers import do_headers
@@ -34,8 +33,8 @@ def output(flow):
         for field_name, sequence in header.items():
             if len(sequence) == 0: continue
             print(f"  {field_name}:")
-            for du, (filename, function, lineno) in sequence:
-                print(f"    {du} ({os.path.basename(filename)}:{function}:{lineno})")
+            for du, trace in sequence:
+                print(f"    {du} ({':'.join(map(str, trace))})")
 
 
 if __name__ == '__main__':
