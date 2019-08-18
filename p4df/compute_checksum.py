@@ -1,4 +1,4 @@
-from .util import append, find
+from .util import find
 
 def do_compute_checksum(p4, flow):
     for checksum in p4['checksums']:
@@ -6,8 +6,8 @@ def do_compute_checksum(p4, flow):
 
         for input in calculation['input']:
             if input['type'] == 'field':
-                append(flow, input['value'], 'U')
+                flow.use(input['value'])
             else:
                 raise NotImplementedError('compute_checksum - tarefa 14/15/16')
 
-        append(flow, checksum['target'], 'D')
+        flow.define(checksum['target'])

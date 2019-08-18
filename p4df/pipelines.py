@@ -1,4 +1,4 @@
-from .util import append, find, operation
+from .util import find, operation
 
 
 def do_pipelines(p4, flow):
@@ -20,15 +20,14 @@ def _pipeline(pipeline_name, p4, flow):
             if key['match_type'] == 'valid':
                 raise NotImplementedError('pipelines - tarefa 2')
 
-            append(flow, key['target'], 'U')
+            flow.use(key['target'])
             # match_type true/false ??
 
             for action_name in table['actions']:
                 action = find(p4['actions'], name=action_name)
 
-                flow[action_name] = {}
                 for item in action['runtime_data']:
-                    flow[action_name][item['name']] = []
+                    flow.declare([action['name'], item['name']])
 
                 for primitive in action['primitives']:
                     if primitive['op'] == 'assign':
@@ -38,11 +37,11 @@ def _pipeline(pipeline_name, p4, flow):
 
                         if left['type'] == 'field':
                             field = left['value']
-                            append(flow, field, 'D')
+                            flow.define(field)
                         elif left['type'] == 'runtime_data':
                             index = left['value']
-                            data_name = action['runtime_data'][index]['name']
-                            append(flow, [action_name, data_name], 'D')
+                            data = action['runtime_data'][index]
+                            flow.define([action['name'], data['name']])
                         else:
                             raise NotImplementedError('pipelines - tarefa 7')
 

@@ -1,17 +1,21 @@
-import inspect
-import os
+
+def find(iterable, **kwargs):
+    for item in iterable:
+        if all(item[key] == value for key, value in kwargs.items()):
+            return item
+
 
 def operation(flow, node, action=None):
     if node is None: return
 
     if node['type'] == 'field':
         field = node['value']
-        append(flow, field, 'U')
+        flow.use(field)
 
     elif node['type'] == 'runtime_data':
         index = node['value']
-        data_name = action['runtime_data'][index]['name']
-        append(flow, [action['name'], data_name], 'U')
+        data = action['runtime_data'][index]
+        flow.use([action['name'], data['name']])
 
     elif node['type'] == 'expression':
         expression = node['value']
@@ -25,23 +29,17 @@ def operation(flow, node, action=None):
                 operation(flow, part, action)
 
 
-def append(flow, field, du):
-    header_name, field_name = field
+class BreadthFirstSearch:
+    def __init__(self, first):
+        self._queue = [first]
+        self._visited = []
 
-    if field_name not in flow[header_name]:
-        flow[header_name][field_name] = []
+    def __iter__(self):
+        while len(self._queue) > 0:
+            item = self._queue.pop(0)
+            if item in self._visited: continue
+            self._visited.append(item)
+            yield item
 
-    flow[header_name][field_name].append((du, _caller_info()))
-
-
-def find(iterable, **kwargs):
-    for item in iterable:
-        if all(item[key] == value for key, value in kwargs.items()):
-            return item
-
-
-def _caller_info():
-    caller_frame_record = inspect.stack()[2]
-    frame = caller_frame_record[0]
-    info = inspect.getframeinfo(frame)
-    return (os.path.basename(info.filename), info.function, info.lineno)
+    def enqueue(self, items):
+        self._queue.extend(items)
