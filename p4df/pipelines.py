@@ -26,6 +26,7 @@ def _pipeline(pipeline_name, p4, flow):
             for action_name in table['actions']:
                 action = find(p4['actions'], name=action_name)
 
+                flow.declare_header(action['name'])
                 for item in action['runtime_data']:
                     flow.declare([action['name'], item['name']])
 

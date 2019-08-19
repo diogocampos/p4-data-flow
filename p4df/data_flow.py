@@ -13,13 +13,21 @@ class DataFlow:
     def set_current_node(self, key):
         self._current_node = self._nodes.setdefault(key, _Node(key))
 
+    def declare_header(self, header_name):
+        field_names = self._fields[header_name]
+
     def declare(self, field):
         header_name, field_name = field
         if field_name not in self._fields[header_name]:
             self._fields[header_name].append(field_name)
 
-    def define(self, field): self._current_node.define(field)
-    def use(self, field): self._current_node.use(field)
+    def define(self, field):
+        self.declare(field)
+        self._current_node.define(field)
+
+    def use(self, field):
+        self.declare(field)
+        self._current_node.use(field)
 
     def define_all(self, header_name):
         for field_name in self._fields[header_name]:
@@ -52,6 +60,7 @@ class DataFlow:
         lines = []
 
         for header_name, field_names in self._fields.items():
+            if omit_empty and len(field_names) == 0: continue
             lines.append(f"    {header_name}")
 
             for field_name in field_names:
