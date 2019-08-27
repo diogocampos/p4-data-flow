@@ -3,7 +3,7 @@ from collections import defaultdict
 
 class DataFlow:
     def __init__(self):
-        node = _Node()
+        node = _Node('0')
         self._fields = defaultdict(list)  # header name -> field names
         self._initial_node = node
         self._current_node = node
@@ -52,8 +52,9 @@ class DataFlow:
     def format_output(self, omit_empty=False):
         parts = []
         for path in self._all_paths():
-            parts.append(' -> '.join(node.key or 'null' for node in path))
-            parts.append(self._format_path(path, omit_empty))
+            header = ' -> '.join(node.key for node in path)
+            result = self._format_path(path, omit_empty)
+            parts.append(f"{header}\n{result}")
         return '\n\n'.join(parts)
 
     def _format_path(self, path, omit_empty):
@@ -77,8 +78,8 @@ _DEFINE = 'D'
 _USE = 'U'
 
 class _Node:
-    def __init__(self, key=''):
-        self.key = key if key != '' else _key_generator.next()
+    def __init__(self, key):
+        self.key = key
         self._headers = defaultdict(lambda: defaultdict(list))
 
     def define(self, field): self._append(field, _DEFINE)
@@ -90,17 +91,3 @@ class _Node:
 
     def get(self, header_name, field_name):
         return list(self._headers[header_name][field_name])
-
-
-# Helpers
-
-class _KeyGenerator:
-    def __init__(self):
-        self._counter = 0
-
-    def next(self):
-        key = str(self._counter)
-        self._counter += 1
-        return key
-
-_key_generator = _KeyGenerator()
