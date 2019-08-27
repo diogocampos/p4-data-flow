@@ -4,7 +4,8 @@ from .util import BreadthFirstSearch, find, operation
 def do_parsers(p4, flow):
     parser = p4['parsers'][0]
     bfs = BreadthFirstSearch(parser['init_state'])
-    flow.set_transitions([parser['init_state']])
+    flow.set_prefix('parsers')
+    flow.add_transitions([parser['init_state']])
 
     for state_name in bfs:
         state = find(parser['parse_states'], name=state_name)
@@ -21,10 +22,11 @@ def do_parsers(p4, flow):
                 flow.use(tk['value'])
 
         next_states = [t['next_state'] for t in state['transitions']]
-        flow.set_transitions(next_states)
+        flow.add_transitions(next_states)
         bfs.enqueue(next_states)
 
     flow.set_current_node(None)
+    flow.clear_prefix()
 
 
 def _extract(op, flow):

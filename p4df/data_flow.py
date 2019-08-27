@@ -9,9 +9,29 @@ class DataFlow:
         self._current_node = node
         self._nodes = { node.key: node }  # key -> node
         self._transitions = defaultdict(list)  # node -> nodes
+        self._prefix = None
 
     def set_current_node(self, key):
+        key = self._normalize_key(key)
         self._current_node = self._nodes.setdefault(key, _Node(key))
+
+    def add_transitions(self, keys):
+        transitions = self._transitions[self._current_node]
+        for key in keys:
+            key = self._normalize_key(key)
+            node = self._nodes.setdefault(key, _Node(key))
+            if node not in transitions: transitions.append(node)
+
+    def _normalize_key(self, key):
+        if key is None: key = 'null'
+        if self._prefix: key = f"{self._prefix}/{key}"
+        return key
+
+    def set_prefix(self, prefix):
+        self._prefix = prefix
+
+    def clear_prefix(self):
+        self._prefix = None
 
     def declare_header(self, header_name):
         field_names = self._fields[header_name]
@@ -32,11 +52,6 @@ class DataFlow:
     def define_all(self, header_name):
         for field_name in self._fields[header_name]:
             self._current_node.define([header_name, field_name])
-
-    def set_transitions(self, keys):
-        transitions = self._transitions[self._current_node]
-        for key in keys:
-            transitions.append(self._nodes.setdefault(key, _Node(key)))
 
     def _all_paths(self):
         yield from self._visit(self._initial_node, [])
