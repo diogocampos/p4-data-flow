@@ -1,4 +1,4 @@
-from .util import find, operation
+from .util import BreadthFirstSearch, find, operation
 
 
 def do_pipelines(p4, flow):
@@ -8,15 +8,18 @@ def do_pipelines(p4, flow):
 
 def _pipeline(pipeline_name, p4, flow):
     pipeline = find(p4['pipelines'], name=pipeline_name)
-    table_name = pipeline['init_table']
+    bfs = BreadthFirstSearch(pipeline['init_table'])
+    flow.set_prefix(pipeline_name)
+    flow.add_transitions([pipeline['init_table']])
 
-    while table_name is not None:
+    for table_name in bfs:
         table = find(pipeline['tables'], name=table_name)
+        flow.set_current_node(table_name)
 
-        if table is not None:
-            # TODO table['key'] pode ser uma lista vazia (mri.json)
-            if len(table['key']) == 0: break
+        if table:
+            assert len(table['key']) > 0
             key = table['key'][0]
+
             if key['match_type'] == 'valid':
                 raise NotImplementedError('pipelines - tarefa 2')
 
@@ -24,6 +27,10 @@ def _pipeline(pipeline_name, p4, flow):
             # match_type true/false ??
 
             for action_name in table['actions']:
+                key = f"{table_name}/{action_name}"
+                flow.add_transitions([key])
+                flow.set_current_node(key)
+
                 action = find(p4['actions'], name=action_name)
 
                 flow.declare_header(action['name'])
@@ -49,12 +56,19 @@ def _pipeline(pipeline_name, p4, flow):
                     #else:
                     #    raise NotImplementedError('pipelines - tarefa 3/4')
 
-            break
+                next_tables = [table['next_tables'][action_name]]
+                flow.add_transitions(next_tables)
+                bfs.enqueue(next_tables)
+                flow.set_current_node(table_name)
 
-        else:  # table não localizada
+        else:
             conditional = find(pipeline['conditionals'], name=table_name)
 
             operation(flow, conditional['expression'])
 
-            table_name = conditional['true_next']
-            # TODO conditional['false_next']
+            next_tables = [conditional['true_next'], conditional['false_next']]
+            flow.add_transitions(next_tables)
+            bfs.enqueue(next_tables)
+
+    flow.set_current_node(None)
+    flow.clear_prefix()
