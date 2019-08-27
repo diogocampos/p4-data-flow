@@ -31,7 +31,7 @@ def operation(flow, node, action=None):
 
 class BreadthFirstSearch:
     def __init__(self, first):
-        self._queue = [first]
+        self._queue = [first] if first is not None else []
         self._visited = []
 
     def __iter__(self):
@@ -42,4 +42,4 @@ class BreadthFirstSearch:
             yield item
 
     def enqueue(self, items):
-        self._queue.extend(items)
+        self._queue.extend(i for i in items if i is not None)

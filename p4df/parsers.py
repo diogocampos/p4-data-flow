@@ -22,7 +22,7 @@ def do_parsers(p4, flow):
 
         next_states = [t['next_state'] for t in state['transitions']]
         flow.set_transitions(next_states)
-        bfs.enqueue(name for name in next_states if name is not None)
+        bfs.enqueue(next_states)
 
     flow.set_current_node(None)
 
