@@ -76,15 +76,18 @@ class DataFlow:
         lines = []
 
         for header_name, field_names in self._fields.items():
-            if omit_empty and len(field_names) == 0: continue
-            lines.append(f"    {header_name}")
+            section = [f"    {header_name}"]
 
             for field_name in field_names:
                 sequences = (node.get(header_name, field_name) for node in path)
                 parts = (''.join(seq) for seq in sequences if len(seq) > 0)
                 string = ' '.join(parts)
+
                 if omit_empty and len(string) == 0: continue
-                lines.append(f"        {field_name}: {string}")
+                section.append(f"        {field_name}: {string}")
+
+            if omit_empty and len(section) == 1: continue
+            lines.extend(section)
 
         return '\n'.join(lines)
 
