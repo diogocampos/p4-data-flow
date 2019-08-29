@@ -80,8 +80,14 @@ class DataFlow:
 
             for field_name in field_names:
                 sequences = (node.get(header_name, field_name) for node in path)
-                parts = (''.join(seq) for seq in sequences if len(seq) > 0)
-                string = ' '.join(parts)
+                if verbose:
+                    keys = (node.key for node in path)
+                    parts = (f"[{key}] {seq}"
+                        for key, seq in zip(keys, sequences) if len(seq) > 0)
+                    string = ', '.join(parts)
+                else:
+                    parts = (seq for seq in sequences if len(seq) > 0)
+                    string = ' '.join(parts)
 
                 if not verbose and len(string) == 0: continue
                 section.append(f"        {field_name}: {string}")
@@ -108,4 +114,4 @@ class _Node:
         self._headers[header_name][field_name].append(def_or_use)
 
     def get(self, header_name, field_name):
-        return list(self._headers[header_name][field_name])
+        return ''.join(self._headers[header_name][field_name])
