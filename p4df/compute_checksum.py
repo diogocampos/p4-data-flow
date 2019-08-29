@@ -1,6 +1,8 @@
 from .util import find
 
 def do_compute_checksum(p4, flow):
+    flow.push_node('compute_checksum')
+
     for checksum in p4['checksums']:
         calculation = find(p4['calculations'], name=checksum['calculation'])
 

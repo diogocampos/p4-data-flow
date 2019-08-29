@@ -22,6 +22,10 @@ class DataFlow:
             node = self._nodes.setdefault(key, _Node(key))
             if node not in transitions: transitions.append(node)
 
+    def push_node(self, key):
+        self.add_transitions([key])
+        self.set_current_node(key)
+
     def _normalize_key(self, key):
         if key is None: key = 'null'
         if self._prefix: key = f"{self._prefix}/{key}"
@@ -98,16 +102,13 @@ class DataFlow:
         return '\n'.join(lines)
 
 
-_DEFINE = 'D'
-_USE = 'U'
-
 class _Node:
     def __init__(self, key):
         self.key = key
         self._headers = defaultdict(lambda: defaultdict(list))
 
-    def define(self, field): self._append(field, _DEFINE)
-    def use(self, field): self._append(field, _USE)
+    def define(self, field): self._append(field, 'D')
+    def use(self, field): self._append(field, 'U')
 
     def _append(self, field, def_or_use):
         header_name, field_name = field

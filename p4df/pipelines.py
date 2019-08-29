@@ -27,9 +27,7 @@ def _pipeline(pipeline_name, p4, flow):
             # match_type true/false ??
 
             for action_name in table['actions']:
-                key = f"{table_name}/{action_name}"
-                flow.add_transitions([key])
-                flow.set_current_node(key)
+                flow.push_node(f"{table_name}/{action_name}")
 
                 action = find(p4['actions'], name=action_name)
 
