@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import argparse
 import json
 
 from p4df.compute_checksum import do_compute_checksum
@@ -10,13 +11,20 @@ from p4df.pipelines import do_pipelines
 
 
 def main(argv):
-    filename = argv[1]
+    args = parse_argv(argv)
 
-    with open(filename, 'r') as fp:
-        p4 = json.load(fp)
+    with args.jsonfile:
+        p4 = json.load(args.jsonfile)
 
     flow = get_flow(p4)
-    print(flow.format_output(omit_empty=True))
+    print(flow.format_output(verbose=args.verbose))
+
+
+def parse_argv(argv):
+    parser = argparse.ArgumentParser()
+    parser.add_argument('jsonfile', type=argparse.FileType('r'))
+    parser.add_argument('-v', '--verbose', action='store_true')
+    return parser.parse_args(argv[1:])
 
 
 def get_flow(p4):

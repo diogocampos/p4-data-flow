@@ -64,15 +64,15 @@ class DataFlow:
         else:
             yield path + [node]
 
-    def format_output(self, omit_empty=False):
+    def format_output(self, verbose=False):
         parts = []
         for path in self._all_paths():
             header = ' -> '.join(node.key for node in path)
-            result = self._format_path(path, omit_empty)
+            result = self._format_path(path, verbose)
             parts.append(f"{header}\n{result}")
         return '\n\n'.join(parts)
 
-    def _format_path(self, path, omit_empty):
+    def _format_path(self, path, verbose):
         lines = []
 
         for header_name, field_names in self._fields.items():
@@ -83,10 +83,10 @@ class DataFlow:
                 parts = (''.join(seq) for seq in sequences if len(seq) > 0)
                 string = ' '.join(parts)
 
-                if omit_empty and len(string) == 0: continue
+                if not verbose and len(string) == 0: continue
                 section.append(f"        {field_name}: {string}")
 
-            if omit_empty and len(section) == 1: continue
+            if not verbose and len(section) == 1: continue
             lines.extend(section)
 
         return '\n'.join(lines)
