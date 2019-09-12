@@ -49,6 +49,10 @@ class DataFlow:
         self.declare(field)
         self._current_node.define(field)
 
+    def param(self, field):
+        self.declare(field)
+        self._current_node.param(field)
+
     def use(self, field):
         self.declare(field)
         self._current_node.use(field)
@@ -108,6 +112,7 @@ class _Node:
         self._headers = defaultdict(lambda: defaultdict(list))
 
     def define(self, field): self._append(field, 'D')
+    def param(self, field): self._append(field, 'P')
     def use(self, field): self._append(field, 'U')
 
     def _append(self, field, def_or_use):

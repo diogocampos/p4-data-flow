@@ -41,7 +41,7 @@ def _pipeline(pipeline_name, p4, flow):
 
                 flow.declare_header(action['name'])
                 for item in action['runtime_data']:
-                    flow.declare([action['name'], item['name']])
+                    flow.param([action['name'], item['name']])
 
                 for primitive in action['primitives']:
                     if primitive['op'] == 'assign':
