@@ -59,8 +59,11 @@ def _pipeline(pipeline_name, p4, flow):
                         else:
                             raise NotImplementedError('pipelines - tarefa 7')
 
-                    #else:
-                    #    raise NotImplementedError('pipelines - tarefa 3/4')
+                    elif primitive['op'] == 'drop':
+                        flow.define(['standard_metadata', 'egress_spec'])
+
+                    else:
+                        raise NotImplementedError('pipelines - tarefa 4')
 
                 next_tables = [table['next_tables'][action['name']]]
                 flow.add_transitions(next_tables)
