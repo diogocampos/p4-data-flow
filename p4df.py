@@ -5,6 +5,7 @@ import json
 
 from p4df.compute_checksum import do_compute_checksum
 from p4df.data_flow import DataFlow
+from p4df.deparsers import do_deparsers
 from p4df.headers import do_headers
 from p4df.parsers import do_parsers
 from p4df.pipelines import do_pipelines
@@ -33,6 +34,7 @@ def get_flow(p4):
     do_parsers(p4, flow)
     do_pipelines(p4, flow)
     do_compute_checksum(p4, flow)
+    do_deparsers(p4, flow)
     return flow
 
 

@@ -61,6 +61,10 @@ class DataFlow:
         for field_name in self._fields[header_name]:
             self._current_node.define([header_name, field_name])
 
+    def use_all(self, header_name):
+        for field_name in self._fields[header_name]:
+            self._current_node.use([header_name, field_name])
+
     def _all_paths(self):
         yield from self._visit(self._initial_node, [])
 
