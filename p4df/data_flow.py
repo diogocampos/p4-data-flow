@@ -69,6 +69,8 @@ class DataFlow:
         yield from self._visit(self._initial_node, [])
 
     def _visit(self, node, path):
+        assert node not in path, 'cyclical path'
+
         next_nodes = self._transitions.get(node)
         if next_nodes:
             for next_node in next_nodes:
