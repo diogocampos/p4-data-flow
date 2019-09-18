@@ -1,4 +1,4 @@
-from .util import BreadthFirstSearch, find, operation
+from .util import BreadthFirstSearch, find, not_implemented, operation
 
 
 def do_parsers(p4, flow):
@@ -15,7 +15,7 @@ def do_parsers(p4, flow):
             if op['op'] == 'extract': _extract(op, flow)
             elif op['op'] == 'set': _set(op, flow)
             elif op['op'] == 'verify': _verify(op, flow)
-            else: raise NotImplementedError('parsers - tarefa 2/5/6')
+            else: not_implemented('op', op['op'])
 
         for tk in state['transition_key']:
             if tk['type'] == 'field':
@@ -37,7 +37,7 @@ def _extract(op, flow):
         flow.define_all(header_name)
 
     else:
-        raise NotImplementedError('parsers - tarefa 7/8')
+        not_implemented('type', param['type'])
 
 
 def _set(op, flow):

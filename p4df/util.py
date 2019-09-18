@@ -1,8 +1,24 @@
+import inspect
+import os
+
 
 def find(iterable, **kwargs):
     for item in iterable:
         if all(item[key] == value for key, value in kwargs.items()):
             return item
+
+
+def not_implemented(key, value):
+    path, lineno = caller_info()
+    print(f'Warning: {path}:{lineno}: not implemented: {key} == {repr(value)}')
+
+
+def caller_info():
+    caller_frame_record = inspect.stack()[2]
+    frame = caller_frame_record[0]
+    info = inspect.getframeinfo(frame)
+    relpath = os.path.relpath(info.filename)
+    return (relpath, info.lineno)
 
 
 def operation(flow, node, action=None):

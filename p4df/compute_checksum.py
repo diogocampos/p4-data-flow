@@ -1,4 +1,4 @@
-from .util import find
+from .util import find, not_implemented
 
 def do_compute_checksum(p4, flow):
     flow.push_node('compute_checksum')
@@ -10,6 +10,6 @@ def do_compute_checksum(p4, flow):
             if input['type'] == 'field':
                 flow.use(input['value'])
             else:
-                raise NotImplementedError('compute_checksum - tarefa 14/15/16')
+                not_implemented('type', input['type'])
 
         flow.define(checksum['target'])

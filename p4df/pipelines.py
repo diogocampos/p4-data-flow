@@ -1,4 +1,4 @@
-from .util import BreadthFirstSearch, find, operation
+from .util import BreadthFirstSearch, find, not_implemented, operation
 
 
 def do_pipelines(p4, flow):
@@ -21,9 +21,9 @@ def _pipeline(pipeline_name, p4, flow):
             key = table['key'][0]
 
             if key['match_type'] == 'valid':
-                raise NotImplementedError('pipelines - tarefa 2')
-
-            flow.use(key['target'])
+                not_implemented('match_type', 'valid')
+            else:
+                flow.use(key['target'])
 
             # match
             actions = [(True, find(p4['actions'], name=action_name))
@@ -56,13 +56,13 @@ def _pipeline(pipeline_name, p4, flow):
                             data = action['runtime_data'][index]
                             flow.define([action['name'], data['name']])
                         else:
-                            raise NotImplementedError('pipelines - tarefa 7')
+                            not_implemented('type', left['type'])
 
                     elif primitive['op'] == 'drop':
                         flow.define(['standard_metadata', 'egress_spec'])
 
                     else:
-                        raise NotImplementedError('pipelines - tarefa 4')
+                        not_implemented('op', primitive['op'])
 
                 next_tables = [table['next_tables'][action['name']]]
                 flow.add_transitions(next_tables)
