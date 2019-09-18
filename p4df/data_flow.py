@@ -28,7 +28,7 @@ class DataFlow:
 
     def _normalize_key(self, key):
         if key is None: key = 'null'
-        if self._prefix: key = f"{self._prefix}/{key}"
+        if self._prefix: key = f'{self._prefix}/{key}'
         return key
 
     def set_prefix(self, prefix):
@@ -81,20 +81,20 @@ class DataFlow:
         for path in self._all_paths():
             header = ' -> '.join(node.key for node in path)
             result = self._format_path(path, verbose)
-            parts.append(f"{header}\n{result}")
+            parts.append(f'{header}\n{result}')
         return '\n\n'.join(parts)
 
     def _format_path(self, path, verbose):
         lines = []
 
         for header_name, field_names in self._fields.items():
-            section = [f"    {header_name}"]
+            section = [f'    {header_name}']
 
             for field_name in field_names:
                 sequences = (node.get(header_name, field_name) for node in path)
                 if verbose:
                     keys = (node.key for node in path)
-                    parts = (f"[{key}] {seq}"
+                    parts = (f'[{key}] {seq}'
                         for key, seq in zip(keys, sequences) if len(seq) > 0)
                     string = ', '.join(parts)
                 else:
@@ -102,7 +102,7 @@ class DataFlow:
                     string = ' '.join(parts)
 
                 if not verbose and len(string) == 0: continue
-                section.append(f"        {field_name}: {string}")
+                section.append(f'        {field_name}: {string}')
 
             if not verbose and len(section) == 1: continue
             lines.extend(section)
