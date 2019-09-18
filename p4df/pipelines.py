@@ -17,13 +17,12 @@ def _pipeline(pipeline_name, p4, flow):
         flow.set_current_node(table_name)
 
         if table:
-            assert len(table['key']) > 0
-            key = table['key'][0]
-
-            if key['match_type'] == 'valid':
-                not_implemented('match_type', 'valid')
-            else:
-                flow.use(key['target'])
+            if len(table['key']) > 0:
+                key = table['key'][0]
+                if key['match_type'] == 'valid':
+                    not_implemented('match_type', 'valid')
+                else:
+                    flow.use(key['target'])
 
             # match
             actions = [(True, find(p4['actions'], name=action_name))
