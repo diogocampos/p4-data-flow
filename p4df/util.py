@@ -1,5 +1,6 @@
 import inspect
 import os
+import sys
 
 
 def find(iterable, **kwargs):
@@ -10,7 +11,7 @@ def find(iterable, **kwargs):
 
 def not_implemented(key, value):
     path, lineno = caller_info()
-    print(f'Warning: {path}:{lineno}: not implemented: {key} == {repr(value)}')
+    print(f'Warning: {path}:{lineno}: not implemented: {key} == {repr(value)}', file=sys.stderr)
 
 
 def caller_info():
