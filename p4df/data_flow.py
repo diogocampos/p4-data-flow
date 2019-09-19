@@ -92,16 +92,12 @@ class DataFlow:
                     if not ''.join(sequences).startswith('D'): return False
         return True
 
-    def format_output(self, verbose=False):
-        parts = []
+    def formatted_results(self, verbose=False):
         for path in self._all_paths(verbose):
-            header = ' -> '.join(node.key for node in path)
-            result = self._format_path(path, verbose)
-            parts.append(f'{header}\n{result}')
-        return '\n\n'.join(parts)
+            yield self._format_path(path, verbose)
 
     def _format_path(self, path, verbose):
-        lines = []
+        lines = [' -> '.join(node.key for node in path)]
 
         for header_name, field_names in self._fields.items():
             section = [f'    {header_name}']
