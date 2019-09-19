@@ -111,7 +111,7 @@ class DataFlow:
                     string = ', '.join(parts)
                 else:
                     parts = (seq for seq in sequences if len(seq) > 0)
-                    string = ' '.join(parts)
+                    string = ''.join(parts)
 
                 if not verbose and len(string) == 0: continue
                 section.append(f'        {field_name}: {string}')
