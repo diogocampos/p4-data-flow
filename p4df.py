@@ -18,7 +18,8 @@ def main(argv):
         p4 = json.load(args.jsonfile)
 
     flow = get_flow(p4)
-    print('\n', flow.format_output(verbose=args.verbose))
+    print()
+    print(flow.format_output(verbose=args.verbose))
 
 
 def parse_argv(argv):

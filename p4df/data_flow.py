@@ -65,22 +65,36 @@ class DataFlow:
         for field_name in self._fields[header_name]:
             self._current_node.use([header_name, field_name])
 
-    def _all_paths(self):
-        yield from self._visit(self._initial_node, [])
+    def _all_paths(self, verbose):
+        yield from self._visit(self._initial_node, [], verbose)
 
-    def _visit(self, node, path):
-        assert node not in path, 'cyclical path'
+    def _visit(self, node, subpath, verbose):
+        assert node not in subpath, 'cyclical path'
+        path = subpath + [node]
 
         next_nodes = self._transitions.get(node)
         if next_nodes:
             for next_node in next_nodes:
-                yield from self._visit(next_node, path + [node])
+                yield from self._visit(next_node, path, verbose)
         else:
-            yield path + [node]
+            if verbose or self._is_feasible_path(path): yield path
+
+    def _is_feasible_path(self, path):
+        for i, node in enumerate(path):
+            subpath = path[0:i]
+            for header_name, field_names in self._fields.items():
+                if 'U' not in node.get(header_name, '$valid$'): continue
+
+                for field_name in field_names:
+                    if field_name == '$valid$': continue
+                    sequences = (node.get(header_name, field_name)
+                        for node in subpath)
+                    if not ''.join(sequences).startswith('D'): return False
+        return True
 
     def format_output(self, verbose=False):
         parts = []
-        for path in self._all_paths():
+        for path in self._all_paths(verbose):
             header = ' -> '.join(node.key for node in path)
             result = self._format_path(path, verbose)
             parts.append(f'{header}\n{result}')
@@ -126,4 +140,4 @@ class _Node:
         self._headers[header_name][field_name].append(def_or_use)
 
     def get(self, header_name, field_name):
-        return ''.join(self._headers[header_name][field_name])
+        return ''.join(self._headers.get(header_name, {}).get(field_name, []))
