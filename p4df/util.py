@@ -1,15 +1,26 @@
 import sys
 
 
+class BreadthFirstSearch:
+    def __init__(self, first):
+        self._queue = [first] if first is not None else []
+        self._visited = []
+
+    def __iter__(self):
+        while len(self._queue) > 0:
+            item = self._queue.pop(0)
+            if item in self._visited: continue
+            self._visited.append(item)
+            yield item
+
+    def enqueue(self, items):
+        self._queue.extend(i for i in items if i is not None)
+
+
 def find(iterable, **kwargs):
     for item in iterable:
         if all(item[key] == value for key, value in kwargs.items()):
             return item
-
-
-def not_implemented(flow, key, value):
-    print(f'[{flow.current_key}] not implemented: {key} == {repr(value)}',
-        file=sys.stderr)
 
 
 def operation(flow, node, action=None):
@@ -36,17 +47,11 @@ def operation(flow, node, action=None):
                 operation(flow, part, action)
 
 
-class BreadthFirstSearch:
-    def __init__(self, first):
-        self._queue = [first] if first is not None else []
-        self._visited = []
+def not_implemented(flow, key, value):
+    warn(f'[{flow.current_key}] not implemented: {key} == {repr(value)}')
 
-    def __iter__(self):
-        while len(self._queue) > 0:
-            item = self._queue.pop(0)
-            if item in self._visited: continue
-            self._visited.append(item)
-            yield item
-
-    def enqueue(self, items):
-        self._queue.extend(i for i in items if i is not None)
+_printed = set()
+def warn(message):
+    if message in _printed: return
+    _printed.add(message)
+    print(message, file=sys.stderr)
