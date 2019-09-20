@@ -10,6 +10,6 @@ def do_compute_checksum(p4, flow):
             if input['type'] == 'field':
                 flow.use(input['value'])
             else:
-                not_implemented('type', input['type'])
+                not_implemented(flow, 'type', input['type'])
 
         flow.define(checksum['target'])

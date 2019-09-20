@@ -1,5 +1,3 @@
-import inspect
-import os
 import sys
 
 
@@ -9,17 +7,9 @@ def find(iterable, **kwargs):
             return item
 
 
-def not_implemented(key, value):
-    path, lineno = caller_info()
-    print(f'Warning: {path}:{lineno}: not implemented: {key} == {repr(value)}', file=sys.stderr)
-
-
-def caller_info():
-    caller_frame_record = inspect.stack()[2]
-    frame = caller_frame_record[0]
-    info = inspect.getframeinfo(frame)
-    relpath = os.path.relpath(info.filename)
-    return (relpath, info.lineno)
+def not_implemented(flow, key, value):
+    print(f'[{flow.current_key}] not implemented: {key} == {repr(value)}',
+        file=sys.stderr)
 
 
 def operation(flow, node, action=None):

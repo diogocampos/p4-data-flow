@@ -15,7 +15,7 @@ def do_parsers(p4, flow):
             if op['op'] == 'extract': _extract(op, flow)
             elif op['op'] == 'set': _set(op, flow)
             elif op['op'] == 'verify': _verify(op, flow)
-            else: not_implemented('op', op['op'])
+            else: not_implemented(flow, 'op', op['op'])
 
         for tk in state['transition_key']:
             if tk['type'] == 'field':
@@ -37,7 +37,7 @@ def _extract(op, flow):
         flow.define_all(header_name)
 
     else:
-        not_implemented('type', param['type'])
+        not_implemented(flow, 'type', param['type'])
 
 
 def _set(op, flow):

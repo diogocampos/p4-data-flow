@@ -20,7 +20,7 @@ def _pipeline(pipeline_name, p4, flow):
             if len(table['key']) > 0:
                 key = table['key'][0]
                 if key['match_type'] == 'valid':
-                    not_implemented('match_type', 'valid')
+                    not_implemented(flow, 'match_type', 'valid')
                 else:
                     flow.use(key['target'])
 
@@ -55,13 +55,13 @@ def _pipeline(pipeline_name, p4, flow):
                             data = action['runtime_data'][index]
                             flow.define([action['name'], data['name']])
                         else:
-                            not_implemented('type', left['type'])
+                            not_implemented(flow, 'type', left['type'])
 
                     elif primitive['op'] == 'drop':
                         flow.define(['standard_metadata', 'egress_spec'])
 
                     else:
-                        not_implemented('op', primitive['op'])
+                        not_implemented(flow, 'op', primitive['op'])
 
                 next_tables = [table['next_tables'][action['name']]]
                 flow.add_transitions(next_tables)

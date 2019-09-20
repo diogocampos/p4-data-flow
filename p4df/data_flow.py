@@ -11,6 +11,10 @@ class DataFlow:
         self._transitions = defaultdict(list)  # node -> nodes
         self._prefix = None
 
+    @property
+    def current_key(self):
+        return self._current_node.key
+
     def set_current_node(self, key):
         key = self._normalize_key(key)
         self._current_node = self._nodes.setdefault(key, _Node(key))
