@@ -73,8 +73,11 @@ class DataFlow:
         yield from self._visit(self._initial_node, [], verbose)
 
     def _visit(self, node, subpath, verbose):
-        assert node not in subpath, 'cyclical path'
         path = subpath + [node]
+
+        if node in subpath:
+            print('\nCYCLE:', ' -> '.join(node.key for node in path))
+            return
 
         next_nodes = self._transitions.get(node)
         if next_nodes:

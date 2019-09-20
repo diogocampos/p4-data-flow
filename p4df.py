@@ -19,8 +19,7 @@ def main(argv):
 
     flow = get_flow(p4)
     for result in flow.formatted_results(verbose=args.verbose):
-        print()
-        print(result)
+        print('', result, sep='\n')
 
 
 def parse_argv(argv):
