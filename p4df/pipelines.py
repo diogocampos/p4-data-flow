@@ -25,17 +25,17 @@ def _pipeline(pipeline_name, p4, flow):
                     flow.use(key['target'])
 
             # match
-            actions = [(True, find(p4['actions'], name=action_name))
+            actions = [find(p4['actions'], name=action_name)
                 for action_name in table['actions']]
 
             # no match
             if 'default_entry' in table:
-                action_id = table['default_entry']['action_id']
-                actions.append((False, find(p4['actions'], id=action_id)))
+                default_action_id = table['default_entry']['action_id']
+                default_action = find(p4['actions'], id=default_action_id)
+                if default_action not in actions: actions.append(default_action)
 
-            for matched, action in actions:
-                match = 'match' if matched else 'no_match'
-                flow.push_node(f"{table['name']}/{match}/{action['name']}")
+            for action in actions:
+                flow.push_node(f"{table['name']}/{action['name']}")
 
                 flow.declare_header(action['name'])
                 for item in action['runtime_data']:
