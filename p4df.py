@@ -11,6 +11,14 @@ from p4df.parsers import do_parsers
 from p4df.pipelines import do_pipelines
 
 
+def parse_argv(argv):
+    parser = argparse.ArgumentParser()
+    parser.add_argument('jsonfile', type=argparse.FileType('r'))
+    parser.add_argument('-v', '--verbose', action='store_true')
+    parser.add_argument('-g', '--graph', action='store_true')
+    return parser.parse_args(argv[1:])
+
+
 def main(argv):
     args = parse_argv(argv)
 
@@ -18,15 +26,11 @@ def main(argv):
         p4 = json.load(args.jsonfile)
 
     flow = get_flow(p4)
-    for result in flow.formatted_results(verbose=args.verbose):
-        print('', result, sep='\n')
 
-
-def parse_argv(argv):
-    parser = argparse.ArgumentParser()
-    parser.add_argument('jsonfile', type=argparse.FileType('r'))
-    parser.add_argument('-v', '--verbose', action='store_true')
-    return parser.parse_args(argv[1:])
+    if args.graph:
+        show_graph(flow)
+    else:
+        show_data_flow(flow, args.verbose)
 
 
 def get_flow(p4):
@@ -37,6 +41,21 @@ def get_flow(p4):
     do_compute_checksum(p4, flow)
     do_deparsers(p4, flow)
     return flow
+
+
+def show_data_flow(flow, verbose):
+    for result in flow.formatted_results(verbose):
+        print('', result, sep='\n')
+
+
+def show_graph(flow):
+    index = { node: str(i) for i, node in enumerate(flow._nodes.values()) }
+    print('\nGRAPH')
+    for node, i in index.items():
+        print(i, '->', ' '.join(index[n] for n in flow._transitions[node]))
+    print('\nLEGEND')
+    for node, i in index.items():
+        print(i, '=', node.key)
 
 
 if __name__ == '__main__':
