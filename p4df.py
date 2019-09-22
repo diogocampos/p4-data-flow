@@ -13,7 +13,9 @@ from p4df.pipelines import do_pipelines
 
 def parse_argv(argv):
     parser = argparse.ArgumentParser()
-    parser.add_argument('jsonfile', type=argparse.FileType('r'))
+
+    parser.add_argument('jsonfile', type=argparse.FileType('r'),
+        help='compiled P4 program')
     parser.add_argument('-v', '--verbose', action='store_true',
         help='display all paths and variables')
     parser.add_argument('-s', '--simple', action='store_true',
@@ -22,6 +24,7 @@ def parse_argv(argv):
         help='omit paths with dropped packets')
     parser.add_argument('-g', '--graph', action='store_true',
         help='display graph structure')
+
     return parser.parse_args(argv[1:])
 
 
