@@ -18,6 +18,8 @@ def parse_argv(argv):
         help='display all paths and variables')
     parser.add_argument('-s', '--simple', action='store_true',
         help='display only variables with possible bugs')
+    parser.add_argument('-d', '--no-drops', action='store_true',
+        help='omit paths with dropped packets')
     parser.add_argument('-g', '--graph', action='store_true',
         help='display graph structure')
     return parser.parse_args(argv[1:])

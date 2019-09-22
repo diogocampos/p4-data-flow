@@ -53,6 +53,10 @@ class DataFlow:
         self.declare(field)
         self._current_node.define(field)
 
+    def drop(self, field):
+        self.declare(field)
+        self._current_node.drop(field)
+
     def param(self, field):
         self.declare(field)
         self._current_node.param(field)
@@ -119,8 +123,8 @@ class DataFlow:
                 else:
                     parts = (seq for seq in sequences if len(seq) > 0)
                     string = ''.join(parts)
-                    if options.simple and not is_possible_bug(string):
-                        string = ''
+                    if options.no_drops and 'X' in string: return ''
+                    if options.simple and not possible_bug(string): string = ''
 
                 if not options.verbose and len(string) == 0: continue
                 section.append(f'        {field_name}: {string}')
@@ -131,7 +135,7 @@ class DataFlow:
         return '\n'.join(lines)
 
 
-def is_possible_bug(string):
+def possible_bug(string):
     return string == 'D' or string.startswith('U') or 'DD' in string
 
 
@@ -141,6 +145,7 @@ class _Node:
         self._headers = defaultdict(lambda: defaultdict(list))
 
     def define(self, field): self._append(field, 'D')
+    def drop(self, field): self._append(field, 'X')
     def param(self, field): self._append(field, 'P')
     def use(self, field): self._append(field, 'U')
 

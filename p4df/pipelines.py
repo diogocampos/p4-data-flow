@@ -58,7 +58,7 @@ def _pipeline(pipeline_name, p4, flow):
                             not_implemented(flow, 'type', left['type'])
 
                     elif primitive['op'] == 'drop':
-                        flow.define(['standard_metadata', 'egress_spec'])
+                        flow.drop(['standard_metadata', 'egress_spec'])
 
                     else:
                         not_implemented(flow, 'op', primitive['op'])
