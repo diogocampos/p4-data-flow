@@ -54,7 +54,7 @@ def get_flow(p4):
 
 def show_data_flow(flow, options):
     for result in flow.formatted_results(options):
-        print('', result, sep='\n')
+        if result: print('', result, sep='\n')
 
 
 def show_graph(flow):
