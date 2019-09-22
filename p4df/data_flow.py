@@ -69,8 +69,8 @@ class DataFlow:
         for field_name in self._fields[header_name]:
             self._current_node.use([header_name, field_name])
 
-    def _all_paths(self, verbose):
-        yield from self._visit(self._initial_node, [], verbose)
+    def _all_paths(self, options):
+        yield from self._visit(self._initial_node, [], options.verbose)
 
     def _visit(self, node, subpath, verbose):
         if node in subpath:
@@ -99,11 +99,11 @@ class DataFlow:
 
         return True
 
-    def formatted_results(self, verbose=False):
-        for path in self._all_paths(verbose):
-            yield self._format_path(path, verbose)
+    def formatted_results(self, options):
+        for path in self._all_paths(options):
+            yield self._format_path(path, options)
 
-    def _format_path(self, path, verbose):
+    def _format_path(self, path, options):
         lines = [' -> '.join(node.key for node in path)]
 
         for header_name, field_names in self._fields.items():
@@ -111,7 +111,7 @@ class DataFlow:
 
             for field_name in field_names:
                 sequences = (node.get(header_name, field_name) for node in path)
-                if verbose:
+                if options.verbose:
                     keys = (node.key for node in path)
                     parts = (f'[{key}] {seq}'
                         for key, seq in zip(keys, sequences) if len(seq) > 0)
@@ -119,14 +119,20 @@ class DataFlow:
                 else:
                     parts = (seq for seq in sequences if len(seq) > 0)
                     string = ''.join(parts)
+                    if options.simple and not is_possible_bug(string):
+                        string = ''
 
-                if not verbose and len(string) == 0: continue
+                if not options.verbose and len(string) == 0: continue
                 section.append(f'        {field_name}: {string}')
 
-            if not verbose and len(section) == 1: continue
+            if not options.verbose and len(section) == 1: continue
             lines.extend(section)
 
         return '\n'.join(lines)
+
+
+def is_possible_bug(string):
+    return string == 'D' or string.startswith('U') or 'DD' in string
 
 
 class _Node:

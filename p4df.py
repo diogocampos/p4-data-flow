@@ -14,8 +14,12 @@ from p4df.pipelines import do_pipelines
 def parse_argv(argv):
     parser = argparse.ArgumentParser()
     parser.add_argument('jsonfile', type=argparse.FileType('r'))
-    parser.add_argument('-v', '--verbose', action='store_true')
-    parser.add_argument('-g', '--graph', action='store_true')
+    parser.add_argument('-v', '--verbose', action='store_true',
+        help='display all paths and variables')
+    parser.add_argument('-s', '--simple', action='store_true',
+        help='display only variables with possible bugs')
+    parser.add_argument('-g', '--graph', action='store_true',
+        help='display graph structure')
     return parser.parse_args(argv[1:])
 
 
@@ -30,7 +34,7 @@ def main(argv):
     if args.graph:
         show_graph(flow)
     else:
-        show_data_flow(flow, args.verbose)
+        show_data_flow(flow, args)
 
 
 def get_flow(p4):
@@ -43,8 +47,8 @@ def get_flow(p4):
     return flow
 
 
-def show_data_flow(flow, verbose):
-    for result in flow.formatted_results(verbose):
+def show_data_flow(flow, options):
+    for result in flow.formatted_results(options):
         print('', result, sep='\n')
 
 
