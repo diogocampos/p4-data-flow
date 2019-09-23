@@ -58,13 +58,8 @@ def show_data_flow(flow, options):
 
 
 def show_graph(flow):
-    index = { node: str(i) for i, node in enumerate(flow._nodes.values()) }
-    print('\nGRAPH')
-    for node, i in index.items():
-        print(i, '->', ' '.join(index[n] for n in flow._transitions[node]))
-    print('\nLEGEND')
-    for node, i in index.items():
-        print(i, '=', node.key)
+    graph = flow.format_graph()
+    print(graph)
 
 
 if __name__ == '__main__':

@@ -134,6 +134,21 @@ class DataFlow:
 
         return '\n'.join(lines)
 
+    def format_graph(self):
+        lines = []
+        index = { node: str(i) for i, node in enumerate(self._nodes.values()) }
+
+        lines.append('\nGRAPH')
+        for node, i in index.items():
+            next_nodes = ' '.join(index[n] for n in self._transitions[node])
+            lines.append(f'{i} -> {next_nodes}')
+
+        lines.append('\nLEGEND')
+        for node, i in index.items():
+            lines.append(f'{i} = {node.key}')
+
+        return '\n'.join(lines)
+
 
 def possible_bug(string):
     return string == 'D' or string.startswith('U') or 'DD' in string
