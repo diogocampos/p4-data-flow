@@ -164,9 +164,9 @@ class _Node:
     def param(self, field): self._append(field, 'P')
     def use(self, field): self._append(field, 'U')
 
-    def _append(self, field, def_or_use):
+    def _append(self, field, symbol):
         header_name, field_name = field
-        self._headers[header_name][field_name].append(def_or_use)
+        self._headers[header_name][field_name].append(symbol)
 
     def get(self, header_name, field_name):
         return ''.join(self._headers[header_name][field_name])

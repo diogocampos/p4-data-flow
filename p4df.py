@@ -31,15 +31,15 @@ def parse_argv(argv):
 def main(argv):
     args = parse_argv(argv)
 
-    with args.jsonfile:
-        p4 = json.load(args.jsonfile)
+    with args.jsonfile as file:
+        p4 = json.load(file)
 
     flow = get_flow(p4)
 
     if args.graph:
-        show_graph(flow)
+        print_graph(flow)
     else:
-        show_data_flow(flow, args)
+        print_flow(flow, args)
 
 
 def get_flow(p4):
@@ -52,12 +52,12 @@ def get_flow(p4):
     return flow
 
 
-def show_data_flow(flow, options):
+def print_flow(flow, options):
     for result in flow.formatted_results(options):
         if result: print('', result, sep='\n')
 
 
-def show_graph(flow):
+def print_graph(flow):
     graph = flow.format_graph()
     print(graph)
 
