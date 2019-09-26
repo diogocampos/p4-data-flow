@@ -16,14 +16,14 @@ def parse_argv(argv):
 
     parser.add_argument('jsonfile', type=argparse.FileType('r'),
         help='compiled P4 program')
+    parser.add_argument('-g', '--graph', action='store_true',
+        help='show graph structure and exit')
     parser.add_argument('-v', '--verbose', action='store_true',
-        help='display all paths and variables')
-    parser.add_argument('-s', '--simple', action='store_true',
-        help='display only variables with possible bugs')
+        help='show all paths and variables (overrides -d and -s)')
     parser.add_argument('-d', '--no-drops', action='store_true',
         help='omit paths with dropped packets')
-    parser.add_argument('-g', '--graph', action='store_true',
-        help='display graph structure')
+    parser.add_argument('-s', '--simple', action='store_true',
+        help='show only variables with possible bugs (D, U*, *DD*)')
 
     return parser.parse_args(argv[1:])
 
