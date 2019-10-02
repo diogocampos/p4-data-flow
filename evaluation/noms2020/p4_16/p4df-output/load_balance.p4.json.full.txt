@@ -1,0 +1,2332 @@
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_tcp -> parsers/null -> ingress/node_2 -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUU
+        $valid$: UU
+    tcp
+        srcPort: DU
+        dstPort: DU
+        seqNo: DU
+        ackNo: DU
+        dataOffset: DU
+        res: DU
+        ecn: DU
+        ctrl: DU
+        window: DU
+        checksum: DU
+        urgentPtr: DU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.drop -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyIngress.set_ecmp_select
+        ecmp_base: P
+        ecmp_count: P
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.drop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/MyIngress.set_nhop -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_spec: D
+        egress_port: U
+    ethernet
+        dstAddr: DDU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUDUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUDUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyIngress.set_nhop
+        nhop_dmac: PU
+        nhop_ipv4: PU
+        port: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ecmp_group -> ingress/MyIngress.ecmp_group/NoAction -> ingress/MyIngress.ecmp_nhop -> ingress/MyIngress.ecmp_nhop/NoAction -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata.ecmp_select: U
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.rewrite_mac -> egress/null -> compute_checksum -> deparsers
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DDU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+    MyEgress.rewrite_mac
+        smac: PU
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/MyEgress.drop -> egress/null -> compute_checksum -> deparsers
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/null -> egress/MyEgress.send_frame -> egress/MyEgress.send_frame/NoAction -> egress/null -> compute_checksum -> deparsers
+    standard_metadata
+        egress_port: U
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    ipv4
+        version: DUU
+        ihl: DUU
+        diffserv: DUU
+        totalLen: DUU
+        identification: DUU
+        flags: DUU
+        fragOffset: DUU
+        ttl: DUUU
+        protocol: DUUU
+        hdrChecksum: DDU
+        srcAddr: DUU
+        dstAddr: DUU
+        $valid$: UU
+    tcp
+        srcPort: U
+        dstPort: U
+        seqNo: U
+        ackNo: U
+        dataOffset: U
+        res: U
+        ecn: U
+        ctrl: U
+        window: U
+        checksum: U
+        urgentPtr: U

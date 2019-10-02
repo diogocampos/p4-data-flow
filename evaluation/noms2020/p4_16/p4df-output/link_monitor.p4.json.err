@@ -1,0 +1,11 @@
+[parsers/parse_probe_fwd] not implemented: type == 'stack'
+[parsers/parse_probe_data] not implemented: type == 'stack'
+[ingress/MyIngress.ipv4_lpm/MyIngress.drop] not implemented: op == 'mark_to_drop'
+[egress/tbl_act_0/act_2] not implemented: op == 'register_read'
+[egress/tbl_act_3/act_7] not implemented: op == 'register_write'
+[egress/tbl_act_4/act_5] not implemented: op == 'push'
+[egress/tbl_act_4/act_5] not implemented: op == 'add_header'
+[egress/tbl_act_7/act_6] not implemented: op == 'register_read'
+[egress/tbl_act_7/act_6] not implemented: op == 'register_write'
+0.02user 0.00system 0:00.02elapsed 100%CPU (0avgtext+0avgdata 9944maxresident)k
+0inputs+16outputs (0major+1357minor)pagefaults 0swaps

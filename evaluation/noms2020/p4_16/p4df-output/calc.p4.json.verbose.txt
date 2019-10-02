@@ -1,0 +1,1491 @@
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_add -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_0
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_1
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    scalars
+        tmp_3: [parsers/check_p4calc] DUUUUUUUU
+        tmp_4: [parsers/check_p4calc] DUUUUUUUU
+        tmp_5: [parsers/check_p4calc] DUUUUUUUU
+        tmp_6: [parsers/check_p4calc] DU
+        tmp_7: [parsers/check_p4calc] DU
+        tmp_8: [parsers/check_p4calc] DU
+        tmp_2: [ingress/MyIngress.calculate/MyIngress.operation_add] DU
+    standard_metadata
+        ingress_port: [ingress/MyIngress.calculate/MyIngress.operation_add] U
+        egress_spec: [ingress/MyIngress.calculate/MyIngress.operation_add] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_add] UD, [deparsers] U
+        srcAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_add] UD, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [parsers/parse_p4calc] D, [deparsers] U
+        four: [parsers/parse_p4calc] D, [deparsers] U
+        ver: [parsers/parse_p4calc] D, [deparsers] U
+        op: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate/MyIngress.operation_add] U, [deparsers] U
+        operand_b: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate/MyIngress.operation_add] U, [deparsers] U
+        res: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate/MyIngress.operation_add] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_sub -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_0
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_1
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    scalars
+        tmp_3: [parsers/check_p4calc] DUUUUUUUU
+        tmp_4: [parsers/check_p4calc] DUUUUUUUU
+        tmp_5: [parsers/check_p4calc] DUUUUUUUU
+        tmp_6: [parsers/check_p4calc] DU
+        tmp_7: [parsers/check_p4calc] DU
+        tmp_8: [parsers/check_p4calc] DU
+        tmp_2: [ingress/MyIngress.calculate/MyIngress.operation_sub] DU
+    standard_metadata
+        ingress_port: [ingress/MyIngress.calculate/MyIngress.operation_sub] U
+        egress_spec: [ingress/MyIngress.calculate/MyIngress.operation_sub] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_sub] UD, [deparsers] U
+        srcAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_sub] UD, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [parsers/parse_p4calc] D, [deparsers] U
+        four: [parsers/parse_p4calc] D, [deparsers] U
+        ver: [parsers/parse_p4calc] D, [deparsers] U
+        op: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate/MyIngress.operation_sub] U, [deparsers] U
+        operand_b: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate/MyIngress.operation_sub] U, [deparsers] U
+        res: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate/MyIngress.operation_sub] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_and -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_0
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_1
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    scalars
+        tmp_3: [parsers/check_p4calc] DUUUUUUUU
+        tmp_4: [parsers/check_p4calc] DUUUUUUUU
+        tmp_5: [parsers/check_p4calc] DUUUUUUUU
+        tmp_6: [parsers/check_p4calc] DU
+        tmp_7: [parsers/check_p4calc] DU
+        tmp_8: [parsers/check_p4calc] DU
+        tmp_2: [ingress/MyIngress.calculate/MyIngress.operation_and] DU
+    standard_metadata
+        ingress_port: [ingress/MyIngress.calculate/MyIngress.operation_and] U
+        egress_spec: [ingress/MyIngress.calculate/MyIngress.operation_and] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_and] UD, [deparsers] U
+        srcAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_and] UD, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [parsers/parse_p4calc] D, [deparsers] U
+        four: [parsers/parse_p4calc] D, [deparsers] U
+        ver: [parsers/parse_p4calc] D, [deparsers] U
+        op: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate/MyIngress.operation_and] U, [deparsers] U
+        operand_b: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate/MyIngress.operation_and] U, [deparsers] U
+        res: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate/MyIngress.operation_and] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_or -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_0
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_1
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    scalars
+        tmp_3: [parsers/check_p4calc] DUUUUUUUU
+        tmp_4: [parsers/check_p4calc] DUUUUUUUU
+        tmp_5: [parsers/check_p4calc] DUUUUUUUU
+        tmp_6: [parsers/check_p4calc] DU
+        tmp_7: [parsers/check_p4calc] DU
+        tmp_8: [parsers/check_p4calc] DU
+        tmp_2: [ingress/MyIngress.calculate/MyIngress.operation_or] DU
+    standard_metadata
+        ingress_port: [ingress/MyIngress.calculate/MyIngress.operation_or] U
+        egress_spec: [ingress/MyIngress.calculate/MyIngress.operation_or] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_or] UD, [deparsers] U
+        srcAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_or] UD, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [parsers/parse_p4calc] D, [deparsers] U
+        four: [parsers/parse_p4calc] D, [deparsers] U
+        ver: [parsers/parse_p4calc] D, [deparsers] U
+        op: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate/MyIngress.operation_or] U, [deparsers] U
+        operand_b: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate/MyIngress.operation_or] U, [deparsers] U
+        res: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate/MyIngress.operation_or] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_xor -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_0
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_1
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    scalars
+        tmp_3: [parsers/check_p4calc] DUUUUUUUU
+        tmp_4: [parsers/check_p4calc] DUUUUUUUU
+        tmp_5: [parsers/check_p4calc] DUUUUUUUU
+        tmp_6: [parsers/check_p4calc] DU
+        tmp_7: [parsers/check_p4calc] DU
+        tmp_8: [parsers/check_p4calc] DU
+        tmp_2: [ingress/MyIngress.calculate/MyIngress.operation_xor] DU
+    standard_metadata
+        ingress_port: [ingress/MyIngress.calculate/MyIngress.operation_xor] U
+        egress_spec: [ingress/MyIngress.calculate/MyIngress.operation_xor] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_xor] UD, [deparsers] U
+        srcAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_xor] UD, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [parsers/parse_p4calc] D, [deparsers] U
+        four: [parsers/parse_p4calc] D, [deparsers] U
+        ver: [parsers/parse_p4calc] D, [deparsers] U
+        op: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate/MyIngress.operation_xor] U, [deparsers] U
+        operand_b: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate/MyIngress.operation_xor] U, [deparsers] U
+        res: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate/MyIngress.operation_xor] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_0
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_1
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    scalars
+        tmp_3: [parsers/check_p4calc] DUUUUUUUU
+        tmp_4: [parsers/check_p4calc] DUUUUUUUU
+        tmp_5: [parsers/check_p4calc] DUUUUUUUU
+        tmp_6: [parsers/check_p4calc] DU
+        tmp_7: [parsers/check_p4calc] DU
+        tmp_8: [parsers/check_p4calc] DU
+        tmp_2: 
+    standard_metadata
+        ingress_port: 
+        egress_spec: 
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [deparsers] U
+        srcAddr: [parsers/start] D, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [parsers/parse_p4calc] D, [deparsers] U
+        four: [parsers/parse_p4calc] D, [deparsers] U
+        ver: [parsers/parse_p4calc] D, [deparsers] U
+        op: [parsers/parse_p4calc] D, [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [parsers/parse_p4calc] D, [deparsers] U
+        operand_b: [parsers/parse_p4calc] D, [deparsers] U
+        res: [parsers/parse_p4calc] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/tbl_operation_drop -> ingress/tbl_operation_drop/MyIngress.operation_drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_0
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_1
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    scalars
+        tmp_3: [parsers/check_p4calc] DUUUUUUUU
+        tmp_4: [parsers/check_p4calc] DUUUUUUUU
+        tmp_5: [parsers/check_p4calc] DUUUUUUUU
+        tmp_6: [parsers/check_p4calc] DU
+        tmp_7: [parsers/check_p4calc] DU
+        tmp_8: [parsers/check_p4calc] DU
+        tmp_2: 
+    standard_metadata
+        ingress_port: 
+        egress_spec: 
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [deparsers] U
+        srcAddr: [parsers/start] D, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [parsers/parse_p4calc] D, [deparsers] U
+        four: [parsers/parse_p4calc] D, [deparsers] U
+        ver: [parsers/parse_p4calc] D, [deparsers] U
+        op: [parsers/parse_p4calc] D, [deparsers] U
+        operand_a: [parsers/parse_p4calc] D, [deparsers] U
+        operand_b: [parsers/parse_p4calc] D, [deparsers] U
+        res: [parsers/parse_p4calc] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_add -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_0
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_1
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    scalars
+        tmp_3: [parsers/check_p4calc] DUUUUUUUU
+        tmp_4: [parsers/check_p4calc] DUUUUUUUU
+        tmp_5: [parsers/check_p4calc] DUUUUUUUU
+        tmp_6: [parsers/check_p4calc] DU
+        tmp_7: [parsers/check_p4calc] DU
+        tmp_8: [parsers/check_p4calc] DU
+        tmp_2: [ingress/MyIngress.calculate/MyIngress.operation_add] DU
+    standard_metadata
+        ingress_port: [ingress/MyIngress.calculate/MyIngress.operation_add] U
+        egress_spec: [ingress/MyIngress.calculate/MyIngress.operation_add] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_add] UD, [deparsers] U
+        srcAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_add] UD, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [deparsers] U
+        four: [deparsers] U
+        ver: [deparsers] U
+        op: [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [ingress/MyIngress.calculate/MyIngress.operation_add] U, [deparsers] U
+        operand_b: [ingress/MyIngress.calculate/MyIngress.operation_add] U, [deparsers] U
+        res: [ingress/MyIngress.calculate/MyIngress.operation_add] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_sub -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_0
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_1
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    scalars
+        tmp_3: [parsers/check_p4calc] DUUUUUUUU
+        tmp_4: [parsers/check_p4calc] DUUUUUUUU
+        tmp_5: [parsers/check_p4calc] DUUUUUUUU
+        tmp_6: [parsers/check_p4calc] DU
+        tmp_7: [parsers/check_p4calc] DU
+        tmp_8: [parsers/check_p4calc] DU
+        tmp_2: [ingress/MyIngress.calculate/MyIngress.operation_sub] DU
+    standard_metadata
+        ingress_port: [ingress/MyIngress.calculate/MyIngress.operation_sub] U
+        egress_spec: [ingress/MyIngress.calculate/MyIngress.operation_sub] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_sub] UD, [deparsers] U
+        srcAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_sub] UD, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [deparsers] U
+        four: [deparsers] U
+        ver: [deparsers] U
+        op: [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [ingress/MyIngress.calculate/MyIngress.operation_sub] U, [deparsers] U
+        operand_b: [ingress/MyIngress.calculate/MyIngress.operation_sub] U, [deparsers] U
+        res: [ingress/MyIngress.calculate/MyIngress.operation_sub] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_and -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_0
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_1
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    scalars
+        tmp_3: [parsers/check_p4calc] DUUUUUUUU
+        tmp_4: [parsers/check_p4calc] DUUUUUUUU
+        tmp_5: [parsers/check_p4calc] DUUUUUUUU
+        tmp_6: [parsers/check_p4calc] DU
+        tmp_7: [parsers/check_p4calc] DU
+        tmp_8: [parsers/check_p4calc] DU
+        tmp_2: [ingress/MyIngress.calculate/MyIngress.operation_and] DU
+    standard_metadata
+        ingress_port: [ingress/MyIngress.calculate/MyIngress.operation_and] U
+        egress_spec: [ingress/MyIngress.calculate/MyIngress.operation_and] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_and] UD, [deparsers] U
+        srcAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_and] UD, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [deparsers] U
+        four: [deparsers] U
+        ver: [deparsers] U
+        op: [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [ingress/MyIngress.calculate/MyIngress.operation_and] U, [deparsers] U
+        operand_b: [ingress/MyIngress.calculate/MyIngress.operation_and] U, [deparsers] U
+        res: [ingress/MyIngress.calculate/MyIngress.operation_and] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_or -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_0
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_1
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    scalars
+        tmp_3: [parsers/check_p4calc] DUUUUUUUU
+        tmp_4: [parsers/check_p4calc] DUUUUUUUU
+        tmp_5: [parsers/check_p4calc] DUUUUUUUU
+        tmp_6: [parsers/check_p4calc] DU
+        tmp_7: [parsers/check_p4calc] DU
+        tmp_8: [parsers/check_p4calc] DU
+        tmp_2: [ingress/MyIngress.calculate/MyIngress.operation_or] DU
+    standard_metadata
+        ingress_port: [ingress/MyIngress.calculate/MyIngress.operation_or] U
+        egress_spec: [ingress/MyIngress.calculate/MyIngress.operation_or] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_or] UD, [deparsers] U
+        srcAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_or] UD, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [deparsers] U
+        four: [deparsers] U
+        ver: [deparsers] U
+        op: [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [ingress/MyIngress.calculate/MyIngress.operation_or] U, [deparsers] U
+        operand_b: [ingress/MyIngress.calculate/MyIngress.operation_or] U, [deparsers] U
+        res: [ingress/MyIngress.calculate/MyIngress.operation_or] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_xor -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_0
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_1
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    scalars
+        tmp_3: [parsers/check_p4calc] DUUUUUUUU
+        tmp_4: [parsers/check_p4calc] DUUUUUUUU
+        tmp_5: [parsers/check_p4calc] DUUUUUUUU
+        tmp_6: [parsers/check_p4calc] DU
+        tmp_7: [parsers/check_p4calc] DU
+        tmp_8: [parsers/check_p4calc] DU
+        tmp_2: [ingress/MyIngress.calculate/MyIngress.operation_xor] DU
+    standard_metadata
+        ingress_port: [ingress/MyIngress.calculate/MyIngress.operation_xor] U
+        egress_spec: [ingress/MyIngress.calculate/MyIngress.operation_xor] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_xor] UD, [deparsers] U
+        srcAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_xor] UD, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [deparsers] U
+        four: [deparsers] U
+        ver: [deparsers] U
+        op: [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [ingress/MyIngress.calculate/MyIngress.operation_xor] U, [deparsers] U
+        operand_b: [ingress/MyIngress.calculate/MyIngress.operation_xor] U, [deparsers] U
+        res: [ingress/MyIngress.calculate/MyIngress.operation_xor] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_0
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_1
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    scalars
+        tmp_3: [parsers/check_p4calc] DUUUUUUUU
+        tmp_4: [parsers/check_p4calc] DUUUUUUUU
+        tmp_5: [parsers/check_p4calc] DUUUUUUUU
+        tmp_6: [parsers/check_p4calc] DU
+        tmp_7: [parsers/check_p4calc] DU
+        tmp_8: [parsers/check_p4calc] DU
+        tmp_2: 
+    standard_metadata
+        ingress_port: 
+        egress_spec: 
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [deparsers] U
+        srcAddr: [parsers/start] D, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [deparsers] U
+        four: [deparsers] U
+        ver: [deparsers] U
+        op: [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [deparsers] U
+        operand_b: [deparsers] U
+        res: [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/null -> ingress/node_2 -> ingress/tbl_operation_drop -> ingress/tbl_operation_drop/MyIngress.operation_drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_0
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    tmp_1
+        p: [parsers/check_p4calc] D
+        four: [parsers/check_p4calc] D
+        ver: [parsers/check_p4calc] D
+        op: [parsers/check_p4calc] D
+        operand_a: [parsers/check_p4calc] D
+        operand_b: [parsers/check_p4calc] D
+        res: [parsers/check_p4calc] D
+    scalars
+        tmp_3: [parsers/check_p4calc] DUUUUUUUU
+        tmp_4: [parsers/check_p4calc] DUUUUUUUU
+        tmp_5: [parsers/check_p4calc] DUUUUUUUU
+        tmp_6: [parsers/check_p4calc] DU
+        tmp_7: [parsers/check_p4calc] DU
+        tmp_8: [parsers/check_p4calc] DU
+        tmp_2: 
+    standard_metadata
+        ingress_port: 
+        egress_spec: 
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [deparsers] U
+        srcAddr: [parsers/start] D, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [deparsers] U
+        four: [deparsers] U
+        ver: [deparsers] U
+        op: [deparsers] U
+        operand_a: [deparsers] U
+        operand_b: [deparsers] U
+        res: [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_add -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    tmp_0
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    tmp_1
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    scalars
+        tmp_3: 
+        tmp_4: 
+        tmp_5: 
+        tmp_6: 
+        tmp_7: 
+        tmp_8: 
+        tmp_2: [ingress/MyIngress.calculate/MyIngress.operation_add] DU
+    standard_metadata
+        ingress_port: [ingress/MyIngress.calculate/MyIngress.operation_add] U
+        egress_spec: [ingress/MyIngress.calculate/MyIngress.operation_add] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_add] UD, [deparsers] U
+        srcAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_add] UD, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [deparsers] U
+        four: [deparsers] U
+        ver: [deparsers] U
+        op: [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [ingress/MyIngress.calculate/MyIngress.operation_add] U, [deparsers] U
+        operand_b: [ingress/MyIngress.calculate/MyIngress.operation_add] U, [deparsers] U
+        res: [ingress/MyIngress.calculate/MyIngress.operation_add] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_sub -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    tmp_0
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    tmp_1
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    scalars
+        tmp_3: 
+        tmp_4: 
+        tmp_5: 
+        tmp_6: 
+        tmp_7: 
+        tmp_8: 
+        tmp_2: [ingress/MyIngress.calculate/MyIngress.operation_sub] DU
+    standard_metadata
+        ingress_port: [ingress/MyIngress.calculate/MyIngress.operation_sub] U
+        egress_spec: [ingress/MyIngress.calculate/MyIngress.operation_sub] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_sub] UD, [deparsers] U
+        srcAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_sub] UD, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [deparsers] U
+        four: [deparsers] U
+        ver: [deparsers] U
+        op: [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [ingress/MyIngress.calculate/MyIngress.operation_sub] U, [deparsers] U
+        operand_b: [ingress/MyIngress.calculate/MyIngress.operation_sub] U, [deparsers] U
+        res: [ingress/MyIngress.calculate/MyIngress.operation_sub] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_and -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    tmp_0
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    tmp_1
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    scalars
+        tmp_3: 
+        tmp_4: 
+        tmp_5: 
+        tmp_6: 
+        tmp_7: 
+        tmp_8: 
+        tmp_2: [ingress/MyIngress.calculate/MyIngress.operation_and] DU
+    standard_metadata
+        ingress_port: [ingress/MyIngress.calculate/MyIngress.operation_and] U
+        egress_spec: [ingress/MyIngress.calculate/MyIngress.operation_and] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_and] UD, [deparsers] U
+        srcAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_and] UD, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [deparsers] U
+        four: [deparsers] U
+        ver: [deparsers] U
+        op: [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [ingress/MyIngress.calculate/MyIngress.operation_and] U, [deparsers] U
+        operand_b: [ingress/MyIngress.calculate/MyIngress.operation_and] U, [deparsers] U
+        res: [ingress/MyIngress.calculate/MyIngress.operation_and] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_or -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    tmp_0
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    tmp_1
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    scalars
+        tmp_3: 
+        tmp_4: 
+        tmp_5: 
+        tmp_6: 
+        tmp_7: 
+        tmp_8: 
+        tmp_2: [ingress/MyIngress.calculate/MyIngress.operation_or] DU
+    standard_metadata
+        ingress_port: [ingress/MyIngress.calculate/MyIngress.operation_or] U
+        egress_spec: [ingress/MyIngress.calculate/MyIngress.operation_or] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_or] UD, [deparsers] U
+        srcAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_or] UD, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [deparsers] U
+        four: [deparsers] U
+        ver: [deparsers] U
+        op: [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [ingress/MyIngress.calculate/MyIngress.operation_or] U, [deparsers] U
+        operand_b: [ingress/MyIngress.calculate/MyIngress.operation_or] U, [deparsers] U
+        res: [ingress/MyIngress.calculate/MyIngress.operation_or] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_xor -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    tmp_0
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    tmp_1
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    scalars
+        tmp_3: 
+        tmp_4: 
+        tmp_5: 
+        tmp_6: 
+        tmp_7: 
+        tmp_8: 
+        tmp_2: [ingress/MyIngress.calculate/MyIngress.operation_xor] DU
+    standard_metadata
+        ingress_port: [ingress/MyIngress.calculate/MyIngress.operation_xor] U
+        egress_spec: [ingress/MyIngress.calculate/MyIngress.operation_xor] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_xor] UD, [deparsers] U
+        srcAddr: [parsers/start] D, [ingress/MyIngress.calculate/MyIngress.operation_xor] UD, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [deparsers] U
+        four: [deparsers] U
+        ver: [deparsers] U
+        op: [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [ingress/MyIngress.calculate/MyIngress.operation_xor] U, [deparsers] U
+        operand_b: [ingress/MyIngress.calculate/MyIngress.operation_xor] U, [deparsers] U
+        res: [ingress/MyIngress.calculate/MyIngress.operation_xor] D, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    tmp_0
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    tmp_1
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    scalars
+        tmp_3: 
+        tmp_4: 
+        tmp_5: 
+        tmp_6: 
+        tmp_7: 
+        tmp_8: 
+        tmp_2: 
+    standard_metadata
+        ingress_port: 
+        egress_spec: 
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [deparsers] U
+        srcAddr: [parsers/start] D, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [deparsers] U
+        four: [deparsers] U
+        ver: [deparsers] U
+        op: [ingress/MyIngress.calculate] U, [deparsers] U
+        operand_a: [deparsers] U
+        operand_b: [deparsers] U
+        res: [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/tbl_operation_drop -> ingress/tbl_operation_drop/MyIngress.operation_drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    tmp_0
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    tmp_1
+        p: 
+        four: 
+        ver: 
+        op: 
+        operand_a: 
+        operand_b: 
+        res: 
+    scalars
+        tmp_3: 
+        tmp_4: 
+        tmp_5: 
+        tmp_6: 
+        tmp_7: 
+        tmp_8: 
+        tmp_2: 
+    standard_metadata
+        ingress_port: 
+        egress_spec: 
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [deparsers] U
+        srcAddr: [parsers/start] D, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    p4calc
+        p: [deparsers] U
+        four: [deparsers] U
+        ver: [deparsers] U
+        op: [deparsers] U
+        operand_a: [deparsers] U
+        operand_b: [deparsers] U
+        res: [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    MyIngress.operation_add
+    MyIngress.operation_sub
+    MyIngress.operation_and
+    MyIngress.operation_or
+    MyIngress.operation_xor
+    MyIngress.operation_drop

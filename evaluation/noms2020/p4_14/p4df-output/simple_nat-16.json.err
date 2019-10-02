@@ -1,0 +1,6 @@
+[ingress/nat/nat_miss_int_to_ext] not implemented: op == 'clone_ingress_pkt_to_egress'
+[egress/send_frame/do_rewrites] not implemented: op == 'remove_header'
+[egress/send_to_cpu/do_cpu_encap] not implemented: op == 'add_header'
+[compute_checksum] not implemented: type == 'hexstr'
+3.58user 0.00system 0:03.64elapsed 98%CPU (0avgtext+0avgdata 10224maxresident)k
+0inputs+18320outputs (0major+1439minor)pagefaults 0swaps

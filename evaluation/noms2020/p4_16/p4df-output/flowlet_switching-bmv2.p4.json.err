@@ -1,0 +1,11 @@
+[ingress/ingress.flowlet/ingress.lookup_flowlet_map] not implemented: op == 'modify_field_with_hash_based_offset'
+[ingress/ingress.flowlet/ingress.lookup_flowlet_map] not implemented: op == 'register_read'
+[ingress/ingress.flowlet/ingress.lookup_flowlet_map] not implemented: op == 'register_write'
+[ingress/ingress.new_flowlet/ingress.update_flowlet_id] not implemented: op == 'register_write'
+[ingress/ingress.ecmp_group/ingress._drop] not implemented: op == 'mark_to_drop'
+[ingress/ingress.ecmp_group/ingress.set_ecmp_select] not implemented: op == 'modify_field_with_hash_based_offset'
+[ingress/ingress.ecmp_nhop/ingress._drop] not implemented: op == 'mark_to_drop'
+[ingress/ingress.forward/ingress._drop] not implemented: op == 'mark_to_drop'
+[egress/egress.send_frame/egress._drop] not implemented: op == 'mark_to_drop'
+0.81user 0.02system 0:00.87elapsed 95%CPU (0avgtext+0avgdata 9972maxresident)k
+0inputs+4504outputs (0major+22033minor)pagefaults 0swaps

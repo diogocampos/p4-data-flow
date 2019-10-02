@@ -1,0 +1,6 @@
+[parsers/parse_swtrace] not implemented: type == 'stack'
+[ingress/MyIngress.ipv4_lpm/MyIngress.drop] not implemented: op == 'mark_to_drop'
+[egress/MyEgress.swtrace/MyEgress.add_swtrace] not implemented: op == 'push'
+[egress/MyEgress.swtrace/MyEgress.add_swtrace] not implemented: op == 'add_header'
+0.03user 0.00system 0:00.03elapsed 100%CPU (0avgtext+0avgdata 9652maxresident)k
+0inputs+80outputs (0major+1325minor)pagefaults 0swaps

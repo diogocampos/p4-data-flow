@@ -1,0 +1,712 @@
+
+0 -> parsers/start -> parsers/parse_srcRouting -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/node_3 -> ingress/tbl_srcRoute_finish -> ingress/tbl_srcRoute_finish/MyIngress.srcRoute_finish -> ingress/tbl_srcRoute_nhop -> ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop -> ingress/node_6 -> ingress/tbl_update_ttl -> ingress/tbl_update_ttl/MyIngress.update_ttl -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+    standard_metadata
+        ingress_port: 
+        egress_spec: [ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [deparsers] U
+        srcAddr: [parsers/start] D, [deparsers] U
+        etherType: [parsers/start] DU, [ingress/tbl_srcRoute_finish/MyIngress.srcRoute_finish] D, [deparsers] U
+    ipv4
+        version: [parsers/parse_ipv4] D, [deparsers] U
+        ihl: [parsers/parse_ipv4] D, [deparsers] U
+        diffserv: [parsers/parse_ipv4] D, [deparsers] U
+        totalLen: [parsers/parse_ipv4] D, [deparsers] U
+        identification: [parsers/parse_ipv4] D, [deparsers] U
+        flags: [parsers/parse_ipv4] D, [deparsers] U
+        fragOffset: [parsers/parse_ipv4] D, [deparsers] U
+        ttl: [parsers/parse_ipv4] D, [ingress/tbl_update_ttl/MyIngress.update_ttl] UD, [deparsers] U
+        protocol: [parsers/parse_ipv4] D, [deparsers] U
+        hdrChecksum: [parsers/parse_ipv4] D, [deparsers] U
+        srcAddr: [parsers/parse_ipv4] D, [deparsers] U
+        dstAddr: [parsers/parse_ipv4] D, [deparsers] U
+        $valid$: [ingress/node_6] U, [deparsers] U
+    srcRoutes[0]
+        bos: [ingress/node_3] U, [deparsers] U
+        port: [ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] U, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    srcRoutes[1]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[2]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[3]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[4]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[5]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[6]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[7]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[8]
+        bos: [deparsers] U
+        port: [deparsers] U
+    MyIngress.drop
+    MyIngress.srcRoute_finish
+    MyIngress.srcRoute_nhop
+    MyIngress.update_ttl
+
+0 -> parsers/start -> parsers/parse_srcRouting -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/node_3 -> ingress/tbl_srcRoute_finish -> ingress/tbl_srcRoute_finish/MyIngress.srcRoute_finish -> ingress/tbl_srcRoute_nhop -> ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop -> ingress/node_6 -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+    standard_metadata
+        ingress_port: 
+        egress_spec: [ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [deparsers] U
+        srcAddr: [parsers/start] D, [deparsers] U
+        etherType: [parsers/start] DU, [ingress/tbl_srcRoute_finish/MyIngress.srcRoute_finish] D, [deparsers] U
+    ipv4
+        version: [parsers/parse_ipv4] D, [deparsers] U
+        ihl: [parsers/parse_ipv4] D, [deparsers] U
+        diffserv: [parsers/parse_ipv4] D, [deparsers] U
+        totalLen: [parsers/parse_ipv4] D, [deparsers] U
+        identification: [parsers/parse_ipv4] D, [deparsers] U
+        flags: [parsers/parse_ipv4] D, [deparsers] U
+        fragOffset: [parsers/parse_ipv4] D, [deparsers] U
+        ttl: [parsers/parse_ipv4] D, [deparsers] U
+        protocol: [parsers/parse_ipv4] D, [deparsers] U
+        hdrChecksum: [parsers/parse_ipv4] D, [deparsers] U
+        srcAddr: [parsers/parse_ipv4] D, [deparsers] U
+        dstAddr: [parsers/parse_ipv4] D, [deparsers] U
+        $valid$: [ingress/node_6] U, [deparsers] U
+    srcRoutes[0]
+        bos: [ingress/node_3] U, [deparsers] U
+        port: [ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] U, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    srcRoutes[1]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[2]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[3]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[4]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[5]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[6]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[7]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[8]
+        bos: [deparsers] U
+        port: [deparsers] U
+    MyIngress.drop
+    MyIngress.srcRoute_finish
+    MyIngress.srcRoute_nhop
+    MyIngress.update_ttl
+
+0 -> parsers/start -> parsers/parse_srcRouting -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/node_3 -> ingress/tbl_srcRoute_nhop -> ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop -> ingress/node_6 -> ingress/tbl_update_ttl -> ingress/tbl_update_ttl/MyIngress.update_ttl -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+    standard_metadata
+        ingress_port: 
+        egress_spec: [ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [deparsers] U
+        srcAddr: [parsers/start] D, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    ipv4
+        version: [parsers/parse_ipv4] D, [deparsers] U
+        ihl: [parsers/parse_ipv4] D, [deparsers] U
+        diffserv: [parsers/parse_ipv4] D, [deparsers] U
+        totalLen: [parsers/parse_ipv4] D, [deparsers] U
+        identification: [parsers/parse_ipv4] D, [deparsers] U
+        flags: [parsers/parse_ipv4] D, [deparsers] U
+        fragOffset: [parsers/parse_ipv4] D, [deparsers] U
+        ttl: [parsers/parse_ipv4] D, [ingress/tbl_update_ttl/MyIngress.update_ttl] UD, [deparsers] U
+        protocol: [parsers/parse_ipv4] D, [deparsers] U
+        hdrChecksum: [parsers/parse_ipv4] D, [deparsers] U
+        srcAddr: [parsers/parse_ipv4] D, [deparsers] U
+        dstAddr: [parsers/parse_ipv4] D, [deparsers] U
+        $valid$: [ingress/node_6] U, [deparsers] U
+    srcRoutes[0]
+        bos: [ingress/node_3] U, [deparsers] U
+        port: [ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] U, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    srcRoutes[1]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[2]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[3]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[4]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[5]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[6]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[7]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[8]
+        bos: [deparsers] U
+        port: [deparsers] U
+    MyIngress.drop
+    MyIngress.srcRoute_finish
+    MyIngress.srcRoute_nhop
+    MyIngress.update_ttl
+
+0 -> parsers/start -> parsers/parse_srcRouting -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/node_3 -> ingress/tbl_srcRoute_nhop -> ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop -> ingress/node_6 -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+    standard_metadata
+        ingress_port: 
+        egress_spec: [ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [deparsers] U
+        srcAddr: [parsers/start] D, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    ipv4
+        version: [parsers/parse_ipv4] D, [deparsers] U
+        ihl: [parsers/parse_ipv4] D, [deparsers] U
+        diffserv: [parsers/parse_ipv4] D, [deparsers] U
+        totalLen: [parsers/parse_ipv4] D, [deparsers] U
+        identification: [parsers/parse_ipv4] D, [deparsers] U
+        flags: [parsers/parse_ipv4] D, [deparsers] U
+        fragOffset: [parsers/parse_ipv4] D, [deparsers] U
+        ttl: [parsers/parse_ipv4] D, [deparsers] U
+        protocol: [parsers/parse_ipv4] D, [deparsers] U
+        hdrChecksum: [parsers/parse_ipv4] D, [deparsers] U
+        srcAddr: [parsers/parse_ipv4] D, [deparsers] U
+        dstAddr: [parsers/parse_ipv4] D, [deparsers] U
+        $valid$: [ingress/node_6] U, [deparsers] U
+    srcRoutes[0]
+        bos: [ingress/node_3] U, [deparsers] U
+        port: [ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] U, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    srcRoutes[1]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[2]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[3]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[4]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[5]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[6]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[7]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[8]
+        bos: [deparsers] U
+        port: [deparsers] U
+    MyIngress.drop
+    MyIngress.srcRoute_finish
+    MyIngress.srcRoute_nhop
+    MyIngress.update_ttl
+
+0 -> parsers/start -> parsers/parse_srcRouting -> parsers/parse_ipv4 -> parsers/null -> ingress/node_2 -> ingress/tbl_drop -> ingress/tbl_drop/MyIngress.drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+    standard_metadata
+        ingress_port: 
+        egress_spec: 
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [deparsers] U
+        srcAddr: [parsers/start] D, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    ipv4
+        version: [parsers/parse_ipv4] D, [deparsers] U
+        ihl: [parsers/parse_ipv4] D, [deparsers] U
+        diffserv: [parsers/parse_ipv4] D, [deparsers] U
+        totalLen: [parsers/parse_ipv4] D, [deparsers] U
+        identification: [parsers/parse_ipv4] D, [deparsers] U
+        flags: [parsers/parse_ipv4] D, [deparsers] U
+        fragOffset: [parsers/parse_ipv4] D, [deparsers] U
+        ttl: [parsers/parse_ipv4] D, [deparsers] U
+        protocol: [parsers/parse_ipv4] D, [deparsers] U
+        hdrChecksum: [parsers/parse_ipv4] D, [deparsers] U
+        srcAddr: [parsers/parse_ipv4] D, [deparsers] U
+        dstAddr: [parsers/parse_ipv4] D, [deparsers] U
+        $valid$: [deparsers] U
+    srcRoutes[0]
+        bos: [deparsers] U
+        port: [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    srcRoutes[1]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[2]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[3]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[4]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[5]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[6]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[7]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[8]
+        bos: [deparsers] U
+        port: [deparsers] U
+    MyIngress.drop
+    MyIngress.srcRoute_finish
+    MyIngress.srcRoute_nhop
+    MyIngress.update_ttl
+
+CYCLE: 0 -> parsers/start -> parsers/parse_srcRouting -> parsers/parse_srcRouting
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/node_3 -> ingress/tbl_srcRoute_finish -> ingress/tbl_srcRoute_finish/MyIngress.srcRoute_finish -> ingress/tbl_srcRoute_nhop -> ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop -> ingress/node_6 -> ingress/tbl_update_ttl -> ingress/tbl_update_ttl/MyIngress.update_ttl -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+    standard_metadata
+        ingress_port: 
+        egress_spec: [ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [deparsers] U
+        srcAddr: [parsers/start] D, [deparsers] U
+        etherType: [parsers/start] DU, [ingress/tbl_srcRoute_finish/MyIngress.srcRoute_finish] D, [deparsers] U
+    ipv4
+        version: [deparsers] U
+        ihl: [deparsers] U
+        diffserv: [deparsers] U
+        totalLen: [deparsers] U
+        identification: [deparsers] U
+        flags: [deparsers] U
+        fragOffset: [deparsers] U
+        ttl: [ingress/tbl_update_ttl/MyIngress.update_ttl] UD, [deparsers] U
+        protocol: [deparsers] U
+        hdrChecksum: [deparsers] U
+        srcAddr: [deparsers] U
+        dstAddr: [deparsers] U
+        $valid$: [ingress/node_6] U, [deparsers] U
+    srcRoutes[0]
+        bos: [ingress/node_3] U, [deparsers] U
+        port: [ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] U, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    srcRoutes[1]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[2]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[3]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[4]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[5]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[6]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[7]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[8]
+        bos: [deparsers] U
+        port: [deparsers] U
+    MyIngress.drop
+    MyIngress.srcRoute_finish
+    MyIngress.srcRoute_nhop
+    MyIngress.update_ttl
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/node_3 -> ingress/tbl_srcRoute_finish -> ingress/tbl_srcRoute_finish/MyIngress.srcRoute_finish -> ingress/tbl_srcRoute_nhop -> ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop -> ingress/node_6 -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+    standard_metadata
+        ingress_port: 
+        egress_spec: [ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [deparsers] U
+        srcAddr: [parsers/start] D, [deparsers] U
+        etherType: [parsers/start] DU, [ingress/tbl_srcRoute_finish/MyIngress.srcRoute_finish] D, [deparsers] U
+    ipv4
+        version: [deparsers] U
+        ihl: [deparsers] U
+        diffserv: [deparsers] U
+        totalLen: [deparsers] U
+        identification: [deparsers] U
+        flags: [deparsers] U
+        fragOffset: [deparsers] U
+        ttl: [deparsers] U
+        protocol: [deparsers] U
+        hdrChecksum: [deparsers] U
+        srcAddr: [deparsers] U
+        dstAddr: [deparsers] U
+        $valid$: [ingress/node_6] U, [deparsers] U
+    srcRoutes[0]
+        bos: [ingress/node_3] U, [deparsers] U
+        port: [ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] U, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    srcRoutes[1]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[2]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[3]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[4]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[5]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[6]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[7]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[8]
+        bos: [deparsers] U
+        port: [deparsers] U
+    MyIngress.drop
+    MyIngress.srcRoute_finish
+    MyIngress.srcRoute_nhop
+    MyIngress.update_ttl
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/node_3 -> ingress/tbl_srcRoute_nhop -> ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop -> ingress/node_6 -> ingress/tbl_update_ttl -> ingress/tbl_update_ttl/MyIngress.update_ttl -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+    standard_metadata
+        ingress_port: 
+        egress_spec: [ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [deparsers] U
+        srcAddr: [parsers/start] D, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    ipv4
+        version: [deparsers] U
+        ihl: [deparsers] U
+        diffserv: [deparsers] U
+        totalLen: [deparsers] U
+        identification: [deparsers] U
+        flags: [deparsers] U
+        fragOffset: [deparsers] U
+        ttl: [ingress/tbl_update_ttl/MyIngress.update_ttl] UD, [deparsers] U
+        protocol: [deparsers] U
+        hdrChecksum: [deparsers] U
+        srcAddr: [deparsers] U
+        dstAddr: [deparsers] U
+        $valid$: [ingress/node_6] U, [deparsers] U
+    srcRoutes[0]
+        bos: [ingress/node_3] U, [deparsers] U
+        port: [ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] U, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    srcRoutes[1]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[2]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[3]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[4]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[5]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[6]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[7]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[8]
+        bos: [deparsers] U
+        port: [deparsers] U
+    MyIngress.drop
+    MyIngress.srcRoute_finish
+    MyIngress.srcRoute_nhop
+    MyIngress.update_ttl
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/node_3 -> ingress/tbl_srcRoute_nhop -> ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop -> ingress/node_6 -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+    standard_metadata
+        ingress_port: 
+        egress_spec: [ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] D
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [deparsers] U
+        srcAddr: [parsers/start] D, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    ipv4
+        version: [deparsers] U
+        ihl: [deparsers] U
+        diffserv: [deparsers] U
+        totalLen: [deparsers] U
+        identification: [deparsers] U
+        flags: [deparsers] U
+        fragOffset: [deparsers] U
+        ttl: [deparsers] U
+        protocol: [deparsers] U
+        hdrChecksum: [deparsers] U
+        srcAddr: [deparsers] U
+        dstAddr: [deparsers] U
+        $valid$: [ingress/node_6] U, [deparsers] U
+    srcRoutes[0]
+        bos: [ingress/node_3] U, [deparsers] U
+        port: [ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] U, [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    srcRoutes[1]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[2]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[3]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[4]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[5]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[6]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[7]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[8]
+        bos: [deparsers] U
+        port: [deparsers] U
+    MyIngress.drop
+    MyIngress.srcRoute_finish
+    MyIngress.srcRoute_nhop
+    MyIngress.update_ttl
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/tbl_drop -> ingress/tbl_drop/MyIngress.drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+    standard_metadata
+        ingress_port: 
+        egress_spec: 
+        egress_port: 
+        instance_type: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        egress_global_timestamp: 
+        mcast_grp: 
+        egress_rid: 
+        checksum_error: 
+        parser_error: 
+        priority: 
+        _padding: 
+    ethernet
+        dstAddr: [parsers/start] D, [deparsers] U
+        srcAddr: [parsers/start] D, [deparsers] U
+        etherType: [parsers/start] DU, [deparsers] U
+    ipv4
+        version: [deparsers] U
+        ihl: [deparsers] U
+        diffserv: [deparsers] U
+        totalLen: [deparsers] U
+        identification: [deparsers] U
+        flags: [deparsers] U
+        fragOffset: [deparsers] U
+        ttl: [deparsers] U
+        protocol: [deparsers] U
+        hdrChecksum: [deparsers] U
+        srcAddr: [deparsers] U
+        dstAddr: [deparsers] U
+        $valid$: [deparsers] U
+    srcRoutes[0]
+        bos: [deparsers] U
+        port: [deparsers] U
+        $valid$: [ingress/node_2] U, [deparsers] U
+    srcRoutes[1]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[2]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[3]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[4]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[5]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[6]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[7]
+        bos: [deparsers] U
+        port: [deparsers] U
+    srcRoutes[8]
+        bos: [deparsers] U
+        port: [deparsers] U
+    MyIngress.drop
+    MyIngress.srcRoute_finish
+    MyIngress.srcRoute_nhop
+    MyIngress.update_ttl

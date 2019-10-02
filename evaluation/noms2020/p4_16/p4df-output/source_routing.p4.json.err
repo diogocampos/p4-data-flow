@@ -1,0 +1,5 @@
+[parsers/parse_srcRouting] not implemented: type == 'stack'
+[ingress/tbl_drop/MyIngress.drop] not implemented: op == 'mark_to_drop'
+[ingress/tbl_srcRoute_nhop/MyIngress.srcRoute_nhop] not implemented: op == 'pop'
+0.00user 0.02system 0:00.02elapsed 100%CPU (0avgtext+0avgdata 9424maxresident)k
+0inputs+16outputs (0major+1257minor)pagefaults 0swaps

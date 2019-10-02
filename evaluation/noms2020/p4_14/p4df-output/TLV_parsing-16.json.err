@@ -1,0 +1,12 @@
+[parsers/parse_ipv4_option_EOL] not implemented: type == 'stack'
+[parsers/parse_ipv4_option_NOP] not implemented: type == 'stack'
+[parsers/parse_ipv4_option_timestamp] not implemented: op == 'extract_VL'
+[parsers/parse_ipv4_option_timestamp] not implemented: op == 'primitive'
+[egress/format_options/format_options_security] not implemented: op == 'pop'
+[egress/format_options/format_options_security] not implemented: op == 'push'
+[egress/format_options/format_options_timestamp] not implemented: op == 'pop'
+[egress/format_options/format_options_both] not implemented: op == 'pop'
+[egress/format_options/format_options_both] not implemented: op == 'push'
+[compute_checksum] not implemented: type == 'header'
+0.01user 0.01system 0:00.02elapsed 100%CPU (0avgtext+0avgdata 9716maxresident)k
+0inputs+16outputs (0major+1296minor)pagefaults 0swaps

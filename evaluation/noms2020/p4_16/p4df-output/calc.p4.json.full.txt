@@ -1,0 +1,342 @@
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_add -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_0
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_1
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    scalars
+        tmp_3: DUUUUUUUU
+        tmp_4: DUUUUUUUU
+        tmp_5: DUUUUUUUU
+        tmp_6: DU
+        tmp_7: DU
+        tmp_8: DU
+        tmp_2: DU
+    standard_metadata
+        ingress_port: U
+        egress_spec: D
+    ethernet
+        dstAddr: DUDU
+        srcAddr: DUDU
+        etherType: DUU
+    p4calc
+        p: DU
+        four: DU
+        ver: DU
+        op: DUU
+        operand_a: DUU
+        operand_b: DUU
+        res: DDU
+        $valid$: UU
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_sub -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_0
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_1
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    scalars
+        tmp_3: DUUUUUUUU
+        tmp_4: DUUUUUUUU
+        tmp_5: DUUUUUUUU
+        tmp_6: DU
+        tmp_7: DU
+        tmp_8: DU
+        tmp_2: DU
+    standard_metadata
+        ingress_port: U
+        egress_spec: D
+    ethernet
+        dstAddr: DUDU
+        srcAddr: DUDU
+        etherType: DUU
+    p4calc
+        p: DU
+        four: DU
+        ver: DU
+        op: DUU
+        operand_a: DUU
+        operand_b: DUU
+        res: DDU
+        $valid$: UU
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_and -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_0
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_1
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    scalars
+        tmp_3: DUUUUUUUU
+        tmp_4: DUUUUUUUU
+        tmp_5: DUUUUUUUU
+        tmp_6: DU
+        tmp_7: DU
+        tmp_8: DU
+        tmp_2: DU
+    standard_metadata
+        ingress_port: U
+        egress_spec: D
+    ethernet
+        dstAddr: DUDU
+        srcAddr: DUDU
+        etherType: DUU
+    p4calc
+        p: DU
+        four: DU
+        ver: DU
+        op: DUU
+        operand_a: DUU
+        operand_b: DUU
+        res: DDU
+        $valid$: UU
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_or -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_0
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_1
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    scalars
+        tmp_3: DUUUUUUUU
+        tmp_4: DUUUUUUUU
+        tmp_5: DUUUUUUUU
+        tmp_6: DU
+        tmp_7: DU
+        tmp_8: DU
+        tmp_2: DU
+    standard_metadata
+        ingress_port: U
+        egress_spec: D
+    ethernet
+        dstAddr: DUDU
+        srcAddr: DUDU
+        etherType: DUU
+    p4calc
+        p: DU
+        four: DU
+        ver: DU
+        op: DUU
+        operand_a: DUU
+        operand_b: DUU
+        res: DDU
+        $valid$: UU
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_xor -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_0
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_1
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    scalars
+        tmp_3: DUUUUUUUU
+        tmp_4: DUUUUUUUU
+        tmp_5: DUUUUUUUU
+        tmp_6: DU
+        tmp_7: DU
+        tmp_8: DU
+        tmp_2: DU
+    standard_metadata
+        ingress_port: U
+        egress_spec: D
+    ethernet
+        dstAddr: DUDU
+        srcAddr: DUDU
+        etherType: DUU
+    p4calc
+        p: DU
+        four: DU
+        ver: DU
+        op: DUU
+        operand_a: DUU
+        operand_b: DUU
+        res: DDU
+        $valid$: UU
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_0
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_1
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    scalars
+        tmp_3: DUUUUUUUU
+        tmp_4: DUUUUUUUU
+        tmp_5: DUUUUUUUU
+        tmp_6: DU
+        tmp_7: DU
+        tmp_8: DU
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    p4calc
+        p: DU
+        four: DU
+        ver: DU
+        op: DUU
+        operand_a: DU
+        operand_b: DU
+        res: DU
+        $valid$: UU
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/tbl_operation_drop -> ingress/tbl_operation_drop/MyIngress.operation_drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_0
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_1
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    scalars
+        tmp_3: DUUUUUUUU
+        tmp_4: DUUUUUUUU
+        tmp_5: DUUUUUUUU
+        tmp_6: DU
+        tmp_7: DU
+        tmp_8: DU
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DUU
+    p4calc
+        p: DU
+        four: DU
+        ver: DU
+        op: DU
+        operand_a: DU
+        operand_b: DU
+        res: DU
+        $valid$: UU

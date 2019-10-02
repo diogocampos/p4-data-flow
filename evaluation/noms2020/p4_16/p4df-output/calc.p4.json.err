@@ -1,0 +1,5 @@
+[parsers/check_p4calc] not implemented: op == 'primitive'
+[ingress/MyIngress.calculate/MyIngress.operation_drop] not implemented: op == 'mark_to_drop'
+[ingress/tbl_operation_drop/MyIngress.operation_drop] not implemented: op == 'mark_to_drop'
+0.02user 0.00system 0:00.02elapsed 96%CPU (0avgtext+0avgdata 9664maxresident)k
+0inputs+24outputs (0major+1373minor)pagefaults 0swaps

@@ -1,0 +1,16 @@
+[ingress/MyIngress.ipv4_lpm/MyIngress.drop] not implemented: op == 'mark_to_drop'
+Traceback (most recent call last):
+  File "/home/p4/p4-data-flow/p4df.py", line 67, in <module>
+    result = main(sys.argv)
+  File "/home/p4/p4-data-flow/p4df.py", line 37, in main
+    flow = get_flow(p4)
+  File "/home/p4/p4-data-flow/p4df.py", line 49, in get_flow
+    do_pipelines(p4, flow)
+  File "/home/p4/p4-data-flow/p4df/pipelines.py", line 5, in do_pipelines
+    _pipeline('ingress', p4, flow)
+  File "/home/p4/p4-data-flow/p4df/pipelines.py", line 66, in _pipeline
+    next_tables = [table['next_tables'][action['name']]]
+KeyError: 'MyIngress.set_direction'
+Command exited with non-zero status 1
+0.02user 0.00system 0:00.02elapsed 100%CPU (0avgtext+0avgdata 9512maxresident)k
+0inputs+8outputs (0major+1274minor)pagefaults 0swaps

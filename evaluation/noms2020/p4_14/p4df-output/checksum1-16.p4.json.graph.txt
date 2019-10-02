@@ -1,0 +1,38 @@
+
+GRAPH
+0 -> 1
+1 -> 2
+2 -> 3 4 5
+3 -> 5
+4 -> 5
+5 -> 6
+6 -> 7 9
+7 -> 8
+8 -> 10 12 13
+9 -> 8
+10 -> 11
+11 -> 14
+12 -> 11
+13 -> 11
+14 -> 15
+15 -> 16
+16 -> 
+
+LEGEND
+0 = 0
+1 = parsers/start
+2 = parsers/parse_ethernet
+3 = parsers/parse_ipv4
+4 = parsers/parse_ipv6
+5 = parsers/null
+6 = ingress/setup
+7 = ingress/setup/do_setup
+8 = ingress/route
+9 = ingress/setup/NoAction
+10 = ingress/route/drop
+11 = ingress/null
+12 = ingress/route/forward
+13 = ingress/route/NoAction
+14 = egress/null
+15 = compute_checksum
+16 = deparsers

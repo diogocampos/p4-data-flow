@@ -1,0 +1,4414 @@
+
+0 -> parsers/start -> parsers/parse_head -> parsers/null -> ingress/node_2 -> ingress/drop_pkt -> ingress/drop_pkt/_drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp_0: [parsers/start] DU
+        tmp: [parsers/start] DU
+    standard_metadata
+        ingress_port: 
+        egress_spec: [ingress/drop_pkt/_drop] X
+        egress_port: 
+        clone_spec: 
+        instance_type: 
+        drop: 
+        recirculate_port: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        lf_field_list: 
+        mcast_grp: 
+        resubmit_flag: 
+        egress_rid: 
+        _padding: 
+    axon_head
+        preamble: [parsers/parse_head] D, [deparsers] U
+        axonType: [parsers/parse_head] D, [deparsers] U
+        axonLength: [parsers/parse_head] D, [ingress/node_2] U, [deparsers] U
+        fwdHopCount: [parsers/parse_head] DUUU, [deparsers] U
+        revHopCount: [parsers/parse_head] DUU, [deparsers] U
+        $valid$: [deparsers] U
+    axon_fwdHop[0]
+        port: [deparsers] U
+    axon_fwdHop[1]
+        port: [deparsers] U
+    axon_fwdHop[2]
+        port: [deparsers] U
+    axon_fwdHop[3]
+        port: [deparsers] U
+    axon_fwdHop[4]
+        port: [deparsers] U
+    axon_fwdHop[5]
+        port: [deparsers] U
+    axon_fwdHop[6]
+        port: [deparsers] U
+    axon_fwdHop[7]
+        port: [deparsers] U
+    axon_fwdHop[8]
+        port: [deparsers] U
+    axon_fwdHop[9]
+        port: [deparsers] U
+    axon_fwdHop[10]
+        port: [deparsers] U
+    axon_fwdHop[11]
+        port: [deparsers] U
+    axon_fwdHop[12]
+        port: [deparsers] U
+    axon_fwdHop[13]
+        port: [deparsers] U
+    axon_fwdHop[14]
+        port: [deparsers] U
+    axon_fwdHop[15]
+        port: [deparsers] U
+    axon_fwdHop[16]
+        port: [deparsers] U
+    axon_fwdHop[17]
+        port: [deparsers] U
+    axon_fwdHop[18]
+        port: [deparsers] U
+    axon_fwdHop[19]
+        port: [deparsers] U
+    axon_fwdHop[20]
+        port: [deparsers] U
+    axon_fwdHop[21]
+        port: [deparsers] U
+    axon_fwdHop[22]
+        port: [deparsers] U
+    axon_fwdHop[23]
+        port: [deparsers] U
+    axon_fwdHop[24]
+        port: [deparsers] U
+    axon_fwdHop[25]
+        port: [deparsers] U
+    axon_fwdHop[26]
+        port: [deparsers] U
+    axon_fwdHop[27]
+        port: [deparsers] U
+    axon_fwdHop[28]
+        port: [deparsers] U
+    axon_fwdHop[29]
+        port: [deparsers] U
+    axon_fwdHop[30]
+        port: [deparsers] U
+    axon_fwdHop[31]
+        port: [deparsers] U
+    axon_fwdHop[32]
+        port: [deparsers] U
+    axon_fwdHop[33]
+        port: [deparsers] U
+    axon_fwdHop[34]
+        port: [deparsers] U
+    axon_fwdHop[35]
+        port: [deparsers] U
+    axon_fwdHop[36]
+        port: [deparsers] U
+    axon_fwdHop[37]
+        port: [deparsers] U
+    axon_fwdHop[38]
+        port: [deparsers] U
+    axon_fwdHop[39]
+        port: [deparsers] U
+    axon_fwdHop[40]
+        port: [deparsers] U
+    axon_fwdHop[41]
+        port: [deparsers] U
+    axon_fwdHop[42]
+        port: [deparsers] U
+    axon_fwdHop[43]
+        port: [deparsers] U
+    axon_fwdHop[44]
+        port: [deparsers] U
+    axon_fwdHop[45]
+        port: [deparsers] U
+    axon_fwdHop[46]
+        port: [deparsers] U
+    axon_fwdHop[47]
+        port: [deparsers] U
+    axon_fwdHop[48]
+        port: [deparsers] U
+    axon_fwdHop[49]
+        port: [deparsers] U
+    axon_fwdHop[50]
+        port: [deparsers] U
+    axon_fwdHop[51]
+        port: [deparsers] U
+    axon_fwdHop[52]
+        port: [deparsers] U
+    axon_fwdHop[53]
+        port: [deparsers] U
+    axon_fwdHop[54]
+        port: [deparsers] U
+    axon_fwdHop[55]
+        port: [deparsers] U
+    axon_fwdHop[56]
+        port: [deparsers] U
+    axon_fwdHop[57]
+        port: [deparsers] U
+    axon_fwdHop[58]
+        port: [deparsers] U
+    axon_fwdHop[59]
+        port: [deparsers] U
+    axon_fwdHop[60]
+        port: [deparsers] U
+    axon_fwdHop[61]
+        port: [deparsers] U
+    axon_fwdHop[62]
+        port: [deparsers] U
+    axon_fwdHop[63]
+        port: [deparsers] U
+    axon_revHop[0]
+        port: [deparsers] U
+    axon_revHop[1]
+        port: [deparsers] U
+    axon_revHop[2]
+        port: [deparsers] U
+    axon_revHop[3]
+        port: [deparsers] U
+    axon_revHop[4]
+        port: [deparsers] U
+    axon_revHop[5]
+        port: [deparsers] U
+    axon_revHop[6]
+        port: [deparsers] U
+    axon_revHop[7]
+        port: [deparsers] U
+    axon_revHop[8]
+        port: [deparsers] U
+    axon_revHop[9]
+        port: [deparsers] U
+    axon_revHop[10]
+        port: [deparsers] U
+    axon_revHop[11]
+        port: [deparsers] U
+    axon_revHop[12]
+        port: [deparsers] U
+    axon_revHop[13]
+        port: [deparsers] U
+    axon_revHop[14]
+        port: [deparsers] U
+    axon_revHop[15]
+        port: [deparsers] U
+    axon_revHop[16]
+        port: [deparsers] U
+    axon_revHop[17]
+        port: [deparsers] U
+    axon_revHop[18]
+        port: [deparsers] U
+    axon_revHop[19]
+        port: [deparsers] U
+    axon_revHop[20]
+        port: [deparsers] U
+    axon_revHop[21]
+        port: [deparsers] U
+    axon_revHop[22]
+        port: [deparsers] U
+    axon_revHop[23]
+        port: [deparsers] U
+    axon_revHop[24]
+        port: [deparsers] U
+    axon_revHop[25]
+        port: [deparsers] U
+    axon_revHop[26]
+        port: [deparsers] U
+    axon_revHop[27]
+        port: [deparsers] U
+    axon_revHop[28]
+        port: [deparsers] U
+    axon_revHop[29]
+        port: [deparsers] U
+    axon_revHop[30]
+        port: [deparsers] U
+    axon_revHop[31]
+        port: [deparsers] U
+    axon_revHop[32]
+        port: [deparsers] U
+    axon_revHop[33]
+        port: [deparsers] U
+    axon_revHop[34]
+        port: [deparsers] U
+    axon_revHop[35]
+        port: [deparsers] U
+    axon_revHop[36]
+        port: [deparsers] U
+    axon_revHop[37]
+        port: [deparsers] U
+    axon_revHop[38]
+        port: [deparsers] U
+    axon_revHop[39]
+        port: [deparsers] U
+    axon_revHop[40]
+        port: [deparsers] U
+    axon_revHop[41]
+        port: [deparsers] U
+    axon_revHop[42]
+        port: [deparsers] U
+    axon_revHop[43]
+        port: [deparsers] U
+    axon_revHop[44]
+        port: [deparsers] U
+    axon_revHop[45]
+        port: [deparsers] U
+    axon_revHop[46]
+        port: [deparsers] U
+    axon_revHop[47]
+        port: [deparsers] U
+    axon_revHop[48]
+        port: [deparsers] U
+    axon_revHop[49]
+        port: [deparsers] U
+    axon_revHop[50]
+        port: [deparsers] U
+    axon_revHop[51]
+        port: [deparsers] U
+    axon_revHop[52]
+        port: [deparsers] U
+    axon_revHop[53]
+        port: [deparsers] U
+    axon_revHop[54]
+        port: [deparsers] U
+    axon_revHop[55]
+        port: [deparsers] U
+    axon_revHop[56]
+        port: [deparsers] U
+    axon_revHop[57]
+        port: [deparsers] U
+    axon_revHop[58]
+        port: [deparsers] U
+    axon_revHop[59]
+        port: [deparsers] U
+    axon_revHop[60]
+        port: [deparsers] U
+    axon_revHop[61]
+        port: [deparsers] U
+    axon_revHop[62]
+        port: [deparsers] U
+    axon_revHop[63]
+        port: [deparsers] U
+    my_metadata
+        fwdHopCount: [parsers/parse_head] D
+        revHopCount: [parsers/parse_head] D
+        headerLen: [parsers/parse_head] D, [ingress/node_2] U
+    _drop
+    NoAction
+    route
+
+0 -> parsers/start -> parsers/parse_head -> parsers/null -> ingress/node_2 -> ingress/drop_pkt -> ingress/drop_pkt/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp_0: [parsers/start] DU
+        tmp: [parsers/start] DU
+    standard_metadata
+        ingress_port: 
+        egress_spec: 
+        egress_port: 
+        clone_spec: 
+        instance_type: 
+        drop: 
+        recirculate_port: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        lf_field_list: 
+        mcast_grp: 
+        resubmit_flag: 
+        egress_rid: 
+        _padding: 
+    axon_head
+        preamble: [parsers/parse_head] D, [deparsers] U
+        axonType: [parsers/parse_head] D, [deparsers] U
+        axonLength: [parsers/parse_head] D, [ingress/node_2] U, [deparsers] U
+        fwdHopCount: [parsers/parse_head] DUUU, [deparsers] U
+        revHopCount: [parsers/parse_head] DUU, [deparsers] U
+        $valid$: [deparsers] U
+    axon_fwdHop[0]
+        port: [deparsers] U
+    axon_fwdHop[1]
+        port: [deparsers] U
+    axon_fwdHop[2]
+        port: [deparsers] U
+    axon_fwdHop[3]
+        port: [deparsers] U
+    axon_fwdHop[4]
+        port: [deparsers] U
+    axon_fwdHop[5]
+        port: [deparsers] U
+    axon_fwdHop[6]
+        port: [deparsers] U
+    axon_fwdHop[7]
+        port: [deparsers] U
+    axon_fwdHop[8]
+        port: [deparsers] U
+    axon_fwdHop[9]
+        port: [deparsers] U
+    axon_fwdHop[10]
+        port: [deparsers] U
+    axon_fwdHop[11]
+        port: [deparsers] U
+    axon_fwdHop[12]
+        port: [deparsers] U
+    axon_fwdHop[13]
+        port: [deparsers] U
+    axon_fwdHop[14]
+        port: [deparsers] U
+    axon_fwdHop[15]
+        port: [deparsers] U
+    axon_fwdHop[16]
+        port: [deparsers] U
+    axon_fwdHop[17]
+        port: [deparsers] U
+    axon_fwdHop[18]
+        port: [deparsers] U
+    axon_fwdHop[19]
+        port: [deparsers] U
+    axon_fwdHop[20]
+        port: [deparsers] U
+    axon_fwdHop[21]
+        port: [deparsers] U
+    axon_fwdHop[22]
+        port: [deparsers] U
+    axon_fwdHop[23]
+        port: [deparsers] U
+    axon_fwdHop[24]
+        port: [deparsers] U
+    axon_fwdHop[25]
+        port: [deparsers] U
+    axon_fwdHop[26]
+        port: [deparsers] U
+    axon_fwdHop[27]
+        port: [deparsers] U
+    axon_fwdHop[28]
+        port: [deparsers] U
+    axon_fwdHop[29]
+        port: [deparsers] U
+    axon_fwdHop[30]
+        port: [deparsers] U
+    axon_fwdHop[31]
+        port: [deparsers] U
+    axon_fwdHop[32]
+        port: [deparsers] U
+    axon_fwdHop[33]
+        port: [deparsers] U
+    axon_fwdHop[34]
+        port: [deparsers] U
+    axon_fwdHop[35]
+        port: [deparsers] U
+    axon_fwdHop[36]
+        port: [deparsers] U
+    axon_fwdHop[37]
+        port: [deparsers] U
+    axon_fwdHop[38]
+        port: [deparsers] U
+    axon_fwdHop[39]
+        port: [deparsers] U
+    axon_fwdHop[40]
+        port: [deparsers] U
+    axon_fwdHop[41]
+        port: [deparsers] U
+    axon_fwdHop[42]
+        port: [deparsers] U
+    axon_fwdHop[43]
+        port: [deparsers] U
+    axon_fwdHop[44]
+        port: [deparsers] U
+    axon_fwdHop[45]
+        port: [deparsers] U
+    axon_fwdHop[46]
+        port: [deparsers] U
+    axon_fwdHop[47]
+        port: [deparsers] U
+    axon_fwdHop[48]
+        port: [deparsers] U
+    axon_fwdHop[49]
+        port: [deparsers] U
+    axon_fwdHop[50]
+        port: [deparsers] U
+    axon_fwdHop[51]
+        port: [deparsers] U
+    axon_fwdHop[52]
+        port: [deparsers] U
+    axon_fwdHop[53]
+        port: [deparsers] U
+    axon_fwdHop[54]
+        port: [deparsers] U
+    axon_fwdHop[55]
+        port: [deparsers] U
+    axon_fwdHop[56]
+        port: [deparsers] U
+    axon_fwdHop[57]
+        port: [deparsers] U
+    axon_fwdHop[58]
+        port: [deparsers] U
+    axon_fwdHop[59]
+        port: [deparsers] U
+    axon_fwdHop[60]
+        port: [deparsers] U
+    axon_fwdHop[61]
+        port: [deparsers] U
+    axon_fwdHop[62]
+        port: [deparsers] U
+    axon_fwdHop[63]
+        port: [deparsers] U
+    axon_revHop[0]
+        port: [deparsers] U
+    axon_revHop[1]
+        port: [deparsers] U
+    axon_revHop[2]
+        port: [deparsers] U
+    axon_revHop[3]
+        port: [deparsers] U
+    axon_revHop[4]
+        port: [deparsers] U
+    axon_revHop[5]
+        port: [deparsers] U
+    axon_revHop[6]
+        port: [deparsers] U
+    axon_revHop[7]
+        port: [deparsers] U
+    axon_revHop[8]
+        port: [deparsers] U
+    axon_revHop[9]
+        port: [deparsers] U
+    axon_revHop[10]
+        port: [deparsers] U
+    axon_revHop[11]
+        port: [deparsers] U
+    axon_revHop[12]
+        port: [deparsers] U
+    axon_revHop[13]
+        port: [deparsers] U
+    axon_revHop[14]
+        port: [deparsers] U
+    axon_revHop[15]
+        port: [deparsers] U
+    axon_revHop[16]
+        port: [deparsers] U
+    axon_revHop[17]
+        port: [deparsers] U
+    axon_revHop[18]
+        port: [deparsers] U
+    axon_revHop[19]
+        port: [deparsers] U
+    axon_revHop[20]
+        port: [deparsers] U
+    axon_revHop[21]
+        port: [deparsers] U
+    axon_revHop[22]
+        port: [deparsers] U
+    axon_revHop[23]
+        port: [deparsers] U
+    axon_revHop[24]
+        port: [deparsers] U
+    axon_revHop[25]
+        port: [deparsers] U
+    axon_revHop[26]
+        port: [deparsers] U
+    axon_revHop[27]
+        port: [deparsers] U
+    axon_revHop[28]
+        port: [deparsers] U
+    axon_revHop[29]
+        port: [deparsers] U
+    axon_revHop[30]
+        port: [deparsers] U
+    axon_revHop[31]
+        port: [deparsers] U
+    axon_revHop[32]
+        port: [deparsers] U
+    axon_revHop[33]
+        port: [deparsers] U
+    axon_revHop[34]
+        port: [deparsers] U
+    axon_revHop[35]
+        port: [deparsers] U
+    axon_revHop[36]
+        port: [deparsers] U
+    axon_revHop[37]
+        port: [deparsers] U
+    axon_revHop[38]
+        port: [deparsers] U
+    axon_revHop[39]
+        port: [deparsers] U
+    axon_revHop[40]
+        port: [deparsers] U
+    axon_revHop[41]
+        port: [deparsers] U
+    axon_revHop[42]
+        port: [deparsers] U
+    axon_revHop[43]
+        port: [deparsers] U
+    axon_revHop[44]
+        port: [deparsers] U
+    axon_revHop[45]
+        port: [deparsers] U
+    axon_revHop[46]
+        port: [deparsers] U
+    axon_revHop[47]
+        port: [deparsers] U
+    axon_revHop[48]
+        port: [deparsers] U
+    axon_revHop[49]
+        port: [deparsers] U
+    axon_revHop[50]
+        port: [deparsers] U
+    axon_revHop[51]
+        port: [deparsers] U
+    axon_revHop[52]
+        port: [deparsers] U
+    axon_revHop[53]
+        port: [deparsers] U
+    axon_revHop[54]
+        port: [deparsers] U
+    axon_revHop[55]
+        port: [deparsers] U
+    axon_revHop[56]
+        port: [deparsers] U
+    axon_revHop[57]
+        port: [deparsers] U
+    axon_revHop[58]
+        port: [deparsers] U
+    axon_revHop[59]
+        port: [deparsers] U
+    axon_revHop[60]
+        port: [deparsers] U
+    axon_revHop[61]
+        port: [deparsers] U
+    axon_revHop[62]
+        port: [deparsers] U
+    axon_revHop[63]
+        port: [deparsers] U
+    my_metadata
+        fwdHopCount: [parsers/parse_head] D
+        revHopCount: [parsers/parse_head] D
+        headerLen: [parsers/parse_head] D, [ingress/node_2] U
+    _drop
+    NoAction
+    route
+
+0 -> parsers/start -> parsers/parse_head -> parsers/null -> ingress/node_2 -> ingress/route_pkt -> ingress/route_pkt/_drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp_0: [parsers/start] DU
+        tmp: [parsers/start] DU
+    standard_metadata
+        ingress_port: 
+        egress_spec: [ingress/route_pkt/_drop] X
+        egress_port: 
+        clone_spec: 
+        instance_type: 
+        drop: 
+        recirculate_port: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        lf_field_list: 
+        mcast_grp: 
+        resubmit_flag: 
+        egress_rid: 
+        _padding: 
+    axon_head
+        preamble: [parsers/parse_head] D, [deparsers] U
+        axonType: [parsers/parse_head] D, [deparsers] U
+        axonLength: [parsers/parse_head] D, [ingress/node_2] U, [deparsers] U
+        fwdHopCount: [parsers/parse_head] DUUU, [deparsers] U
+        revHopCount: [parsers/parse_head] DUU, [deparsers] U
+        $valid$: [ingress/route_pkt] U, [deparsers] U
+    axon_fwdHop[0]
+        port: [deparsers] U
+    axon_fwdHop[1]
+        port: [deparsers] U
+    axon_fwdHop[2]
+        port: [deparsers] U
+    axon_fwdHop[3]
+        port: [deparsers] U
+    axon_fwdHop[4]
+        port: [deparsers] U
+    axon_fwdHop[5]
+        port: [deparsers] U
+    axon_fwdHop[6]
+        port: [deparsers] U
+    axon_fwdHop[7]
+        port: [deparsers] U
+    axon_fwdHop[8]
+        port: [deparsers] U
+    axon_fwdHop[9]
+        port: [deparsers] U
+    axon_fwdHop[10]
+        port: [deparsers] U
+    axon_fwdHop[11]
+        port: [deparsers] U
+    axon_fwdHop[12]
+        port: [deparsers] U
+    axon_fwdHop[13]
+        port: [deparsers] U
+    axon_fwdHop[14]
+        port: [deparsers] U
+    axon_fwdHop[15]
+        port: [deparsers] U
+    axon_fwdHop[16]
+        port: [deparsers] U
+    axon_fwdHop[17]
+        port: [deparsers] U
+    axon_fwdHop[18]
+        port: [deparsers] U
+    axon_fwdHop[19]
+        port: [deparsers] U
+    axon_fwdHop[20]
+        port: [deparsers] U
+    axon_fwdHop[21]
+        port: [deparsers] U
+    axon_fwdHop[22]
+        port: [deparsers] U
+    axon_fwdHop[23]
+        port: [deparsers] U
+    axon_fwdHop[24]
+        port: [deparsers] U
+    axon_fwdHop[25]
+        port: [deparsers] U
+    axon_fwdHop[26]
+        port: [deparsers] U
+    axon_fwdHop[27]
+        port: [deparsers] U
+    axon_fwdHop[28]
+        port: [deparsers] U
+    axon_fwdHop[29]
+        port: [deparsers] U
+    axon_fwdHop[30]
+        port: [deparsers] U
+    axon_fwdHop[31]
+        port: [deparsers] U
+    axon_fwdHop[32]
+        port: [deparsers] U
+    axon_fwdHop[33]
+        port: [deparsers] U
+    axon_fwdHop[34]
+        port: [deparsers] U
+    axon_fwdHop[35]
+        port: [deparsers] U
+    axon_fwdHop[36]
+        port: [deparsers] U
+    axon_fwdHop[37]
+        port: [deparsers] U
+    axon_fwdHop[38]
+        port: [deparsers] U
+    axon_fwdHop[39]
+        port: [deparsers] U
+    axon_fwdHop[40]
+        port: [deparsers] U
+    axon_fwdHop[41]
+        port: [deparsers] U
+    axon_fwdHop[42]
+        port: [deparsers] U
+    axon_fwdHop[43]
+        port: [deparsers] U
+    axon_fwdHop[44]
+        port: [deparsers] U
+    axon_fwdHop[45]
+        port: [deparsers] U
+    axon_fwdHop[46]
+        port: [deparsers] U
+    axon_fwdHop[47]
+        port: [deparsers] U
+    axon_fwdHop[48]
+        port: [deparsers] U
+    axon_fwdHop[49]
+        port: [deparsers] U
+    axon_fwdHop[50]
+        port: [deparsers] U
+    axon_fwdHop[51]
+        port: [deparsers] U
+    axon_fwdHop[52]
+        port: [deparsers] U
+    axon_fwdHop[53]
+        port: [deparsers] U
+    axon_fwdHop[54]
+        port: [deparsers] U
+    axon_fwdHop[55]
+        port: [deparsers] U
+    axon_fwdHop[56]
+        port: [deparsers] U
+    axon_fwdHop[57]
+        port: [deparsers] U
+    axon_fwdHop[58]
+        port: [deparsers] U
+    axon_fwdHop[59]
+        port: [deparsers] U
+    axon_fwdHop[60]
+        port: [deparsers] U
+    axon_fwdHop[61]
+        port: [deparsers] U
+    axon_fwdHop[62]
+        port: [deparsers] U
+    axon_fwdHop[63]
+        port: [deparsers] U
+    axon_revHop[0]
+        port: [deparsers] U
+    axon_revHop[1]
+        port: [deparsers] U
+    axon_revHop[2]
+        port: [deparsers] U
+    axon_revHop[3]
+        port: [deparsers] U
+    axon_revHop[4]
+        port: [deparsers] U
+    axon_revHop[5]
+        port: [deparsers] U
+    axon_revHop[6]
+        port: [deparsers] U
+    axon_revHop[7]
+        port: [deparsers] U
+    axon_revHop[8]
+        port: [deparsers] U
+    axon_revHop[9]
+        port: [deparsers] U
+    axon_revHop[10]
+        port: [deparsers] U
+    axon_revHop[11]
+        port: [deparsers] U
+    axon_revHop[12]
+        port: [deparsers] U
+    axon_revHop[13]
+        port: [deparsers] U
+    axon_revHop[14]
+        port: [deparsers] U
+    axon_revHop[15]
+        port: [deparsers] U
+    axon_revHop[16]
+        port: [deparsers] U
+    axon_revHop[17]
+        port: [deparsers] U
+    axon_revHop[18]
+        port: [deparsers] U
+    axon_revHop[19]
+        port: [deparsers] U
+    axon_revHop[20]
+        port: [deparsers] U
+    axon_revHop[21]
+        port: [deparsers] U
+    axon_revHop[22]
+        port: [deparsers] U
+    axon_revHop[23]
+        port: [deparsers] U
+    axon_revHop[24]
+        port: [deparsers] U
+    axon_revHop[25]
+        port: [deparsers] U
+    axon_revHop[26]
+        port: [deparsers] U
+    axon_revHop[27]
+        port: [deparsers] U
+    axon_revHop[28]
+        port: [deparsers] U
+    axon_revHop[29]
+        port: [deparsers] U
+    axon_revHop[30]
+        port: [deparsers] U
+    axon_revHop[31]
+        port: [deparsers] U
+    axon_revHop[32]
+        port: [deparsers] U
+    axon_revHop[33]
+        port: [deparsers] U
+    axon_revHop[34]
+        port: [deparsers] U
+    axon_revHop[35]
+        port: [deparsers] U
+    axon_revHop[36]
+        port: [deparsers] U
+    axon_revHop[37]
+        port: [deparsers] U
+    axon_revHop[38]
+        port: [deparsers] U
+    axon_revHop[39]
+        port: [deparsers] U
+    axon_revHop[40]
+        port: [deparsers] U
+    axon_revHop[41]
+        port: [deparsers] U
+    axon_revHop[42]
+        port: [deparsers] U
+    axon_revHop[43]
+        port: [deparsers] U
+    axon_revHop[44]
+        port: [deparsers] U
+    axon_revHop[45]
+        port: [deparsers] U
+    axon_revHop[46]
+        port: [deparsers] U
+    axon_revHop[47]
+        port: [deparsers] U
+    axon_revHop[48]
+        port: [deparsers] U
+    axon_revHop[49]
+        port: [deparsers] U
+    axon_revHop[50]
+        port: [deparsers] U
+    axon_revHop[51]
+        port: [deparsers] U
+    axon_revHop[52]
+        port: [deparsers] U
+    axon_revHop[53]
+        port: [deparsers] U
+    axon_revHop[54]
+        port: [deparsers] U
+    axon_revHop[55]
+        port: [deparsers] U
+    axon_revHop[56]
+        port: [deparsers] U
+    axon_revHop[57]
+        port: [deparsers] U
+    axon_revHop[58]
+        port: [deparsers] U
+    axon_revHop[59]
+        port: [deparsers] U
+    axon_revHop[60]
+        port: [deparsers] U
+    axon_revHop[61]
+        port: [deparsers] U
+    axon_revHop[62]
+        port: [deparsers] U
+    axon_revHop[63]
+        port: [deparsers] U
+    my_metadata
+        fwdHopCount: [parsers/parse_head] D
+        revHopCount: [parsers/parse_head] D
+        headerLen: [parsers/parse_head] D, [ingress/node_2] U
+    _drop
+    NoAction
+    route
+
+0 -> parsers/start -> parsers/parse_head -> parsers/null -> ingress/node_2 -> ingress/route_pkt -> ingress/route_pkt/route -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp_0: [parsers/start] DU
+        tmp: [parsers/start] DU
+    standard_metadata
+        ingress_port: [ingress/route_pkt/route] U
+        egress_spec: [ingress/route_pkt/route] D
+        egress_port: 
+        clone_spec: 
+        instance_type: 
+        drop: 
+        recirculate_port: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        lf_field_list: 
+        mcast_grp: 
+        resubmit_flag: 
+        egress_rid: 
+        _padding: 
+    axon_head
+        preamble: [parsers/parse_head] D, [deparsers] U
+        axonType: [parsers/parse_head] D, [deparsers] U
+        axonLength: [parsers/parse_head] D, [ingress/node_2] U, [deparsers] U
+        fwdHopCount: [parsers/parse_head] DUUU, [ingress/route_pkt/route] UD, [deparsers] U
+        revHopCount: [parsers/parse_head] DUU, [ingress/route_pkt/route] UD, [deparsers] U
+        $valid$: [ingress/route_pkt] U, [deparsers] U
+    axon_fwdHop[0]
+        port: [ingress/route_pkt/route] U, [deparsers] U
+    axon_fwdHop[1]
+        port: [deparsers] U
+    axon_fwdHop[2]
+        port: [deparsers] U
+    axon_fwdHop[3]
+        port: [deparsers] U
+    axon_fwdHop[4]
+        port: [deparsers] U
+    axon_fwdHop[5]
+        port: [deparsers] U
+    axon_fwdHop[6]
+        port: [deparsers] U
+    axon_fwdHop[7]
+        port: [deparsers] U
+    axon_fwdHop[8]
+        port: [deparsers] U
+    axon_fwdHop[9]
+        port: [deparsers] U
+    axon_fwdHop[10]
+        port: [deparsers] U
+    axon_fwdHop[11]
+        port: [deparsers] U
+    axon_fwdHop[12]
+        port: [deparsers] U
+    axon_fwdHop[13]
+        port: [deparsers] U
+    axon_fwdHop[14]
+        port: [deparsers] U
+    axon_fwdHop[15]
+        port: [deparsers] U
+    axon_fwdHop[16]
+        port: [deparsers] U
+    axon_fwdHop[17]
+        port: [deparsers] U
+    axon_fwdHop[18]
+        port: [deparsers] U
+    axon_fwdHop[19]
+        port: [deparsers] U
+    axon_fwdHop[20]
+        port: [deparsers] U
+    axon_fwdHop[21]
+        port: [deparsers] U
+    axon_fwdHop[22]
+        port: [deparsers] U
+    axon_fwdHop[23]
+        port: [deparsers] U
+    axon_fwdHop[24]
+        port: [deparsers] U
+    axon_fwdHop[25]
+        port: [deparsers] U
+    axon_fwdHop[26]
+        port: [deparsers] U
+    axon_fwdHop[27]
+        port: [deparsers] U
+    axon_fwdHop[28]
+        port: [deparsers] U
+    axon_fwdHop[29]
+        port: [deparsers] U
+    axon_fwdHop[30]
+        port: [deparsers] U
+    axon_fwdHop[31]
+        port: [deparsers] U
+    axon_fwdHop[32]
+        port: [deparsers] U
+    axon_fwdHop[33]
+        port: [deparsers] U
+    axon_fwdHop[34]
+        port: [deparsers] U
+    axon_fwdHop[35]
+        port: [deparsers] U
+    axon_fwdHop[36]
+        port: [deparsers] U
+    axon_fwdHop[37]
+        port: [deparsers] U
+    axon_fwdHop[38]
+        port: [deparsers] U
+    axon_fwdHop[39]
+        port: [deparsers] U
+    axon_fwdHop[40]
+        port: [deparsers] U
+    axon_fwdHop[41]
+        port: [deparsers] U
+    axon_fwdHop[42]
+        port: [deparsers] U
+    axon_fwdHop[43]
+        port: [deparsers] U
+    axon_fwdHop[44]
+        port: [deparsers] U
+    axon_fwdHop[45]
+        port: [deparsers] U
+    axon_fwdHop[46]
+        port: [deparsers] U
+    axon_fwdHop[47]
+        port: [deparsers] U
+    axon_fwdHop[48]
+        port: [deparsers] U
+    axon_fwdHop[49]
+        port: [deparsers] U
+    axon_fwdHop[50]
+        port: [deparsers] U
+    axon_fwdHop[51]
+        port: [deparsers] U
+    axon_fwdHop[52]
+        port: [deparsers] U
+    axon_fwdHop[53]
+        port: [deparsers] U
+    axon_fwdHop[54]
+        port: [deparsers] U
+    axon_fwdHop[55]
+        port: [deparsers] U
+    axon_fwdHop[56]
+        port: [deparsers] U
+    axon_fwdHop[57]
+        port: [deparsers] U
+    axon_fwdHop[58]
+        port: [deparsers] U
+    axon_fwdHop[59]
+        port: [deparsers] U
+    axon_fwdHop[60]
+        port: [deparsers] U
+    axon_fwdHop[61]
+        port: [deparsers] U
+    axon_fwdHop[62]
+        port: [deparsers] U
+    axon_fwdHop[63]
+        port: [deparsers] U
+    axon_revHop[0]
+        port: [ingress/route_pkt/route] D, [deparsers] U
+    axon_revHop[1]
+        port: [deparsers] U
+    axon_revHop[2]
+        port: [deparsers] U
+    axon_revHop[3]
+        port: [deparsers] U
+    axon_revHop[4]
+        port: [deparsers] U
+    axon_revHop[5]
+        port: [deparsers] U
+    axon_revHop[6]
+        port: [deparsers] U
+    axon_revHop[7]
+        port: [deparsers] U
+    axon_revHop[8]
+        port: [deparsers] U
+    axon_revHop[9]
+        port: [deparsers] U
+    axon_revHop[10]
+        port: [deparsers] U
+    axon_revHop[11]
+        port: [deparsers] U
+    axon_revHop[12]
+        port: [deparsers] U
+    axon_revHop[13]
+        port: [deparsers] U
+    axon_revHop[14]
+        port: [deparsers] U
+    axon_revHop[15]
+        port: [deparsers] U
+    axon_revHop[16]
+        port: [deparsers] U
+    axon_revHop[17]
+        port: [deparsers] U
+    axon_revHop[18]
+        port: [deparsers] U
+    axon_revHop[19]
+        port: [deparsers] U
+    axon_revHop[20]
+        port: [deparsers] U
+    axon_revHop[21]
+        port: [deparsers] U
+    axon_revHop[22]
+        port: [deparsers] U
+    axon_revHop[23]
+        port: [deparsers] U
+    axon_revHop[24]
+        port: [deparsers] U
+    axon_revHop[25]
+        port: [deparsers] U
+    axon_revHop[26]
+        port: [deparsers] U
+    axon_revHop[27]
+        port: [deparsers] U
+    axon_revHop[28]
+        port: [deparsers] U
+    axon_revHop[29]
+        port: [deparsers] U
+    axon_revHop[30]
+        port: [deparsers] U
+    axon_revHop[31]
+        port: [deparsers] U
+    axon_revHop[32]
+        port: [deparsers] U
+    axon_revHop[33]
+        port: [deparsers] U
+    axon_revHop[34]
+        port: [deparsers] U
+    axon_revHop[35]
+        port: [deparsers] U
+    axon_revHop[36]
+        port: [deparsers] U
+    axon_revHop[37]
+        port: [deparsers] U
+    axon_revHop[38]
+        port: [deparsers] U
+    axon_revHop[39]
+        port: [deparsers] U
+    axon_revHop[40]
+        port: [deparsers] U
+    axon_revHop[41]
+        port: [deparsers] U
+    axon_revHop[42]
+        port: [deparsers] U
+    axon_revHop[43]
+        port: [deparsers] U
+    axon_revHop[44]
+        port: [deparsers] U
+    axon_revHop[45]
+        port: [deparsers] U
+    axon_revHop[46]
+        port: [deparsers] U
+    axon_revHop[47]
+        port: [deparsers] U
+    axon_revHop[48]
+        port: [deparsers] U
+    axon_revHop[49]
+        port: [deparsers] U
+    axon_revHop[50]
+        port: [deparsers] U
+    axon_revHop[51]
+        port: [deparsers] U
+    axon_revHop[52]
+        port: [deparsers] U
+    axon_revHop[53]
+        port: [deparsers] U
+    axon_revHop[54]
+        port: [deparsers] U
+    axon_revHop[55]
+        port: [deparsers] U
+    axon_revHop[56]
+        port: [deparsers] U
+    axon_revHop[57]
+        port: [deparsers] U
+    axon_revHop[58]
+        port: [deparsers] U
+    axon_revHop[59]
+        port: [deparsers] U
+    axon_revHop[60]
+        port: [deparsers] U
+    axon_revHop[61]
+        port: [deparsers] U
+    axon_revHop[62]
+        port: [deparsers] U
+    axon_revHop[63]
+        port: [deparsers] U
+    my_metadata
+        fwdHopCount: [parsers/parse_head] D
+        revHopCount: [parsers/parse_head] D
+        headerLen: [parsers/parse_head] D, [ingress/node_2] U
+    _drop
+    NoAction
+    route
+
+0 -> parsers/start -> parsers/parse_head -> parsers/null -> ingress/node_2 -> ingress/route_pkt -> ingress/route_pkt/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp_0: [parsers/start] DU
+        tmp: [parsers/start] DU
+    standard_metadata
+        ingress_port: 
+        egress_spec: 
+        egress_port: 
+        clone_spec: 
+        instance_type: 
+        drop: 
+        recirculate_port: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        lf_field_list: 
+        mcast_grp: 
+        resubmit_flag: 
+        egress_rid: 
+        _padding: 
+    axon_head
+        preamble: [parsers/parse_head] D, [deparsers] U
+        axonType: [parsers/parse_head] D, [deparsers] U
+        axonLength: [parsers/parse_head] D, [ingress/node_2] U, [deparsers] U
+        fwdHopCount: [parsers/parse_head] DUUU, [deparsers] U
+        revHopCount: [parsers/parse_head] DUU, [deparsers] U
+        $valid$: [ingress/route_pkt] U, [deparsers] U
+    axon_fwdHop[0]
+        port: [deparsers] U
+    axon_fwdHop[1]
+        port: [deparsers] U
+    axon_fwdHop[2]
+        port: [deparsers] U
+    axon_fwdHop[3]
+        port: [deparsers] U
+    axon_fwdHop[4]
+        port: [deparsers] U
+    axon_fwdHop[5]
+        port: [deparsers] U
+    axon_fwdHop[6]
+        port: [deparsers] U
+    axon_fwdHop[7]
+        port: [deparsers] U
+    axon_fwdHop[8]
+        port: [deparsers] U
+    axon_fwdHop[9]
+        port: [deparsers] U
+    axon_fwdHop[10]
+        port: [deparsers] U
+    axon_fwdHop[11]
+        port: [deparsers] U
+    axon_fwdHop[12]
+        port: [deparsers] U
+    axon_fwdHop[13]
+        port: [deparsers] U
+    axon_fwdHop[14]
+        port: [deparsers] U
+    axon_fwdHop[15]
+        port: [deparsers] U
+    axon_fwdHop[16]
+        port: [deparsers] U
+    axon_fwdHop[17]
+        port: [deparsers] U
+    axon_fwdHop[18]
+        port: [deparsers] U
+    axon_fwdHop[19]
+        port: [deparsers] U
+    axon_fwdHop[20]
+        port: [deparsers] U
+    axon_fwdHop[21]
+        port: [deparsers] U
+    axon_fwdHop[22]
+        port: [deparsers] U
+    axon_fwdHop[23]
+        port: [deparsers] U
+    axon_fwdHop[24]
+        port: [deparsers] U
+    axon_fwdHop[25]
+        port: [deparsers] U
+    axon_fwdHop[26]
+        port: [deparsers] U
+    axon_fwdHop[27]
+        port: [deparsers] U
+    axon_fwdHop[28]
+        port: [deparsers] U
+    axon_fwdHop[29]
+        port: [deparsers] U
+    axon_fwdHop[30]
+        port: [deparsers] U
+    axon_fwdHop[31]
+        port: [deparsers] U
+    axon_fwdHop[32]
+        port: [deparsers] U
+    axon_fwdHop[33]
+        port: [deparsers] U
+    axon_fwdHop[34]
+        port: [deparsers] U
+    axon_fwdHop[35]
+        port: [deparsers] U
+    axon_fwdHop[36]
+        port: [deparsers] U
+    axon_fwdHop[37]
+        port: [deparsers] U
+    axon_fwdHop[38]
+        port: [deparsers] U
+    axon_fwdHop[39]
+        port: [deparsers] U
+    axon_fwdHop[40]
+        port: [deparsers] U
+    axon_fwdHop[41]
+        port: [deparsers] U
+    axon_fwdHop[42]
+        port: [deparsers] U
+    axon_fwdHop[43]
+        port: [deparsers] U
+    axon_fwdHop[44]
+        port: [deparsers] U
+    axon_fwdHop[45]
+        port: [deparsers] U
+    axon_fwdHop[46]
+        port: [deparsers] U
+    axon_fwdHop[47]
+        port: [deparsers] U
+    axon_fwdHop[48]
+        port: [deparsers] U
+    axon_fwdHop[49]
+        port: [deparsers] U
+    axon_fwdHop[50]
+        port: [deparsers] U
+    axon_fwdHop[51]
+        port: [deparsers] U
+    axon_fwdHop[52]
+        port: [deparsers] U
+    axon_fwdHop[53]
+        port: [deparsers] U
+    axon_fwdHop[54]
+        port: [deparsers] U
+    axon_fwdHop[55]
+        port: [deparsers] U
+    axon_fwdHop[56]
+        port: [deparsers] U
+    axon_fwdHop[57]
+        port: [deparsers] U
+    axon_fwdHop[58]
+        port: [deparsers] U
+    axon_fwdHop[59]
+        port: [deparsers] U
+    axon_fwdHop[60]
+        port: [deparsers] U
+    axon_fwdHop[61]
+        port: [deparsers] U
+    axon_fwdHop[62]
+        port: [deparsers] U
+    axon_fwdHop[63]
+        port: [deparsers] U
+    axon_revHop[0]
+        port: [deparsers] U
+    axon_revHop[1]
+        port: [deparsers] U
+    axon_revHop[2]
+        port: [deparsers] U
+    axon_revHop[3]
+        port: [deparsers] U
+    axon_revHop[4]
+        port: [deparsers] U
+    axon_revHop[5]
+        port: [deparsers] U
+    axon_revHop[6]
+        port: [deparsers] U
+    axon_revHop[7]
+        port: [deparsers] U
+    axon_revHop[8]
+        port: [deparsers] U
+    axon_revHop[9]
+        port: [deparsers] U
+    axon_revHop[10]
+        port: [deparsers] U
+    axon_revHop[11]
+        port: [deparsers] U
+    axon_revHop[12]
+        port: [deparsers] U
+    axon_revHop[13]
+        port: [deparsers] U
+    axon_revHop[14]
+        port: [deparsers] U
+    axon_revHop[15]
+        port: [deparsers] U
+    axon_revHop[16]
+        port: [deparsers] U
+    axon_revHop[17]
+        port: [deparsers] U
+    axon_revHop[18]
+        port: [deparsers] U
+    axon_revHop[19]
+        port: [deparsers] U
+    axon_revHop[20]
+        port: [deparsers] U
+    axon_revHop[21]
+        port: [deparsers] U
+    axon_revHop[22]
+        port: [deparsers] U
+    axon_revHop[23]
+        port: [deparsers] U
+    axon_revHop[24]
+        port: [deparsers] U
+    axon_revHop[25]
+        port: [deparsers] U
+    axon_revHop[26]
+        port: [deparsers] U
+    axon_revHop[27]
+        port: [deparsers] U
+    axon_revHop[28]
+        port: [deparsers] U
+    axon_revHop[29]
+        port: [deparsers] U
+    axon_revHop[30]
+        port: [deparsers] U
+    axon_revHop[31]
+        port: [deparsers] U
+    axon_revHop[32]
+        port: [deparsers] U
+    axon_revHop[33]
+        port: [deparsers] U
+    axon_revHop[34]
+        port: [deparsers] U
+    axon_revHop[35]
+        port: [deparsers] U
+    axon_revHop[36]
+        port: [deparsers] U
+    axon_revHop[37]
+        port: [deparsers] U
+    axon_revHop[38]
+        port: [deparsers] U
+    axon_revHop[39]
+        port: [deparsers] U
+    axon_revHop[40]
+        port: [deparsers] U
+    axon_revHop[41]
+        port: [deparsers] U
+    axon_revHop[42]
+        port: [deparsers] U
+    axon_revHop[43]
+        port: [deparsers] U
+    axon_revHop[44]
+        port: [deparsers] U
+    axon_revHop[45]
+        port: [deparsers] U
+    axon_revHop[46]
+        port: [deparsers] U
+    axon_revHop[47]
+        port: [deparsers] U
+    axon_revHop[48]
+        port: [deparsers] U
+    axon_revHop[49]
+        port: [deparsers] U
+    axon_revHop[50]
+        port: [deparsers] U
+    axon_revHop[51]
+        port: [deparsers] U
+    axon_revHop[52]
+        port: [deparsers] U
+    axon_revHop[53]
+        port: [deparsers] U
+    axon_revHop[54]
+        port: [deparsers] U
+    axon_revHop[55]
+        port: [deparsers] U
+    axon_revHop[56]
+        port: [deparsers] U
+    axon_revHop[57]
+        port: [deparsers] U
+    axon_revHop[58]
+        port: [deparsers] U
+    axon_revHop[59]
+        port: [deparsers] U
+    axon_revHop[60]
+        port: [deparsers] U
+    axon_revHop[61]
+        port: [deparsers] U
+    axon_revHop[62]
+        port: [deparsers] U
+    axon_revHop[63]
+        port: [deparsers] U
+    my_metadata
+        fwdHopCount: [parsers/parse_head] D
+        revHopCount: [parsers/parse_head] D
+        headerLen: [parsers/parse_head] D, [ingress/node_2] U
+    _drop
+    NoAction
+    route
+
+0 -> parsers/start -> parsers/parse_head -> parsers/parse_next_fwdHop -> parsers/parse_next_revHop -> parsers/null -> ingress/node_2 -> ingress/drop_pkt -> ingress/drop_pkt/_drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp_0: [parsers/start] DU
+        tmp: [parsers/start] DU
+    standard_metadata
+        ingress_port: 
+        egress_spec: [ingress/drop_pkt/_drop] X
+        egress_port: 
+        clone_spec: 
+        instance_type: 
+        drop: 
+        recirculate_port: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        lf_field_list: 
+        mcast_grp: 
+        resubmit_flag: 
+        egress_rid: 
+        _padding: 
+    axon_head
+        preamble: [parsers/parse_head] D, [deparsers] U
+        axonType: [parsers/parse_head] D, [deparsers] U
+        axonLength: [parsers/parse_head] D, [ingress/node_2] U, [deparsers] U
+        fwdHopCount: [parsers/parse_head] DUUU, [deparsers] U
+        revHopCount: [parsers/parse_head] DUU, [deparsers] U
+        $valid$: [deparsers] U
+    axon_fwdHop[0]
+        port: [deparsers] U
+    axon_fwdHop[1]
+        port: [deparsers] U
+    axon_fwdHop[2]
+        port: [deparsers] U
+    axon_fwdHop[3]
+        port: [deparsers] U
+    axon_fwdHop[4]
+        port: [deparsers] U
+    axon_fwdHop[5]
+        port: [deparsers] U
+    axon_fwdHop[6]
+        port: [deparsers] U
+    axon_fwdHop[7]
+        port: [deparsers] U
+    axon_fwdHop[8]
+        port: [deparsers] U
+    axon_fwdHop[9]
+        port: [deparsers] U
+    axon_fwdHop[10]
+        port: [deparsers] U
+    axon_fwdHop[11]
+        port: [deparsers] U
+    axon_fwdHop[12]
+        port: [deparsers] U
+    axon_fwdHop[13]
+        port: [deparsers] U
+    axon_fwdHop[14]
+        port: [deparsers] U
+    axon_fwdHop[15]
+        port: [deparsers] U
+    axon_fwdHop[16]
+        port: [deparsers] U
+    axon_fwdHop[17]
+        port: [deparsers] U
+    axon_fwdHop[18]
+        port: [deparsers] U
+    axon_fwdHop[19]
+        port: [deparsers] U
+    axon_fwdHop[20]
+        port: [deparsers] U
+    axon_fwdHop[21]
+        port: [deparsers] U
+    axon_fwdHop[22]
+        port: [deparsers] U
+    axon_fwdHop[23]
+        port: [deparsers] U
+    axon_fwdHop[24]
+        port: [deparsers] U
+    axon_fwdHop[25]
+        port: [deparsers] U
+    axon_fwdHop[26]
+        port: [deparsers] U
+    axon_fwdHop[27]
+        port: [deparsers] U
+    axon_fwdHop[28]
+        port: [deparsers] U
+    axon_fwdHop[29]
+        port: [deparsers] U
+    axon_fwdHop[30]
+        port: [deparsers] U
+    axon_fwdHop[31]
+        port: [deparsers] U
+    axon_fwdHop[32]
+        port: [deparsers] U
+    axon_fwdHop[33]
+        port: [deparsers] U
+    axon_fwdHop[34]
+        port: [deparsers] U
+    axon_fwdHop[35]
+        port: [deparsers] U
+    axon_fwdHop[36]
+        port: [deparsers] U
+    axon_fwdHop[37]
+        port: [deparsers] U
+    axon_fwdHop[38]
+        port: [deparsers] U
+    axon_fwdHop[39]
+        port: [deparsers] U
+    axon_fwdHop[40]
+        port: [deparsers] U
+    axon_fwdHop[41]
+        port: [deparsers] U
+    axon_fwdHop[42]
+        port: [deparsers] U
+    axon_fwdHop[43]
+        port: [deparsers] U
+    axon_fwdHop[44]
+        port: [deparsers] U
+    axon_fwdHop[45]
+        port: [deparsers] U
+    axon_fwdHop[46]
+        port: [deparsers] U
+    axon_fwdHop[47]
+        port: [deparsers] U
+    axon_fwdHop[48]
+        port: [deparsers] U
+    axon_fwdHop[49]
+        port: [deparsers] U
+    axon_fwdHop[50]
+        port: [deparsers] U
+    axon_fwdHop[51]
+        port: [deparsers] U
+    axon_fwdHop[52]
+        port: [deparsers] U
+    axon_fwdHop[53]
+        port: [deparsers] U
+    axon_fwdHop[54]
+        port: [deparsers] U
+    axon_fwdHop[55]
+        port: [deparsers] U
+    axon_fwdHop[56]
+        port: [deparsers] U
+    axon_fwdHop[57]
+        port: [deparsers] U
+    axon_fwdHop[58]
+        port: [deparsers] U
+    axon_fwdHop[59]
+        port: [deparsers] U
+    axon_fwdHop[60]
+        port: [deparsers] U
+    axon_fwdHop[61]
+        port: [deparsers] U
+    axon_fwdHop[62]
+        port: [deparsers] U
+    axon_fwdHop[63]
+        port: [deparsers] U
+    axon_revHop[0]
+        port: [deparsers] U
+    axon_revHop[1]
+        port: [deparsers] U
+    axon_revHop[2]
+        port: [deparsers] U
+    axon_revHop[3]
+        port: [deparsers] U
+    axon_revHop[4]
+        port: [deparsers] U
+    axon_revHop[5]
+        port: [deparsers] U
+    axon_revHop[6]
+        port: [deparsers] U
+    axon_revHop[7]
+        port: [deparsers] U
+    axon_revHop[8]
+        port: [deparsers] U
+    axon_revHop[9]
+        port: [deparsers] U
+    axon_revHop[10]
+        port: [deparsers] U
+    axon_revHop[11]
+        port: [deparsers] U
+    axon_revHop[12]
+        port: [deparsers] U
+    axon_revHop[13]
+        port: [deparsers] U
+    axon_revHop[14]
+        port: [deparsers] U
+    axon_revHop[15]
+        port: [deparsers] U
+    axon_revHop[16]
+        port: [deparsers] U
+    axon_revHop[17]
+        port: [deparsers] U
+    axon_revHop[18]
+        port: [deparsers] U
+    axon_revHop[19]
+        port: [deparsers] U
+    axon_revHop[20]
+        port: [deparsers] U
+    axon_revHop[21]
+        port: [deparsers] U
+    axon_revHop[22]
+        port: [deparsers] U
+    axon_revHop[23]
+        port: [deparsers] U
+    axon_revHop[24]
+        port: [deparsers] U
+    axon_revHop[25]
+        port: [deparsers] U
+    axon_revHop[26]
+        port: [deparsers] U
+    axon_revHop[27]
+        port: [deparsers] U
+    axon_revHop[28]
+        port: [deparsers] U
+    axon_revHop[29]
+        port: [deparsers] U
+    axon_revHop[30]
+        port: [deparsers] U
+    axon_revHop[31]
+        port: [deparsers] U
+    axon_revHop[32]
+        port: [deparsers] U
+    axon_revHop[33]
+        port: [deparsers] U
+    axon_revHop[34]
+        port: [deparsers] U
+    axon_revHop[35]
+        port: [deparsers] U
+    axon_revHop[36]
+        port: [deparsers] U
+    axon_revHop[37]
+        port: [deparsers] U
+    axon_revHop[38]
+        port: [deparsers] U
+    axon_revHop[39]
+        port: [deparsers] U
+    axon_revHop[40]
+        port: [deparsers] U
+    axon_revHop[41]
+        port: [deparsers] U
+    axon_revHop[42]
+        port: [deparsers] U
+    axon_revHop[43]
+        port: [deparsers] U
+    axon_revHop[44]
+        port: [deparsers] U
+    axon_revHop[45]
+        port: [deparsers] U
+    axon_revHop[46]
+        port: [deparsers] U
+    axon_revHop[47]
+        port: [deparsers] U
+    axon_revHop[48]
+        port: [deparsers] U
+    axon_revHop[49]
+        port: [deparsers] U
+    axon_revHop[50]
+        port: [deparsers] U
+    axon_revHop[51]
+        port: [deparsers] U
+    axon_revHop[52]
+        port: [deparsers] U
+    axon_revHop[53]
+        port: [deparsers] U
+    axon_revHop[54]
+        port: [deparsers] U
+    axon_revHop[55]
+        port: [deparsers] U
+    axon_revHop[56]
+        port: [deparsers] U
+    axon_revHop[57]
+        port: [deparsers] U
+    axon_revHop[58]
+        port: [deparsers] U
+    axon_revHop[59]
+        port: [deparsers] U
+    axon_revHop[60]
+        port: [deparsers] U
+    axon_revHop[61]
+        port: [deparsers] U
+    axon_revHop[62]
+        port: [deparsers] U
+    axon_revHop[63]
+        port: [deparsers] U
+    my_metadata
+        fwdHopCount: [parsers/parse_head] D, [parsers/parse_next_fwdHop] U
+        revHopCount: [parsers/parse_head] D, [parsers/parse_next_revHop] U
+        headerLen: [parsers/parse_head] D, [ingress/node_2] U
+    _drop
+    NoAction
+    route
+
+0 -> parsers/start -> parsers/parse_head -> parsers/parse_next_fwdHop -> parsers/parse_next_revHop -> parsers/null -> ingress/node_2 -> ingress/drop_pkt -> ingress/drop_pkt/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp_0: [parsers/start] DU
+        tmp: [parsers/start] DU
+    standard_metadata
+        ingress_port: 
+        egress_spec: 
+        egress_port: 
+        clone_spec: 
+        instance_type: 
+        drop: 
+        recirculate_port: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        lf_field_list: 
+        mcast_grp: 
+        resubmit_flag: 
+        egress_rid: 
+        _padding: 
+    axon_head
+        preamble: [parsers/parse_head] D, [deparsers] U
+        axonType: [parsers/parse_head] D, [deparsers] U
+        axonLength: [parsers/parse_head] D, [ingress/node_2] U, [deparsers] U
+        fwdHopCount: [parsers/parse_head] DUUU, [deparsers] U
+        revHopCount: [parsers/parse_head] DUU, [deparsers] U
+        $valid$: [deparsers] U
+    axon_fwdHop[0]
+        port: [deparsers] U
+    axon_fwdHop[1]
+        port: [deparsers] U
+    axon_fwdHop[2]
+        port: [deparsers] U
+    axon_fwdHop[3]
+        port: [deparsers] U
+    axon_fwdHop[4]
+        port: [deparsers] U
+    axon_fwdHop[5]
+        port: [deparsers] U
+    axon_fwdHop[6]
+        port: [deparsers] U
+    axon_fwdHop[7]
+        port: [deparsers] U
+    axon_fwdHop[8]
+        port: [deparsers] U
+    axon_fwdHop[9]
+        port: [deparsers] U
+    axon_fwdHop[10]
+        port: [deparsers] U
+    axon_fwdHop[11]
+        port: [deparsers] U
+    axon_fwdHop[12]
+        port: [deparsers] U
+    axon_fwdHop[13]
+        port: [deparsers] U
+    axon_fwdHop[14]
+        port: [deparsers] U
+    axon_fwdHop[15]
+        port: [deparsers] U
+    axon_fwdHop[16]
+        port: [deparsers] U
+    axon_fwdHop[17]
+        port: [deparsers] U
+    axon_fwdHop[18]
+        port: [deparsers] U
+    axon_fwdHop[19]
+        port: [deparsers] U
+    axon_fwdHop[20]
+        port: [deparsers] U
+    axon_fwdHop[21]
+        port: [deparsers] U
+    axon_fwdHop[22]
+        port: [deparsers] U
+    axon_fwdHop[23]
+        port: [deparsers] U
+    axon_fwdHop[24]
+        port: [deparsers] U
+    axon_fwdHop[25]
+        port: [deparsers] U
+    axon_fwdHop[26]
+        port: [deparsers] U
+    axon_fwdHop[27]
+        port: [deparsers] U
+    axon_fwdHop[28]
+        port: [deparsers] U
+    axon_fwdHop[29]
+        port: [deparsers] U
+    axon_fwdHop[30]
+        port: [deparsers] U
+    axon_fwdHop[31]
+        port: [deparsers] U
+    axon_fwdHop[32]
+        port: [deparsers] U
+    axon_fwdHop[33]
+        port: [deparsers] U
+    axon_fwdHop[34]
+        port: [deparsers] U
+    axon_fwdHop[35]
+        port: [deparsers] U
+    axon_fwdHop[36]
+        port: [deparsers] U
+    axon_fwdHop[37]
+        port: [deparsers] U
+    axon_fwdHop[38]
+        port: [deparsers] U
+    axon_fwdHop[39]
+        port: [deparsers] U
+    axon_fwdHop[40]
+        port: [deparsers] U
+    axon_fwdHop[41]
+        port: [deparsers] U
+    axon_fwdHop[42]
+        port: [deparsers] U
+    axon_fwdHop[43]
+        port: [deparsers] U
+    axon_fwdHop[44]
+        port: [deparsers] U
+    axon_fwdHop[45]
+        port: [deparsers] U
+    axon_fwdHop[46]
+        port: [deparsers] U
+    axon_fwdHop[47]
+        port: [deparsers] U
+    axon_fwdHop[48]
+        port: [deparsers] U
+    axon_fwdHop[49]
+        port: [deparsers] U
+    axon_fwdHop[50]
+        port: [deparsers] U
+    axon_fwdHop[51]
+        port: [deparsers] U
+    axon_fwdHop[52]
+        port: [deparsers] U
+    axon_fwdHop[53]
+        port: [deparsers] U
+    axon_fwdHop[54]
+        port: [deparsers] U
+    axon_fwdHop[55]
+        port: [deparsers] U
+    axon_fwdHop[56]
+        port: [deparsers] U
+    axon_fwdHop[57]
+        port: [deparsers] U
+    axon_fwdHop[58]
+        port: [deparsers] U
+    axon_fwdHop[59]
+        port: [deparsers] U
+    axon_fwdHop[60]
+        port: [deparsers] U
+    axon_fwdHop[61]
+        port: [deparsers] U
+    axon_fwdHop[62]
+        port: [deparsers] U
+    axon_fwdHop[63]
+        port: [deparsers] U
+    axon_revHop[0]
+        port: [deparsers] U
+    axon_revHop[1]
+        port: [deparsers] U
+    axon_revHop[2]
+        port: [deparsers] U
+    axon_revHop[3]
+        port: [deparsers] U
+    axon_revHop[4]
+        port: [deparsers] U
+    axon_revHop[5]
+        port: [deparsers] U
+    axon_revHop[6]
+        port: [deparsers] U
+    axon_revHop[7]
+        port: [deparsers] U
+    axon_revHop[8]
+        port: [deparsers] U
+    axon_revHop[9]
+        port: [deparsers] U
+    axon_revHop[10]
+        port: [deparsers] U
+    axon_revHop[11]
+        port: [deparsers] U
+    axon_revHop[12]
+        port: [deparsers] U
+    axon_revHop[13]
+        port: [deparsers] U
+    axon_revHop[14]
+        port: [deparsers] U
+    axon_revHop[15]
+        port: [deparsers] U
+    axon_revHop[16]
+        port: [deparsers] U
+    axon_revHop[17]
+        port: [deparsers] U
+    axon_revHop[18]
+        port: [deparsers] U
+    axon_revHop[19]
+        port: [deparsers] U
+    axon_revHop[20]
+        port: [deparsers] U
+    axon_revHop[21]
+        port: [deparsers] U
+    axon_revHop[22]
+        port: [deparsers] U
+    axon_revHop[23]
+        port: [deparsers] U
+    axon_revHop[24]
+        port: [deparsers] U
+    axon_revHop[25]
+        port: [deparsers] U
+    axon_revHop[26]
+        port: [deparsers] U
+    axon_revHop[27]
+        port: [deparsers] U
+    axon_revHop[28]
+        port: [deparsers] U
+    axon_revHop[29]
+        port: [deparsers] U
+    axon_revHop[30]
+        port: [deparsers] U
+    axon_revHop[31]
+        port: [deparsers] U
+    axon_revHop[32]
+        port: [deparsers] U
+    axon_revHop[33]
+        port: [deparsers] U
+    axon_revHop[34]
+        port: [deparsers] U
+    axon_revHop[35]
+        port: [deparsers] U
+    axon_revHop[36]
+        port: [deparsers] U
+    axon_revHop[37]
+        port: [deparsers] U
+    axon_revHop[38]
+        port: [deparsers] U
+    axon_revHop[39]
+        port: [deparsers] U
+    axon_revHop[40]
+        port: [deparsers] U
+    axon_revHop[41]
+        port: [deparsers] U
+    axon_revHop[42]
+        port: [deparsers] U
+    axon_revHop[43]
+        port: [deparsers] U
+    axon_revHop[44]
+        port: [deparsers] U
+    axon_revHop[45]
+        port: [deparsers] U
+    axon_revHop[46]
+        port: [deparsers] U
+    axon_revHop[47]
+        port: [deparsers] U
+    axon_revHop[48]
+        port: [deparsers] U
+    axon_revHop[49]
+        port: [deparsers] U
+    axon_revHop[50]
+        port: [deparsers] U
+    axon_revHop[51]
+        port: [deparsers] U
+    axon_revHop[52]
+        port: [deparsers] U
+    axon_revHop[53]
+        port: [deparsers] U
+    axon_revHop[54]
+        port: [deparsers] U
+    axon_revHop[55]
+        port: [deparsers] U
+    axon_revHop[56]
+        port: [deparsers] U
+    axon_revHop[57]
+        port: [deparsers] U
+    axon_revHop[58]
+        port: [deparsers] U
+    axon_revHop[59]
+        port: [deparsers] U
+    axon_revHop[60]
+        port: [deparsers] U
+    axon_revHop[61]
+        port: [deparsers] U
+    axon_revHop[62]
+        port: [deparsers] U
+    axon_revHop[63]
+        port: [deparsers] U
+    my_metadata
+        fwdHopCount: [parsers/parse_head] D, [parsers/parse_next_fwdHop] U
+        revHopCount: [parsers/parse_head] D, [parsers/parse_next_revHop] U
+        headerLen: [parsers/parse_head] D, [ingress/node_2] U
+    _drop
+    NoAction
+    route
+
+0 -> parsers/start -> parsers/parse_head -> parsers/parse_next_fwdHop -> parsers/parse_next_revHop -> parsers/null -> ingress/node_2 -> ingress/route_pkt -> ingress/route_pkt/_drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp_0: [parsers/start] DU
+        tmp: [parsers/start] DU
+    standard_metadata
+        ingress_port: 
+        egress_spec: [ingress/route_pkt/_drop] X
+        egress_port: 
+        clone_spec: 
+        instance_type: 
+        drop: 
+        recirculate_port: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        lf_field_list: 
+        mcast_grp: 
+        resubmit_flag: 
+        egress_rid: 
+        _padding: 
+    axon_head
+        preamble: [parsers/parse_head] D, [deparsers] U
+        axonType: [parsers/parse_head] D, [deparsers] U
+        axonLength: [parsers/parse_head] D, [ingress/node_2] U, [deparsers] U
+        fwdHopCount: [parsers/parse_head] DUUU, [deparsers] U
+        revHopCount: [parsers/parse_head] DUU, [deparsers] U
+        $valid$: [ingress/route_pkt] U, [deparsers] U
+    axon_fwdHop[0]
+        port: [deparsers] U
+    axon_fwdHop[1]
+        port: [deparsers] U
+    axon_fwdHop[2]
+        port: [deparsers] U
+    axon_fwdHop[3]
+        port: [deparsers] U
+    axon_fwdHop[4]
+        port: [deparsers] U
+    axon_fwdHop[5]
+        port: [deparsers] U
+    axon_fwdHop[6]
+        port: [deparsers] U
+    axon_fwdHop[7]
+        port: [deparsers] U
+    axon_fwdHop[8]
+        port: [deparsers] U
+    axon_fwdHop[9]
+        port: [deparsers] U
+    axon_fwdHop[10]
+        port: [deparsers] U
+    axon_fwdHop[11]
+        port: [deparsers] U
+    axon_fwdHop[12]
+        port: [deparsers] U
+    axon_fwdHop[13]
+        port: [deparsers] U
+    axon_fwdHop[14]
+        port: [deparsers] U
+    axon_fwdHop[15]
+        port: [deparsers] U
+    axon_fwdHop[16]
+        port: [deparsers] U
+    axon_fwdHop[17]
+        port: [deparsers] U
+    axon_fwdHop[18]
+        port: [deparsers] U
+    axon_fwdHop[19]
+        port: [deparsers] U
+    axon_fwdHop[20]
+        port: [deparsers] U
+    axon_fwdHop[21]
+        port: [deparsers] U
+    axon_fwdHop[22]
+        port: [deparsers] U
+    axon_fwdHop[23]
+        port: [deparsers] U
+    axon_fwdHop[24]
+        port: [deparsers] U
+    axon_fwdHop[25]
+        port: [deparsers] U
+    axon_fwdHop[26]
+        port: [deparsers] U
+    axon_fwdHop[27]
+        port: [deparsers] U
+    axon_fwdHop[28]
+        port: [deparsers] U
+    axon_fwdHop[29]
+        port: [deparsers] U
+    axon_fwdHop[30]
+        port: [deparsers] U
+    axon_fwdHop[31]
+        port: [deparsers] U
+    axon_fwdHop[32]
+        port: [deparsers] U
+    axon_fwdHop[33]
+        port: [deparsers] U
+    axon_fwdHop[34]
+        port: [deparsers] U
+    axon_fwdHop[35]
+        port: [deparsers] U
+    axon_fwdHop[36]
+        port: [deparsers] U
+    axon_fwdHop[37]
+        port: [deparsers] U
+    axon_fwdHop[38]
+        port: [deparsers] U
+    axon_fwdHop[39]
+        port: [deparsers] U
+    axon_fwdHop[40]
+        port: [deparsers] U
+    axon_fwdHop[41]
+        port: [deparsers] U
+    axon_fwdHop[42]
+        port: [deparsers] U
+    axon_fwdHop[43]
+        port: [deparsers] U
+    axon_fwdHop[44]
+        port: [deparsers] U
+    axon_fwdHop[45]
+        port: [deparsers] U
+    axon_fwdHop[46]
+        port: [deparsers] U
+    axon_fwdHop[47]
+        port: [deparsers] U
+    axon_fwdHop[48]
+        port: [deparsers] U
+    axon_fwdHop[49]
+        port: [deparsers] U
+    axon_fwdHop[50]
+        port: [deparsers] U
+    axon_fwdHop[51]
+        port: [deparsers] U
+    axon_fwdHop[52]
+        port: [deparsers] U
+    axon_fwdHop[53]
+        port: [deparsers] U
+    axon_fwdHop[54]
+        port: [deparsers] U
+    axon_fwdHop[55]
+        port: [deparsers] U
+    axon_fwdHop[56]
+        port: [deparsers] U
+    axon_fwdHop[57]
+        port: [deparsers] U
+    axon_fwdHop[58]
+        port: [deparsers] U
+    axon_fwdHop[59]
+        port: [deparsers] U
+    axon_fwdHop[60]
+        port: [deparsers] U
+    axon_fwdHop[61]
+        port: [deparsers] U
+    axon_fwdHop[62]
+        port: [deparsers] U
+    axon_fwdHop[63]
+        port: [deparsers] U
+    axon_revHop[0]
+        port: [deparsers] U
+    axon_revHop[1]
+        port: [deparsers] U
+    axon_revHop[2]
+        port: [deparsers] U
+    axon_revHop[3]
+        port: [deparsers] U
+    axon_revHop[4]
+        port: [deparsers] U
+    axon_revHop[5]
+        port: [deparsers] U
+    axon_revHop[6]
+        port: [deparsers] U
+    axon_revHop[7]
+        port: [deparsers] U
+    axon_revHop[8]
+        port: [deparsers] U
+    axon_revHop[9]
+        port: [deparsers] U
+    axon_revHop[10]
+        port: [deparsers] U
+    axon_revHop[11]
+        port: [deparsers] U
+    axon_revHop[12]
+        port: [deparsers] U
+    axon_revHop[13]
+        port: [deparsers] U
+    axon_revHop[14]
+        port: [deparsers] U
+    axon_revHop[15]
+        port: [deparsers] U
+    axon_revHop[16]
+        port: [deparsers] U
+    axon_revHop[17]
+        port: [deparsers] U
+    axon_revHop[18]
+        port: [deparsers] U
+    axon_revHop[19]
+        port: [deparsers] U
+    axon_revHop[20]
+        port: [deparsers] U
+    axon_revHop[21]
+        port: [deparsers] U
+    axon_revHop[22]
+        port: [deparsers] U
+    axon_revHop[23]
+        port: [deparsers] U
+    axon_revHop[24]
+        port: [deparsers] U
+    axon_revHop[25]
+        port: [deparsers] U
+    axon_revHop[26]
+        port: [deparsers] U
+    axon_revHop[27]
+        port: [deparsers] U
+    axon_revHop[28]
+        port: [deparsers] U
+    axon_revHop[29]
+        port: [deparsers] U
+    axon_revHop[30]
+        port: [deparsers] U
+    axon_revHop[31]
+        port: [deparsers] U
+    axon_revHop[32]
+        port: [deparsers] U
+    axon_revHop[33]
+        port: [deparsers] U
+    axon_revHop[34]
+        port: [deparsers] U
+    axon_revHop[35]
+        port: [deparsers] U
+    axon_revHop[36]
+        port: [deparsers] U
+    axon_revHop[37]
+        port: [deparsers] U
+    axon_revHop[38]
+        port: [deparsers] U
+    axon_revHop[39]
+        port: [deparsers] U
+    axon_revHop[40]
+        port: [deparsers] U
+    axon_revHop[41]
+        port: [deparsers] U
+    axon_revHop[42]
+        port: [deparsers] U
+    axon_revHop[43]
+        port: [deparsers] U
+    axon_revHop[44]
+        port: [deparsers] U
+    axon_revHop[45]
+        port: [deparsers] U
+    axon_revHop[46]
+        port: [deparsers] U
+    axon_revHop[47]
+        port: [deparsers] U
+    axon_revHop[48]
+        port: [deparsers] U
+    axon_revHop[49]
+        port: [deparsers] U
+    axon_revHop[50]
+        port: [deparsers] U
+    axon_revHop[51]
+        port: [deparsers] U
+    axon_revHop[52]
+        port: [deparsers] U
+    axon_revHop[53]
+        port: [deparsers] U
+    axon_revHop[54]
+        port: [deparsers] U
+    axon_revHop[55]
+        port: [deparsers] U
+    axon_revHop[56]
+        port: [deparsers] U
+    axon_revHop[57]
+        port: [deparsers] U
+    axon_revHop[58]
+        port: [deparsers] U
+    axon_revHop[59]
+        port: [deparsers] U
+    axon_revHop[60]
+        port: [deparsers] U
+    axon_revHop[61]
+        port: [deparsers] U
+    axon_revHop[62]
+        port: [deparsers] U
+    axon_revHop[63]
+        port: [deparsers] U
+    my_metadata
+        fwdHopCount: [parsers/parse_head] D, [parsers/parse_next_fwdHop] U
+        revHopCount: [parsers/parse_head] D, [parsers/parse_next_revHop] U
+        headerLen: [parsers/parse_head] D, [ingress/node_2] U
+    _drop
+    NoAction
+    route
+
+0 -> parsers/start -> parsers/parse_head -> parsers/parse_next_fwdHop -> parsers/parse_next_revHop -> parsers/null -> ingress/node_2 -> ingress/route_pkt -> ingress/route_pkt/route -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp_0: [parsers/start] DU
+        tmp: [parsers/start] DU
+    standard_metadata
+        ingress_port: [ingress/route_pkt/route] U
+        egress_spec: [ingress/route_pkt/route] D
+        egress_port: 
+        clone_spec: 
+        instance_type: 
+        drop: 
+        recirculate_port: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        lf_field_list: 
+        mcast_grp: 
+        resubmit_flag: 
+        egress_rid: 
+        _padding: 
+    axon_head
+        preamble: [parsers/parse_head] D, [deparsers] U
+        axonType: [parsers/parse_head] D, [deparsers] U
+        axonLength: [parsers/parse_head] D, [ingress/node_2] U, [deparsers] U
+        fwdHopCount: [parsers/parse_head] DUUU, [ingress/route_pkt/route] UD, [deparsers] U
+        revHopCount: [parsers/parse_head] DUU, [ingress/route_pkt/route] UD, [deparsers] U
+        $valid$: [ingress/route_pkt] U, [deparsers] U
+    axon_fwdHop[0]
+        port: [ingress/route_pkt/route] U, [deparsers] U
+    axon_fwdHop[1]
+        port: [deparsers] U
+    axon_fwdHop[2]
+        port: [deparsers] U
+    axon_fwdHop[3]
+        port: [deparsers] U
+    axon_fwdHop[4]
+        port: [deparsers] U
+    axon_fwdHop[5]
+        port: [deparsers] U
+    axon_fwdHop[6]
+        port: [deparsers] U
+    axon_fwdHop[7]
+        port: [deparsers] U
+    axon_fwdHop[8]
+        port: [deparsers] U
+    axon_fwdHop[9]
+        port: [deparsers] U
+    axon_fwdHop[10]
+        port: [deparsers] U
+    axon_fwdHop[11]
+        port: [deparsers] U
+    axon_fwdHop[12]
+        port: [deparsers] U
+    axon_fwdHop[13]
+        port: [deparsers] U
+    axon_fwdHop[14]
+        port: [deparsers] U
+    axon_fwdHop[15]
+        port: [deparsers] U
+    axon_fwdHop[16]
+        port: [deparsers] U
+    axon_fwdHop[17]
+        port: [deparsers] U
+    axon_fwdHop[18]
+        port: [deparsers] U
+    axon_fwdHop[19]
+        port: [deparsers] U
+    axon_fwdHop[20]
+        port: [deparsers] U
+    axon_fwdHop[21]
+        port: [deparsers] U
+    axon_fwdHop[22]
+        port: [deparsers] U
+    axon_fwdHop[23]
+        port: [deparsers] U
+    axon_fwdHop[24]
+        port: [deparsers] U
+    axon_fwdHop[25]
+        port: [deparsers] U
+    axon_fwdHop[26]
+        port: [deparsers] U
+    axon_fwdHop[27]
+        port: [deparsers] U
+    axon_fwdHop[28]
+        port: [deparsers] U
+    axon_fwdHop[29]
+        port: [deparsers] U
+    axon_fwdHop[30]
+        port: [deparsers] U
+    axon_fwdHop[31]
+        port: [deparsers] U
+    axon_fwdHop[32]
+        port: [deparsers] U
+    axon_fwdHop[33]
+        port: [deparsers] U
+    axon_fwdHop[34]
+        port: [deparsers] U
+    axon_fwdHop[35]
+        port: [deparsers] U
+    axon_fwdHop[36]
+        port: [deparsers] U
+    axon_fwdHop[37]
+        port: [deparsers] U
+    axon_fwdHop[38]
+        port: [deparsers] U
+    axon_fwdHop[39]
+        port: [deparsers] U
+    axon_fwdHop[40]
+        port: [deparsers] U
+    axon_fwdHop[41]
+        port: [deparsers] U
+    axon_fwdHop[42]
+        port: [deparsers] U
+    axon_fwdHop[43]
+        port: [deparsers] U
+    axon_fwdHop[44]
+        port: [deparsers] U
+    axon_fwdHop[45]
+        port: [deparsers] U
+    axon_fwdHop[46]
+        port: [deparsers] U
+    axon_fwdHop[47]
+        port: [deparsers] U
+    axon_fwdHop[48]
+        port: [deparsers] U
+    axon_fwdHop[49]
+        port: [deparsers] U
+    axon_fwdHop[50]
+        port: [deparsers] U
+    axon_fwdHop[51]
+        port: [deparsers] U
+    axon_fwdHop[52]
+        port: [deparsers] U
+    axon_fwdHop[53]
+        port: [deparsers] U
+    axon_fwdHop[54]
+        port: [deparsers] U
+    axon_fwdHop[55]
+        port: [deparsers] U
+    axon_fwdHop[56]
+        port: [deparsers] U
+    axon_fwdHop[57]
+        port: [deparsers] U
+    axon_fwdHop[58]
+        port: [deparsers] U
+    axon_fwdHop[59]
+        port: [deparsers] U
+    axon_fwdHop[60]
+        port: [deparsers] U
+    axon_fwdHop[61]
+        port: [deparsers] U
+    axon_fwdHop[62]
+        port: [deparsers] U
+    axon_fwdHop[63]
+        port: [deparsers] U
+    axon_revHop[0]
+        port: [ingress/route_pkt/route] D, [deparsers] U
+    axon_revHop[1]
+        port: [deparsers] U
+    axon_revHop[2]
+        port: [deparsers] U
+    axon_revHop[3]
+        port: [deparsers] U
+    axon_revHop[4]
+        port: [deparsers] U
+    axon_revHop[5]
+        port: [deparsers] U
+    axon_revHop[6]
+        port: [deparsers] U
+    axon_revHop[7]
+        port: [deparsers] U
+    axon_revHop[8]
+        port: [deparsers] U
+    axon_revHop[9]
+        port: [deparsers] U
+    axon_revHop[10]
+        port: [deparsers] U
+    axon_revHop[11]
+        port: [deparsers] U
+    axon_revHop[12]
+        port: [deparsers] U
+    axon_revHop[13]
+        port: [deparsers] U
+    axon_revHop[14]
+        port: [deparsers] U
+    axon_revHop[15]
+        port: [deparsers] U
+    axon_revHop[16]
+        port: [deparsers] U
+    axon_revHop[17]
+        port: [deparsers] U
+    axon_revHop[18]
+        port: [deparsers] U
+    axon_revHop[19]
+        port: [deparsers] U
+    axon_revHop[20]
+        port: [deparsers] U
+    axon_revHop[21]
+        port: [deparsers] U
+    axon_revHop[22]
+        port: [deparsers] U
+    axon_revHop[23]
+        port: [deparsers] U
+    axon_revHop[24]
+        port: [deparsers] U
+    axon_revHop[25]
+        port: [deparsers] U
+    axon_revHop[26]
+        port: [deparsers] U
+    axon_revHop[27]
+        port: [deparsers] U
+    axon_revHop[28]
+        port: [deparsers] U
+    axon_revHop[29]
+        port: [deparsers] U
+    axon_revHop[30]
+        port: [deparsers] U
+    axon_revHop[31]
+        port: [deparsers] U
+    axon_revHop[32]
+        port: [deparsers] U
+    axon_revHop[33]
+        port: [deparsers] U
+    axon_revHop[34]
+        port: [deparsers] U
+    axon_revHop[35]
+        port: [deparsers] U
+    axon_revHop[36]
+        port: [deparsers] U
+    axon_revHop[37]
+        port: [deparsers] U
+    axon_revHop[38]
+        port: [deparsers] U
+    axon_revHop[39]
+        port: [deparsers] U
+    axon_revHop[40]
+        port: [deparsers] U
+    axon_revHop[41]
+        port: [deparsers] U
+    axon_revHop[42]
+        port: [deparsers] U
+    axon_revHop[43]
+        port: [deparsers] U
+    axon_revHop[44]
+        port: [deparsers] U
+    axon_revHop[45]
+        port: [deparsers] U
+    axon_revHop[46]
+        port: [deparsers] U
+    axon_revHop[47]
+        port: [deparsers] U
+    axon_revHop[48]
+        port: [deparsers] U
+    axon_revHop[49]
+        port: [deparsers] U
+    axon_revHop[50]
+        port: [deparsers] U
+    axon_revHop[51]
+        port: [deparsers] U
+    axon_revHop[52]
+        port: [deparsers] U
+    axon_revHop[53]
+        port: [deparsers] U
+    axon_revHop[54]
+        port: [deparsers] U
+    axon_revHop[55]
+        port: [deparsers] U
+    axon_revHop[56]
+        port: [deparsers] U
+    axon_revHop[57]
+        port: [deparsers] U
+    axon_revHop[58]
+        port: [deparsers] U
+    axon_revHop[59]
+        port: [deparsers] U
+    axon_revHop[60]
+        port: [deparsers] U
+    axon_revHop[61]
+        port: [deparsers] U
+    axon_revHop[62]
+        port: [deparsers] U
+    axon_revHop[63]
+        port: [deparsers] U
+    my_metadata
+        fwdHopCount: [parsers/parse_head] D, [parsers/parse_next_fwdHop] U
+        revHopCount: [parsers/parse_head] D, [parsers/parse_next_revHop] U
+        headerLen: [parsers/parse_head] D, [ingress/node_2] U
+    _drop
+    NoAction
+    route
+
+0 -> parsers/start -> parsers/parse_head -> parsers/parse_next_fwdHop -> parsers/parse_next_revHop -> parsers/null -> ingress/node_2 -> ingress/route_pkt -> ingress/route_pkt/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp_0: [parsers/start] DU
+        tmp: [parsers/start] DU
+    standard_metadata
+        ingress_port: 
+        egress_spec: 
+        egress_port: 
+        clone_spec: 
+        instance_type: 
+        drop: 
+        recirculate_port: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        lf_field_list: 
+        mcast_grp: 
+        resubmit_flag: 
+        egress_rid: 
+        _padding: 
+    axon_head
+        preamble: [parsers/parse_head] D, [deparsers] U
+        axonType: [parsers/parse_head] D, [deparsers] U
+        axonLength: [parsers/parse_head] D, [ingress/node_2] U, [deparsers] U
+        fwdHopCount: [parsers/parse_head] DUUU, [deparsers] U
+        revHopCount: [parsers/parse_head] DUU, [deparsers] U
+        $valid$: [ingress/route_pkt] U, [deparsers] U
+    axon_fwdHop[0]
+        port: [deparsers] U
+    axon_fwdHop[1]
+        port: [deparsers] U
+    axon_fwdHop[2]
+        port: [deparsers] U
+    axon_fwdHop[3]
+        port: [deparsers] U
+    axon_fwdHop[4]
+        port: [deparsers] U
+    axon_fwdHop[5]
+        port: [deparsers] U
+    axon_fwdHop[6]
+        port: [deparsers] U
+    axon_fwdHop[7]
+        port: [deparsers] U
+    axon_fwdHop[8]
+        port: [deparsers] U
+    axon_fwdHop[9]
+        port: [deparsers] U
+    axon_fwdHop[10]
+        port: [deparsers] U
+    axon_fwdHop[11]
+        port: [deparsers] U
+    axon_fwdHop[12]
+        port: [deparsers] U
+    axon_fwdHop[13]
+        port: [deparsers] U
+    axon_fwdHop[14]
+        port: [deparsers] U
+    axon_fwdHop[15]
+        port: [deparsers] U
+    axon_fwdHop[16]
+        port: [deparsers] U
+    axon_fwdHop[17]
+        port: [deparsers] U
+    axon_fwdHop[18]
+        port: [deparsers] U
+    axon_fwdHop[19]
+        port: [deparsers] U
+    axon_fwdHop[20]
+        port: [deparsers] U
+    axon_fwdHop[21]
+        port: [deparsers] U
+    axon_fwdHop[22]
+        port: [deparsers] U
+    axon_fwdHop[23]
+        port: [deparsers] U
+    axon_fwdHop[24]
+        port: [deparsers] U
+    axon_fwdHop[25]
+        port: [deparsers] U
+    axon_fwdHop[26]
+        port: [deparsers] U
+    axon_fwdHop[27]
+        port: [deparsers] U
+    axon_fwdHop[28]
+        port: [deparsers] U
+    axon_fwdHop[29]
+        port: [deparsers] U
+    axon_fwdHop[30]
+        port: [deparsers] U
+    axon_fwdHop[31]
+        port: [deparsers] U
+    axon_fwdHop[32]
+        port: [deparsers] U
+    axon_fwdHop[33]
+        port: [deparsers] U
+    axon_fwdHop[34]
+        port: [deparsers] U
+    axon_fwdHop[35]
+        port: [deparsers] U
+    axon_fwdHop[36]
+        port: [deparsers] U
+    axon_fwdHop[37]
+        port: [deparsers] U
+    axon_fwdHop[38]
+        port: [deparsers] U
+    axon_fwdHop[39]
+        port: [deparsers] U
+    axon_fwdHop[40]
+        port: [deparsers] U
+    axon_fwdHop[41]
+        port: [deparsers] U
+    axon_fwdHop[42]
+        port: [deparsers] U
+    axon_fwdHop[43]
+        port: [deparsers] U
+    axon_fwdHop[44]
+        port: [deparsers] U
+    axon_fwdHop[45]
+        port: [deparsers] U
+    axon_fwdHop[46]
+        port: [deparsers] U
+    axon_fwdHop[47]
+        port: [deparsers] U
+    axon_fwdHop[48]
+        port: [deparsers] U
+    axon_fwdHop[49]
+        port: [deparsers] U
+    axon_fwdHop[50]
+        port: [deparsers] U
+    axon_fwdHop[51]
+        port: [deparsers] U
+    axon_fwdHop[52]
+        port: [deparsers] U
+    axon_fwdHop[53]
+        port: [deparsers] U
+    axon_fwdHop[54]
+        port: [deparsers] U
+    axon_fwdHop[55]
+        port: [deparsers] U
+    axon_fwdHop[56]
+        port: [deparsers] U
+    axon_fwdHop[57]
+        port: [deparsers] U
+    axon_fwdHop[58]
+        port: [deparsers] U
+    axon_fwdHop[59]
+        port: [deparsers] U
+    axon_fwdHop[60]
+        port: [deparsers] U
+    axon_fwdHop[61]
+        port: [deparsers] U
+    axon_fwdHop[62]
+        port: [deparsers] U
+    axon_fwdHop[63]
+        port: [deparsers] U
+    axon_revHop[0]
+        port: [deparsers] U
+    axon_revHop[1]
+        port: [deparsers] U
+    axon_revHop[2]
+        port: [deparsers] U
+    axon_revHop[3]
+        port: [deparsers] U
+    axon_revHop[4]
+        port: [deparsers] U
+    axon_revHop[5]
+        port: [deparsers] U
+    axon_revHop[6]
+        port: [deparsers] U
+    axon_revHop[7]
+        port: [deparsers] U
+    axon_revHop[8]
+        port: [deparsers] U
+    axon_revHop[9]
+        port: [deparsers] U
+    axon_revHop[10]
+        port: [deparsers] U
+    axon_revHop[11]
+        port: [deparsers] U
+    axon_revHop[12]
+        port: [deparsers] U
+    axon_revHop[13]
+        port: [deparsers] U
+    axon_revHop[14]
+        port: [deparsers] U
+    axon_revHop[15]
+        port: [deparsers] U
+    axon_revHop[16]
+        port: [deparsers] U
+    axon_revHop[17]
+        port: [deparsers] U
+    axon_revHop[18]
+        port: [deparsers] U
+    axon_revHop[19]
+        port: [deparsers] U
+    axon_revHop[20]
+        port: [deparsers] U
+    axon_revHop[21]
+        port: [deparsers] U
+    axon_revHop[22]
+        port: [deparsers] U
+    axon_revHop[23]
+        port: [deparsers] U
+    axon_revHop[24]
+        port: [deparsers] U
+    axon_revHop[25]
+        port: [deparsers] U
+    axon_revHop[26]
+        port: [deparsers] U
+    axon_revHop[27]
+        port: [deparsers] U
+    axon_revHop[28]
+        port: [deparsers] U
+    axon_revHop[29]
+        port: [deparsers] U
+    axon_revHop[30]
+        port: [deparsers] U
+    axon_revHop[31]
+        port: [deparsers] U
+    axon_revHop[32]
+        port: [deparsers] U
+    axon_revHop[33]
+        port: [deparsers] U
+    axon_revHop[34]
+        port: [deparsers] U
+    axon_revHop[35]
+        port: [deparsers] U
+    axon_revHop[36]
+        port: [deparsers] U
+    axon_revHop[37]
+        port: [deparsers] U
+    axon_revHop[38]
+        port: [deparsers] U
+    axon_revHop[39]
+        port: [deparsers] U
+    axon_revHop[40]
+        port: [deparsers] U
+    axon_revHop[41]
+        port: [deparsers] U
+    axon_revHop[42]
+        port: [deparsers] U
+    axon_revHop[43]
+        port: [deparsers] U
+    axon_revHop[44]
+        port: [deparsers] U
+    axon_revHop[45]
+        port: [deparsers] U
+    axon_revHop[46]
+        port: [deparsers] U
+    axon_revHop[47]
+        port: [deparsers] U
+    axon_revHop[48]
+        port: [deparsers] U
+    axon_revHop[49]
+        port: [deparsers] U
+    axon_revHop[50]
+        port: [deparsers] U
+    axon_revHop[51]
+        port: [deparsers] U
+    axon_revHop[52]
+        port: [deparsers] U
+    axon_revHop[53]
+        port: [deparsers] U
+    axon_revHop[54]
+        port: [deparsers] U
+    axon_revHop[55]
+        port: [deparsers] U
+    axon_revHop[56]
+        port: [deparsers] U
+    axon_revHop[57]
+        port: [deparsers] U
+    axon_revHop[58]
+        port: [deparsers] U
+    axon_revHop[59]
+        port: [deparsers] U
+    axon_revHop[60]
+        port: [deparsers] U
+    axon_revHop[61]
+        port: [deparsers] U
+    axon_revHop[62]
+        port: [deparsers] U
+    axon_revHop[63]
+        port: [deparsers] U
+    my_metadata
+        fwdHopCount: [parsers/parse_head] D, [parsers/parse_next_fwdHop] U
+        revHopCount: [parsers/parse_head] D, [parsers/parse_next_revHop] U
+        headerLen: [parsers/parse_head] D, [ingress/node_2] U
+    _drop
+    NoAction
+    route
+
+CYCLE: 0 -> parsers/start -> parsers/parse_head -> parsers/parse_next_fwdHop -> parsers/parse_next_revHop -> parsers/parse_revHop -> parsers/parse_next_revHop
+
+CYCLE: 0 -> parsers/start -> parsers/parse_head -> parsers/parse_next_fwdHop -> parsers/parse_fwdHop -> parsers/parse_next_fwdHop
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/drop_pkt -> ingress/drop_pkt/_drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp_0: [parsers/start] DU
+        tmp: [parsers/start] DU
+    standard_metadata
+        ingress_port: 
+        egress_spec: [ingress/drop_pkt/_drop] X
+        egress_port: 
+        clone_spec: 
+        instance_type: 
+        drop: 
+        recirculate_port: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        lf_field_list: 
+        mcast_grp: 
+        resubmit_flag: 
+        egress_rid: 
+        _padding: 
+    axon_head
+        preamble: [deparsers] U
+        axonType: [deparsers] U
+        axonLength: [ingress/node_2] U, [deparsers] U
+        fwdHopCount: [deparsers] U
+        revHopCount: [deparsers] U
+        $valid$: [deparsers] U
+    axon_fwdHop[0]
+        port: [deparsers] U
+    axon_fwdHop[1]
+        port: [deparsers] U
+    axon_fwdHop[2]
+        port: [deparsers] U
+    axon_fwdHop[3]
+        port: [deparsers] U
+    axon_fwdHop[4]
+        port: [deparsers] U
+    axon_fwdHop[5]
+        port: [deparsers] U
+    axon_fwdHop[6]
+        port: [deparsers] U
+    axon_fwdHop[7]
+        port: [deparsers] U
+    axon_fwdHop[8]
+        port: [deparsers] U
+    axon_fwdHop[9]
+        port: [deparsers] U
+    axon_fwdHop[10]
+        port: [deparsers] U
+    axon_fwdHop[11]
+        port: [deparsers] U
+    axon_fwdHop[12]
+        port: [deparsers] U
+    axon_fwdHop[13]
+        port: [deparsers] U
+    axon_fwdHop[14]
+        port: [deparsers] U
+    axon_fwdHop[15]
+        port: [deparsers] U
+    axon_fwdHop[16]
+        port: [deparsers] U
+    axon_fwdHop[17]
+        port: [deparsers] U
+    axon_fwdHop[18]
+        port: [deparsers] U
+    axon_fwdHop[19]
+        port: [deparsers] U
+    axon_fwdHop[20]
+        port: [deparsers] U
+    axon_fwdHop[21]
+        port: [deparsers] U
+    axon_fwdHop[22]
+        port: [deparsers] U
+    axon_fwdHop[23]
+        port: [deparsers] U
+    axon_fwdHop[24]
+        port: [deparsers] U
+    axon_fwdHop[25]
+        port: [deparsers] U
+    axon_fwdHop[26]
+        port: [deparsers] U
+    axon_fwdHop[27]
+        port: [deparsers] U
+    axon_fwdHop[28]
+        port: [deparsers] U
+    axon_fwdHop[29]
+        port: [deparsers] U
+    axon_fwdHop[30]
+        port: [deparsers] U
+    axon_fwdHop[31]
+        port: [deparsers] U
+    axon_fwdHop[32]
+        port: [deparsers] U
+    axon_fwdHop[33]
+        port: [deparsers] U
+    axon_fwdHop[34]
+        port: [deparsers] U
+    axon_fwdHop[35]
+        port: [deparsers] U
+    axon_fwdHop[36]
+        port: [deparsers] U
+    axon_fwdHop[37]
+        port: [deparsers] U
+    axon_fwdHop[38]
+        port: [deparsers] U
+    axon_fwdHop[39]
+        port: [deparsers] U
+    axon_fwdHop[40]
+        port: [deparsers] U
+    axon_fwdHop[41]
+        port: [deparsers] U
+    axon_fwdHop[42]
+        port: [deparsers] U
+    axon_fwdHop[43]
+        port: [deparsers] U
+    axon_fwdHop[44]
+        port: [deparsers] U
+    axon_fwdHop[45]
+        port: [deparsers] U
+    axon_fwdHop[46]
+        port: [deparsers] U
+    axon_fwdHop[47]
+        port: [deparsers] U
+    axon_fwdHop[48]
+        port: [deparsers] U
+    axon_fwdHop[49]
+        port: [deparsers] U
+    axon_fwdHop[50]
+        port: [deparsers] U
+    axon_fwdHop[51]
+        port: [deparsers] U
+    axon_fwdHop[52]
+        port: [deparsers] U
+    axon_fwdHop[53]
+        port: [deparsers] U
+    axon_fwdHop[54]
+        port: [deparsers] U
+    axon_fwdHop[55]
+        port: [deparsers] U
+    axon_fwdHop[56]
+        port: [deparsers] U
+    axon_fwdHop[57]
+        port: [deparsers] U
+    axon_fwdHop[58]
+        port: [deparsers] U
+    axon_fwdHop[59]
+        port: [deparsers] U
+    axon_fwdHop[60]
+        port: [deparsers] U
+    axon_fwdHop[61]
+        port: [deparsers] U
+    axon_fwdHop[62]
+        port: [deparsers] U
+    axon_fwdHop[63]
+        port: [deparsers] U
+    axon_revHop[0]
+        port: [deparsers] U
+    axon_revHop[1]
+        port: [deparsers] U
+    axon_revHop[2]
+        port: [deparsers] U
+    axon_revHop[3]
+        port: [deparsers] U
+    axon_revHop[4]
+        port: [deparsers] U
+    axon_revHop[5]
+        port: [deparsers] U
+    axon_revHop[6]
+        port: [deparsers] U
+    axon_revHop[7]
+        port: [deparsers] U
+    axon_revHop[8]
+        port: [deparsers] U
+    axon_revHop[9]
+        port: [deparsers] U
+    axon_revHop[10]
+        port: [deparsers] U
+    axon_revHop[11]
+        port: [deparsers] U
+    axon_revHop[12]
+        port: [deparsers] U
+    axon_revHop[13]
+        port: [deparsers] U
+    axon_revHop[14]
+        port: [deparsers] U
+    axon_revHop[15]
+        port: [deparsers] U
+    axon_revHop[16]
+        port: [deparsers] U
+    axon_revHop[17]
+        port: [deparsers] U
+    axon_revHop[18]
+        port: [deparsers] U
+    axon_revHop[19]
+        port: [deparsers] U
+    axon_revHop[20]
+        port: [deparsers] U
+    axon_revHop[21]
+        port: [deparsers] U
+    axon_revHop[22]
+        port: [deparsers] U
+    axon_revHop[23]
+        port: [deparsers] U
+    axon_revHop[24]
+        port: [deparsers] U
+    axon_revHop[25]
+        port: [deparsers] U
+    axon_revHop[26]
+        port: [deparsers] U
+    axon_revHop[27]
+        port: [deparsers] U
+    axon_revHop[28]
+        port: [deparsers] U
+    axon_revHop[29]
+        port: [deparsers] U
+    axon_revHop[30]
+        port: [deparsers] U
+    axon_revHop[31]
+        port: [deparsers] U
+    axon_revHop[32]
+        port: [deparsers] U
+    axon_revHop[33]
+        port: [deparsers] U
+    axon_revHop[34]
+        port: [deparsers] U
+    axon_revHop[35]
+        port: [deparsers] U
+    axon_revHop[36]
+        port: [deparsers] U
+    axon_revHop[37]
+        port: [deparsers] U
+    axon_revHop[38]
+        port: [deparsers] U
+    axon_revHop[39]
+        port: [deparsers] U
+    axon_revHop[40]
+        port: [deparsers] U
+    axon_revHop[41]
+        port: [deparsers] U
+    axon_revHop[42]
+        port: [deparsers] U
+    axon_revHop[43]
+        port: [deparsers] U
+    axon_revHop[44]
+        port: [deparsers] U
+    axon_revHop[45]
+        port: [deparsers] U
+    axon_revHop[46]
+        port: [deparsers] U
+    axon_revHop[47]
+        port: [deparsers] U
+    axon_revHop[48]
+        port: [deparsers] U
+    axon_revHop[49]
+        port: [deparsers] U
+    axon_revHop[50]
+        port: [deparsers] U
+    axon_revHop[51]
+        port: [deparsers] U
+    axon_revHop[52]
+        port: [deparsers] U
+    axon_revHop[53]
+        port: [deparsers] U
+    axon_revHop[54]
+        port: [deparsers] U
+    axon_revHop[55]
+        port: [deparsers] U
+    axon_revHop[56]
+        port: [deparsers] U
+    axon_revHop[57]
+        port: [deparsers] U
+    axon_revHop[58]
+        port: [deparsers] U
+    axon_revHop[59]
+        port: [deparsers] U
+    axon_revHop[60]
+        port: [deparsers] U
+    axon_revHop[61]
+        port: [deparsers] U
+    axon_revHop[62]
+        port: [deparsers] U
+    axon_revHop[63]
+        port: [deparsers] U
+    my_metadata
+        fwdHopCount: 
+        revHopCount: 
+        headerLen: [ingress/node_2] U
+    _drop
+    NoAction
+    route
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/drop_pkt -> ingress/drop_pkt/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp_0: [parsers/start] DU
+        tmp: [parsers/start] DU
+    standard_metadata
+        ingress_port: 
+        egress_spec: 
+        egress_port: 
+        clone_spec: 
+        instance_type: 
+        drop: 
+        recirculate_port: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        lf_field_list: 
+        mcast_grp: 
+        resubmit_flag: 
+        egress_rid: 
+        _padding: 
+    axon_head
+        preamble: [deparsers] U
+        axonType: [deparsers] U
+        axonLength: [ingress/node_2] U, [deparsers] U
+        fwdHopCount: [deparsers] U
+        revHopCount: [deparsers] U
+        $valid$: [deparsers] U
+    axon_fwdHop[0]
+        port: [deparsers] U
+    axon_fwdHop[1]
+        port: [deparsers] U
+    axon_fwdHop[2]
+        port: [deparsers] U
+    axon_fwdHop[3]
+        port: [deparsers] U
+    axon_fwdHop[4]
+        port: [deparsers] U
+    axon_fwdHop[5]
+        port: [deparsers] U
+    axon_fwdHop[6]
+        port: [deparsers] U
+    axon_fwdHop[7]
+        port: [deparsers] U
+    axon_fwdHop[8]
+        port: [deparsers] U
+    axon_fwdHop[9]
+        port: [deparsers] U
+    axon_fwdHop[10]
+        port: [deparsers] U
+    axon_fwdHop[11]
+        port: [deparsers] U
+    axon_fwdHop[12]
+        port: [deparsers] U
+    axon_fwdHop[13]
+        port: [deparsers] U
+    axon_fwdHop[14]
+        port: [deparsers] U
+    axon_fwdHop[15]
+        port: [deparsers] U
+    axon_fwdHop[16]
+        port: [deparsers] U
+    axon_fwdHop[17]
+        port: [deparsers] U
+    axon_fwdHop[18]
+        port: [deparsers] U
+    axon_fwdHop[19]
+        port: [deparsers] U
+    axon_fwdHop[20]
+        port: [deparsers] U
+    axon_fwdHop[21]
+        port: [deparsers] U
+    axon_fwdHop[22]
+        port: [deparsers] U
+    axon_fwdHop[23]
+        port: [deparsers] U
+    axon_fwdHop[24]
+        port: [deparsers] U
+    axon_fwdHop[25]
+        port: [deparsers] U
+    axon_fwdHop[26]
+        port: [deparsers] U
+    axon_fwdHop[27]
+        port: [deparsers] U
+    axon_fwdHop[28]
+        port: [deparsers] U
+    axon_fwdHop[29]
+        port: [deparsers] U
+    axon_fwdHop[30]
+        port: [deparsers] U
+    axon_fwdHop[31]
+        port: [deparsers] U
+    axon_fwdHop[32]
+        port: [deparsers] U
+    axon_fwdHop[33]
+        port: [deparsers] U
+    axon_fwdHop[34]
+        port: [deparsers] U
+    axon_fwdHop[35]
+        port: [deparsers] U
+    axon_fwdHop[36]
+        port: [deparsers] U
+    axon_fwdHop[37]
+        port: [deparsers] U
+    axon_fwdHop[38]
+        port: [deparsers] U
+    axon_fwdHop[39]
+        port: [deparsers] U
+    axon_fwdHop[40]
+        port: [deparsers] U
+    axon_fwdHop[41]
+        port: [deparsers] U
+    axon_fwdHop[42]
+        port: [deparsers] U
+    axon_fwdHop[43]
+        port: [deparsers] U
+    axon_fwdHop[44]
+        port: [deparsers] U
+    axon_fwdHop[45]
+        port: [deparsers] U
+    axon_fwdHop[46]
+        port: [deparsers] U
+    axon_fwdHop[47]
+        port: [deparsers] U
+    axon_fwdHop[48]
+        port: [deparsers] U
+    axon_fwdHop[49]
+        port: [deparsers] U
+    axon_fwdHop[50]
+        port: [deparsers] U
+    axon_fwdHop[51]
+        port: [deparsers] U
+    axon_fwdHop[52]
+        port: [deparsers] U
+    axon_fwdHop[53]
+        port: [deparsers] U
+    axon_fwdHop[54]
+        port: [deparsers] U
+    axon_fwdHop[55]
+        port: [deparsers] U
+    axon_fwdHop[56]
+        port: [deparsers] U
+    axon_fwdHop[57]
+        port: [deparsers] U
+    axon_fwdHop[58]
+        port: [deparsers] U
+    axon_fwdHop[59]
+        port: [deparsers] U
+    axon_fwdHop[60]
+        port: [deparsers] U
+    axon_fwdHop[61]
+        port: [deparsers] U
+    axon_fwdHop[62]
+        port: [deparsers] U
+    axon_fwdHop[63]
+        port: [deparsers] U
+    axon_revHop[0]
+        port: [deparsers] U
+    axon_revHop[1]
+        port: [deparsers] U
+    axon_revHop[2]
+        port: [deparsers] U
+    axon_revHop[3]
+        port: [deparsers] U
+    axon_revHop[4]
+        port: [deparsers] U
+    axon_revHop[5]
+        port: [deparsers] U
+    axon_revHop[6]
+        port: [deparsers] U
+    axon_revHop[7]
+        port: [deparsers] U
+    axon_revHop[8]
+        port: [deparsers] U
+    axon_revHop[9]
+        port: [deparsers] U
+    axon_revHop[10]
+        port: [deparsers] U
+    axon_revHop[11]
+        port: [deparsers] U
+    axon_revHop[12]
+        port: [deparsers] U
+    axon_revHop[13]
+        port: [deparsers] U
+    axon_revHop[14]
+        port: [deparsers] U
+    axon_revHop[15]
+        port: [deparsers] U
+    axon_revHop[16]
+        port: [deparsers] U
+    axon_revHop[17]
+        port: [deparsers] U
+    axon_revHop[18]
+        port: [deparsers] U
+    axon_revHop[19]
+        port: [deparsers] U
+    axon_revHop[20]
+        port: [deparsers] U
+    axon_revHop[21]
+        port: [deparsers] U
+    axon_revHop[22]
+        port: [deparsers] U
+    axon_revHop[23]
+        port: [deparsers] U
+    axon_revHop[24]
+        port: [deparsers] U
+    axon_revHop[25]
+        port: [deparsers] U
+    axon_revHop[26]
+        port: [deparsers] U
+    axon_revHop[27]
+        port: [deparsers] U
+    axon_revHop[28]
+        port: [deparsers] U
+    axon_revHop[29]
+        port: [deparsers] U
+    axon_revHop[30]
+        port: [deparsers] U
+    axon_revHop[31]
+        port: [deparsers] U
+    axon_revHop[32]
+        port: [deparsers] U
+    axon_revHop[33]
+        port: [deparsers] U
+    axon_revHop[34]
+        port: [deparsers] U
+    axon_revHop[35]
+        port: [deparsers] U
+    axon_revHop[36]
+        port: [deparsers] U
+    axon_revHop[37]
+        port: [deparsers] U
+    axon_revHop[38]
+        port: [deparsers] U
+    axon_revHop[39]
+        port: [deparsers] U
+    axon_revHop[40]
+        port: [deparsers] U
+    axon_revHop[41]
+        port: [deparsers] U
+    axon_revHop[42]
+        port: [deparsers] U
+    axon_revHop[43]
+        port: [deparsers] U
+    axon_revHop[44]
+        port: [deparsers] U
+    axon_revHop[45]
+        port: [deparsers] U
+    axon_revHop[46]
+        port: [deparsers] U
+    axon_revHop[47]
+        port: [deparsers] U
+    axon_revHop[48]
+        port: [deparsers] U
+    axon_revHop[49]
+        port: [deparsers] U
+    axon_revHop[50]
+        port: [deparsers] U
+    axon_revHop[51]
+        port: [deparsers] U
+    axon_revHop[52]
+        port: [deparsers] U
+    axon_revHop[53]
+        port: [deparsers] U
+    axon_revHop[54]
+        port: [deparsers] U
+    axon_revHop[55]
+        port: [deparsers] U
+    axon_revHop[56]
+        port: [deparsers] U
+    axon_revHop[57]
+        port: [deparsers] U
+    axon_revHop[58]
+        port: [deparsers] U
+    axon_revHop[59]
+        port: [deparsers] U
+    axon_revHop[60]
+        port: [deparsers] U
+    axon_revHop[61]
+        port: [deparsers] U
+    axon_revHop[62]
+        port: [deparsers] U
+    axon_revHop[63]
+        port: [deparsers] U
+    my_metadata
+        fwdHopCount: 
+        revHopCount: 
+        headerLen: [ingress/node_2] U
+    _drop
+    NoAction
+    route
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/route_pkt -> ingress/route_pkt/_drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp_0: [parsers/start] DU
+        tmp: [parsers/start] DU
+    standard_metadata
+        ingress_port: 
+        egress_spec: [ingress/route_pkt/_drop] X
+        egress_port: 
+        clone_spec: 
+        instance_type: 
+        drop: 
+        recirculate_port: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        lf_field_list: 
+        mcast_grp: 
+        resubmit_flag: 
+        egress_rid: 
+        _padding: 
+    axon_head
+        preamble: [deparsers] U
+        axonType: [deparsers] U
+        axonLength: [ingress/node_2] U, [deparsers] U
+        fwdHopCount: [deparsers] U
+        revHopCount: [deparsers] U
+        $valid$: [ingress/route_pkt] U, [deparsers] U
+    axon_fwdHop[0]
+        port: [deparsers] U
+    axon_fwdHop[1]
+        port: [deparsers] U
+    axon_fwdHop[2]
+        port: [deparsers] U
+    axon_fwdHop[3]
+        port: [deparsers] U
+    axon_fwdHop[4]
+        port: [deparsers] U
+    axon_fwdHop[5]
+        port: [deparsers] U
+    axon_fwdHop[6]
+        port: [deparsers] U
+    axon_fwdHop[7]
+        port: [deparsers] U
+    axon_fwdHop[8]
+        port: [deparsers] U
+    axon_fwdHop[9]
+        port: [deparsers] U
+    axon_fwdHop[10]
+        port: [deparsers] U
+    axon_fwdHop[11]
+        port: [deparsers] U
+    axon_fwdHop[12]
+        port: [deparsers] U
+    axon_fwdHop[13]
+        port: [deparsers] U
+    axon_fwdHop[14]
+        port: [deparsers] U
+    axon_fwdHop[15]
+        port: [deparsers] U
+    axon_fwdHop[16]
+        port: [deparsers] U
+    axon_fwdHop[17]
+        port: [deparsers] U
+    axon_fwdHop[18]
+        port: [deparsers] U
+    axon_fwdHop[19]
+        port: [deparsers] U
+    axon_fwdHop[20]
+        port: [deparsers] U
+    axon_fwdHop[21]
+        port: [deparsers] U
+    axon_fwdHop[22]
+        port: [deparsers] U
+    axon_fwdHop[23]
+        port: [deparsers] U
+    axon_fwdHop[24]
+        port: [deparsers] U
+    axon_fwdHop[25]
+        port: [deparsers] U
+    axon_fwdHop[26]
+        port: [deparsers] U
+    axon_fwdHop[27]
+        port: [deparsers] U
+    axon_fwdHop[28]
+        port: [deparsers] U
+    axon_fwdHop[29]
+        port: [deparsers] U
+    axon_fwdHop[30]
+        port: [deparsers] U
+    axon_fwdHop[31]
+        port: [deparsers] U
+    axon_fwdHop[32]
+        port: [deparsers] U
+    axon_fwdHop[33]
+        port: [deparsers] U
+    axon_fwdHop[34]
+        port: [deparsers] U
+    axon_fwdHop[35]
+        port: [deparsers] U
+    axon_fwdHop[36]
+        port: [deparsers] U
+    axon_fwdHop[37]
+        port: [deparsers] U
+    axon_fwdHop[38]
+        port: [deparsers] U
+    axon_fwdHop[39]
+        port: [deparsers] U
+    axon_fwdHop[40]
+        port: [deparsers] U
+    axon_fwdHop[41]
+        port: [deparsers] U
+    axon_fwdHop[42]
+        port: [deparsers] U
+    axon_fwdHop[43]
+        port: [deparsers] U
+    axon_fwdHop[44]
+        port: [deparsers] U
+    axon_fwdHop[45]
+        port: [deparsers] U
+    axon_fwdHop[46]
+        port: [deparsers] U
+    axon_fwdHop[47]
+        port: [deparsers] U
+    axon_fwdHop[48]
+        port: [deparsers] U
+    axon_fwdHop[49]
+        port: [deparsers] U
+    axon_fwdHop[50]
+        port: [deparsers] U
+    axon_fwdHop[51]
+        port: [deparsers] U
+    axon_fwdHop[52]
+        port: [deparsers] U
+    axon_fwdHop[53]
+        port: [deparsers] U
+    axon_fwdHop[54]
+        port: [deparsers] U
+    axon_fwdHop[55]
+        port: [deparsers] U
+    axon_fwdHop[56]
+        port: [deparsers] U
+    axon_fwdHop[57]
+        port: [deparsers] U
+    axon_fwdHop[58]
+        port: [deparsers] U
+    axon_fwdHop[59]
+        port: [deparsers] U
+    axon_fwdHop[60]
+        port: [deparsers] U
+    axon_fwdHop[61]
+        port: [deparsers] U
+    axon_fwdHop[62]
+        port: [deparsers] U
+    axon_fwdHop[63]
+        port: [deparsers] U
+    axon_revHop[0]
+        port: [deparsers] U
+    axon_revHop[1]
+        port: [deparsers] U
+    axon_revHop[2]
+        port: [deparsers] U
+    axon_revHop[3]
+        port: [deparsers] U
+    axon_revHop[4]
+        port: [deparsers] U
+    axon_revHop[5]
+        port: [deparsers] U
+    axon_revHop[6]
+        port: [deparsers] U
+    axon_revHop[7]
+        port: [deparsers] U
+    axon_revHop[8]
+        port: [deparsers] U
+    axon_revHop[9]
+        port: [deparsers] U
+    axon_revHop[10]
+        port: [deparsers] U
+    axon_revHop[11]
+        port: [deparsers] U
+    axon_revHop[12]
+        port: [deparsers] U
+    axon_revHop[13]
+        port: [deparsers] U
+    axon_revHop[14]
+        port: [deparsers] U
+    axon_revHop[15]
+        port: [deparsers] U
+    axon_revHop[16]
+        port: [deparsers] U
+    axon_revHop[17]
+        port: [deparsers] U
+    axon_revHop[18]
+        port: [deparsers] U
+    axon_revHop[19]
+        port: [deparsers] U
+    axon_revHop[20]
+        port: [deparsers] U
+    axon_revHop[21]
+        port: [deparsers] U
+    axon_revHop[22]
+        port: [deparsers] U
+    axon_revHop[23]
+        port: [deparsers] U
+    axon_revHop[24]
+        port: [deparsers] U
+    axon_revHop[25]
+        port: [deparsers] U
+    axon_revHop[26]
+        port: [deparsers] U
+    axon_revHop[27]
+        port: [deparsers] U
+    axon_revHop[28]
+        port: [deparsers] U
+    axon_revHop[29]
+        port: [deparsers] U
+    axon_revHop[30]
+        port: [deparsers] U
+    axon_revHop[31]
+        port: [deparsers] U
+    axon_revHop[32]
+        port: [deparsers] U
+    axon_revHop[33]
+        port: [deparsers] U
+    axon_revHop[34]
+        port: [deparsers] U
+    axon_revHop[35]
+        port: [deparsers] U
+    axon_revHop[36]
+        port: [deparsers] U
+    axon_revHop[37]
+        port: [deparsers] U
+    axon_revHop[38]
+        port: [deparsers] U
+    axon_revHop[39]
+        port: [deparsers] U
+    axon_revHop[40]
+        port: [deparsers] U
+    axon_revHop[41]
+        port: [deparsers] U
+    axon_revHop[42]
+        port: [deparsers] U
+    axon_revHop[43]
+        port: [deparsers] U
+    axon_revHop[44]
+        port: [deparsers] U
+    axon_revHop[45]
+        port: [deparsers] U
+    axon_revHop[46]
+        port: [deparsers] U
+    axon_revHop[47]
+        port: [deparsers] U
+    axon_revHop[48]
+        port: [deparsers] U
+    axon_revHop[49]
+        port: [deparsers] U
+    axon_revHop[50]
+        port: [deparsers] U
+    axon_revHop[51]
+        port: [deparsers] U
+    axon_revHop[52]
+        port: [deparsers] U
+    axon_revHop[53]
+        port: [deparsers] U
+    axon_revHop[54]
+        port: [deparsers] U
+    axon_revHop[55]
+        port: [deparsers] U
+    axon_revHop[56]
+        port: [deparsers] U
+    axon_revHop[57]
+        port: [deparsers] U
+    axon_revHop[58]
+        port: [deparsers] U
+    axon_revHop[59]
+        port: [deparsers] U
+    axon_revHop[60]
+        port: [deparsers] U
+    axon_revHop[61]
+        port: [deparsers] U
+    axon_revHop[62]
+        port: [deparsers] U
+    axon_revHop[63]
+        port: [deparsers] U
+    my_metadata
+        fwdHopCount: 
+        revHopCount: 
+        headerLen: [ingress/node_2] U
+    _drop
+    NoAction
+    route
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/route_pkt -> ingress/route_pkt/route -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp_0: [parsers/start] DU
+        tmp: [parsers/start] DU
+    standard_metadata
+        ingress_port: [ingress/route_pkt/route] U
+        egress_spec: [ingress/route_pkt/route] D
+        egress_port: 
+        clone_spec: 
+        instance_type: 
+        drop: 
+        recirculate_port: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        lf_field_list: 
+        mcast_grp: 
+        resubmit_flag: 
+        egress_rid: 
+        _padding: 
+    axon_head
+        preamble: [deparsers] U
+        axonType: [deparsers] U
+        axonLength: [ingress/node_2] U, [deparsers] U
+        fwdHopCount: [ingress/route_pkt/route] UD, [deparsers] U
+        revHopCount: [ingress/route_pkt/route] UD, [deparsers] U
+        $valid$: [ingress/route_pkt] U, [deparsers] U
+    axon_fwdHop[0]
+        port: [ingress/route_pkt/route] U, [deparsers] U
+    axon_fwdHop[1]
+        port: [deparsers] U
+    axon_fwdHop[2]
+        port: [deparsers] U
+    axon_fwdHop[3]
+        port: [deparsers] U
+    axon_fwdHop[4]
+        port: [deparsers] U
+    axon_fwdHop[5]
+        port: [deparsers] U
+    axon_fwdHop[6]
+        port: [deparsers] U
+    axon_fwdHop[7]
+        port: [deparsers] U
+    axon_fwdHop[8]
+        port: [deparsers] U
+    axon_fwdHop[9]
+        port: [deparsers] U
+    axon_fwdHop[10]
+        port: [deparsers] U
+    axon_fwdHop[11]
+        port: [deparsers] U
+    axon_fwdHop[12]
+        port: [deparsers] U
+    axon_fwdHop[13]
+        port: [deparsers] U
+    axon_fwdHop[14]
+        port: [deparsers] U
+    axon_fwdHop[15]
+        port: [deparsers] U
+    axon_fwdHop[16]
+        port: [deparsers] U
+    axon_fwdHop[17]
+        port: [deparsers] U
+    axon_fwdHop[18]
+        port: [deparsers] U
+    axon_fwdHop[19]
+        port: [deparsers] U
+    axon_fwdHop[20]
+        port: [deparsers] U
+    axon_fwdHop[21]
+        port: [deparsers] U
+    axon_fwdHop[22]
+        port: [deparsers] U
+    axon_fwdHop[23]
+        port: [deparsers] U
+    axon_fwdHop[24]
+        port: [deparsers] U
+    axon_fwdHop[25]
+        port: [deparsers] U
+    axon_fwdHop[26]
+        port: [deparsers] U
+    axon_fwdHop[27]
+        port: [deparsers] U
+    axon_fwdHop[28]
+        port: [deparsers] U
+    axon_fwdHop[29]
+        port: [deparsers] U
+    axon_fwdHop[30]
+        port: [deparsers] U
+    axon_fwdHop[31]
+        port: [deparsers] U
+    axon_fwdHop[32]
+        port: [deparsers] U
+    axon_fwdHop[33]
+        port: [deparsers] U
+    axon_fwdHop[34]
+        port: [deparsers] U
+    axon_fwdHop[35]
+        port: [deparsers] U
+    axon_fwdHop[36]
+        port: [deparsers] U
+    axon_fwdHop[37]
+        port: [deparsers] U
+    axon_fwdHop[38]
+        port: [deparsers] U
+    axon_fwdHop[39]
+        port: [deparsers] U
+    axon_fwdHop[40]
+        port: [deparsers] U
+    axon_fwdHop[41]
+        port: [deparsers] U
+    axon_fwdHop[42]
+        port: [deparsers] U
+    axon_fwdHop[43]
+        port: [deparsers] U
+    axon_fwdHop[44]
+        port: [deparsers] U
+    axon_fwdHop[45]
+        port: [deparsers] U
+    axon_fwdHop[46]
+        port: [deparsers] U
+    axon_fwdHop[47]
+        port: [deparsers] U
+    axon_fwdHop[48]
+        port: [deparsers] U
+    axon_fwdHop[49]
+        port: [deparsers] U
+    axon_fwdHop[50]
+        port: [deparsers] U
+    axon_fwdHop[51]
+        port: [deparsers] U
+    axon_fwdHop[52]
+        port: [deparsers] U
+    axon_fwdHop[53]
+        port: [deparsers] U
+    axon_fwdHop[54]
+        port: [deparsers] U
+    axon_fwdHop[55]
+        port: [deparsers] U
+    axon_fwdHop[56]
+        port: [deparsers] U
+    axon_fwdHop[57]
+        port: [deparsers] U
+    axon_fwdHop[58]
+        port: [deparsers] U
+    axon_fwdHop[59]
+        port: [deparsers] U
+    axon_fwdHop[60]
+        port: [deparsers] U
+    axon_fwdHop[61]
+        port: [deparsers] U
+    axon_fwdHop[62]
+        port: [deparsers] U
+    axon_fwdHop[63]
+        port: [deparsers] U
+    axon_revHop[0]
+        port: [ingress/route_pkt/route] D, [deparsers] U
+    axon_revHop[1]
+        port: [deparsers] U
+    axon_revHop[2]
+        port: [deparsers] U
+    axon_revHop[3]
+        port: [deparsers] U
+    axon_revHop[4]
+        port: [deparsers] U
+    axon_revHop[5]
+        port: [deparsers] U
+    axon_revHop[6]
+        port: [deparsers] U
+    axon_revHop[7]
+        port: [deparsers] U
+    axon_revHop[8]
+        port: [deparsers] U
+    axon_revHop[9]
+        port: [deparsers] U
+    axon_revHop[10]
+        port: [deparsers] U
+    axon_revHop[11]
+        port: [deparsers] U
+    axon_revHop[12]
+        port: [deparsers] U
+    axon_revHop[13]
+        port: [deparsers] U
+    axon_revHop[14]
+        port: [deparsers] U
+    axon_revHop[15]
+        port: [deparsers] U
+    axon_revHop[16]
+        port: [deparsers] U
+    axon_revHop[17]
+        port: [deparsers] U
+    axon_revHop[18]
+        port: [deparsers] U
+    axon_revHop[19]
+        port: [deparsers] U
+    axon_revHop[20]
+        port: [deparsers] U
+    axon_revHop[21]
+        port: [deparsers] U
+    axon_revHop[22]
+        port: [deparsers] U
+    axon_revHop[23]
+        port: [deparsers] U
+    axon_revHop[24]
+        port: [deparsers] U
+    axon_revHop[25]
+        port: [deparsers] U
+    axon_revHop[26]
+        port: [deparsers] U
+    axon_revHop[27]
+        port: [deparsers] U
+    axon_revHop[28]
+        port: [deparsers] U
+    axon_revHop[29]
+        port: [deparsers] U
+    axon_revHop[30]
+        port: [deparsers] U
+    axon_revHop[31]
+        port: [deparsers] U
+    axon_revHop[32]
+        port: [deparsers] U
+    axon_revHop[33]
+        port: [deparsers] U
+    axon_revHop[34]
+        port: [deparsers] U
+    axon_revHop[35]
+        port: [deparsers] U
+    axon_revHop[36]
+        port: [deparsers] U
+    axon_revHop[37]
+        port: [deparsers] U
+    axon_revHop[38]
+        port: [deparsers] U
+    axon_revHop[39]
+        port: [deparsers] U
+    axon_revHop[40]
+        port: [deparsers] U
+    axon_revHop[41]
+        port: [deparsers] U
+    axon_revHop[42]
+        port: [deparsers] U
+    axon_revHop[43]
+        port: [deparsers] U
+    axon_revHop[44]
+        port: [deparsers] U
+    axon_revHop[45]
+        port: [deparsers] U
+    axon_revHop[46]
+        port: [deparsers] U
+    axon_revHop[47]
+        port: [deparsers] U
+    axon_revHop[48]
+        port: [deparsers] U
+    axon_revHop[49]
+        port: [deparsers] U
+    axon_revHop[50]
+        port: [deparsers] U
+    axon_revHop[51]
+        port: [deparsers] U
+    axon_revHop[52]
+        port: [deparsers] U
+    axon_revHop[53]
+        port: [deparsers] U
+    axon_revHop[54]
+        port: [deparsers] U
+    axon_revHop[55]
+        port: [deparsers] U
+    axon_revHop[56]
+        port: [deparsers] U
+    axon_revHop[57]
+        port: [deparsers] U
+    axon_revHop[58]
+        port: [deparsers] U
+    axon_revHop[59]
+        port: [deparsers] U
+    axon_revHop[60]
+        port: [deparsers] U
+    axon_revHop[61]
+        port: [deparsers] U
+    axon_revHop[62]
+        port: [deparsers] U
+    axon_revHop[63]
+        port: [deparsers] U
+    my_metadata
+        fwdHopCount: 
+        revHopCount: 
+        headerLen: [ingress/node_2] U
+    _drop
+    NoAction
+    route
+
+0 -> parsers/start -> parsers/null -> ingress/node_2 -> ingress/route_pkt -> ingress/route_pkt/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp_0: [parsers/start] DU
+        tmp: [parsers/start] DU
+    standard_metadata
+        ingress_port: 
+        egress_spec: 
+        egress_port: 
+        clone_spec: 
+        instance_type: 
+        drop: 
+        recirculate_port: 
+        packet_length: 
+        enq_timestamp: 
+        enq_qdepth: 
+        deq_timedelta: 
+        deq_qdepth: 
+        ingress_global_timestamp: 
+        lf_field_list: 
+        mcast_grp: 
+        resubmit_flag: 
+        egress_rid: 
+        _padding: 
+    axon_head
+        preamble: [deparsers] U
+        axonType: [deparsers] U
+        axonLength: [ingress/node_2] U, [deparsers] U
+        fwdHopCount: [deparsers] U
+        revHopCount: [deparsers] U
+        $valid$: [ingress/route_pkt] U, [deparsers] U
+    axon_fwdHop[0]
+        port: [deparsers] U
+    axon_fwdHop[1]
+        port: [deparsers] U
+    axon_fwdHop[2]
+        port: [deparsers] U
+    axon_fwdHop[3]
+        port: [deparsers] U
+    axon_fwdHop[4]
+        port: [deparsers] U
+    axon_fwdHop[5]
+        port: [deparsers] U
+    axon_fwdHop[6]
+        port: [deparsers] U
+    axon_fwdHop[7]
+        port: [deparsers] U
+    axon_fwdHop[8]
+        port: [deparsers] U
+    axon_fwdHop[9]
+        port: [deparsers] U
+    axon_fwdHop[10]
+        port: [deparsers] U
+    axon_fwdHop[11]
+        port: [deparsers] U
+    axon_fwdHop[12]
+        port: [deparsers] U
+    axon_fwdHop[13]
+        port: [deparsers] U
+    axon_fwdHop[14]
+        port: [deparsers] U
+    axon_fwdHop[15]
+        port: [deparsers] U
+    axon_fwdHop[16]
+        port: [deparsers] U
+    axon_fwdHop[17]
+        port: [deparsers] U
+    axon_fwdHop[18]
+        port: [deparsers] U
+    axon_fwdHop[19]
+        port: [deparsers] U
+    axon_fwdHop[20]
+        port: [deparsers] U
+    axon_fwdHop[21]
+        port: [deparsers] U
+    axon_fwdHop[22]
+        port: [deparsers] U
+    axon_fwdHop[23]
+        port: [deparsers] U
+    axon_fwdHop[24]
+        port: [deparsers] U
+    axon_fwdHop[25]
+        port: [deparsers] U
+    axon_fwdHop[26]
+        port: [deparsers] U
+    axon_fwdHop[27]
+        port: [deparsers] U
+    axon_fwdHop[28]
+        port: [deparsers] U
+    axon_fwdHop[29]
+        port: [deparsers] U
+    axon_fwdHop[30]
+        port: [deparsers] U
+    axon_fwdHop[31]
+        port: [deparsers] U
+    axon_fwdHop[32]
+        port: [deparsers] U
+    axon_fwdHop[33]
+        port: [deparsers] U
+    axon_fwdHop[34]
+        port: [deparsers] U
+    axon_fwdHop[35]
+        port: [deparsers] U
+    axon_fwdHop[36]
+        port: [deparsers] U
+    axon_fwdHop[37]
+        port: [deparsers] U
+    axon_fwdHop[38]
+        port: [deparsers] U
+    axon_fwdHop[39]
+        port: [deparsers] U
+    axon_fwdHop[40]
+        port: [deparsers] U
+    axon_fwdHop[41]
+        port: [deparsers] U
+    axon_fwdHop[42]
+        port: [deparsers] U
+    axon_fwdHop[43]
+        port: [deparsers] U
+    axon_fwdHop[44]
+        port: [deparsers] U
+    axon_fwdHop[45]
+        port: [deparsers] U
+    axon_fwdHop[46]
+        port: [deparsers] U
+    axon_fwdHop[47]
+        port: [deparsers] U
+    axon_fwdHop[48]
+        port: [deparsers] U
+    axon_fwdHop[49]
+        port: [deparsers] U
+    axon_fwdHop[50]
+        port: [deparsers] U
+    axon_fwdHop[51]
+        port: [deparsers] U
+    axon_fwdHop[52]
+        port: [deparsers] U
+    axon_fwdHop[53]
+        port: [deparsers] U
+    axon_fwdHop[54]
+        port: [deparsers] U
+    axon_fwdHop[55]
+        port: [deparsers] U
+    axon_fwdHop[56]
+        port: [deparsers] U
+    axon_fwdHop[57]
+        port: [deparsers] U
+    axon_fwdHop[58]
+        port: [deparsers] U
+    axon_fwdHop[59]
+        port: [deparsers] U
+    axon_fwdHop[60]
+        port: [deparsers] U
+    axon_fwdHop[61]
+        port: [deparsers] U
+    axon_fwdHop[62]
+        port: [deparsers] U
+    axon_fwdHop[63]
+        port: [deparsers] U
+    axon_revHop[0]
+        port: [deparsers] U
+    axon_revHop[1]
+        port: [deparsers] U
+    axon_revHop[2]
+        port: [deparsers] U
+    axon_revHop[3]
+        port: [deparsers] U
+    axon_revHop[4]
+        port: [deparsers] U
+    axon_revHop[5]
+        port: [deparsers] U
+    axon_revHop[6]
+        port: [deparsers] U
+    axon_revHop[7]
+        port: [deparsers] U
+    axon_revHop[8]
+        port: [deparsers] U
+    axon_revHop[9]
+        port: [deparsers] U
+    axon_revHop[10]
+        port: [deparsers] U
+    axon_revHop[11]
+        port: [deparsers] U
+    axon_revHop[12]
+        port: [deparsers] U
+    axon_revHop[13]
+        port: [deparsers] U
+    axon_revHop[14]
+        port: [deparsers] U
+    axon_revHop[15]
+        port: [deparsers] U
+    axon_revHop[16]
+        port: [deparsers] U
+    axon_revHop[17]
+        port: [deparsers] U
+    axon_revHop[18]
+        port: [deparsers] U
+    axon_revHop[19]
+        port: [deparsers] U
+    axon_revHop[20]
+        port: [deparsers] U
+    axon_revHop[21]
+        port: [deparsers] U
+    axon_revHop[22]
+        port: [deparsers] U
+    axon_revHop[23]
+        port: [deparsers] U
+    axon_revHop[24]
+        port: [deparsers] U
+    axon_revHop[25]
+        port: [deparsers] U
+    axon_revHop[26]
+        port: [deparsers] U
+    axon_revHop[27]
+        port: [deparsers] U
+    axon_revHop[28]
+        port: [deparsers] U
+    axon_revHop[29]
+        port: [deparsers] U
+    axon_revHop[30]
+        port: [deparsers] U
+    axon_revHop[31]
+        port: [deparsers] U
+    axon_revHop[32]
+        port: [deparsers] U
+    axon_revHop[33]
+        port: [deparsers] U
+    axon_revHop[34]
+        port: [deparsers] U
+    axon_revHop[35]
+        port: [deparsers] U
+    axon_revHop[36]
+        port: [deparsers] U
+    axon_revHop[37]
+        port: [deparsers] U
+    axon_revHop[38]
+        port: [deparsers] U
+    axon_revHop[39]
+        port: [deparsers] U
+    axon_revHop[40]
+        port: [deparsers] U
+    axon_revHop[41]
+        port: [deparsers] U
+    axon_revHop[42]
+        port: [deparsers] U
+    axon_revHop[43]
+        port: [deparsers] U
+    axon_revHop[44]
+        port: [deparsers] U
+    axon_revHop[45]
+        port: [deparsers] U
+    axon_revHop[46]
+        port: [deparsers] U
+    axon_revHop[47]
+        port: [deparsers] U
+    axon_revHop[48]
+        port: [deparsers] U
+    axon_revHop[49]
+        port: [deparsers] U
+    axon_revHop[50]
+        port: [deparsers] U
+    axon_revHop[51]
+        port: [deparsers] U
+    axon_revHop[52]
+        port: [deparsers] U
+    axon_revHop[53]
+        port: [deparsers] U
+    axon_revHop[54]
+        port: [deparsers] U
+    axon_revHop[55]
+        port: [deparsers] U
+    axon_revHop[56]
+        port: [deparsers] U
+    axon_revHop[57]
+        port: [deparsers] U
+    axon_revHop[58]
+        port: [deparsers] U
+    axon_revHop[59]
+        port: [deparsers] U
+    axon_revHop[60]
+        port: [deparsers] U
+    axon_revHop[61]
+        port: [deparsers] U
+    axon_revHop[62]
+        port: [deparsers] U
+    axon_revHop[63]
+        port: [deparsers] U
+    my_metadata
+        fwdHopCount: 
+        revHopCount: 
+        headerLen: [ingress/node_2] U
+    _drop
+    NoAction
+    route

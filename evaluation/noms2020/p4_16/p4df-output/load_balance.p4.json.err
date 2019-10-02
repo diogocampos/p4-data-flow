@@ -1,0 +1,6 @@
+[ingress/MyIngress.ecmp_group/MyIngress.drop] not implemented: op == 'mark_to_drop'
+[ingress/MyIngress.ecmp_group/MyIngress.set_ecmp_select] not implemented: op == 'modify_field_with_hash_based_offset'
+[ingress/MyIngress.ecmp_nhop/MyIngress.drop] not implemented: op == 'mark_to_drop'
+[egress/MyEgress.send_frame/MyEgress.drop] not implemented: op == 'mark_to_drop'
+0.04user 0.00system 0:00.04elapsed 100%CPU (0avgtext+0avgdata 9776maxresident)k
+0inputs+144outputs (0major+1309minor)pagefaults 0swaps

@@ -1,0 +1,87 @@
+
+0 -> parsers/start -> parsers/parse_ethernet -> parsers/null -> ingress/t_ingress_1 -> ingress/t_ingress_1/_nop -> ingress/t_ingress_2 -> ingress/t_ingress_2/_nop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._mymeta_f10: UU
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DU
+
+0 -> parsers/start -> parsers/parse_ethernet -> parsers/null -> ingress/t_ingress_1 -> ingress/t_ingress_1/_nop -> ingress/t_ingress_2 -> ingress/t_ingress_2/_resubmit -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp: D
+        metadata._mymeta_f10: UUD
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DU
+
+0 -> parsers/start -> parsers/parse_ethernet -> parsers/null -> ingress/t_ingress_1 -> ingress/t_ingress_1/_nop -> ingress/t_ingress_2 -> ingress/t_ingress_2/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._mymeta_f10: UU
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DU
+
+0 -> parsers/start -> parsers/parse_ethernet -> parsers/null -> ingress/t_ingress_1 -> ingress/t_ingress_1/set_port -> ingress/t_ingress_2 -> ingress/t_ingress_2/_nop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._mymeta_f10: UU
+    standard_metadata
+        egress_spec: D
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DU
+    set_port
+        port: PU
+
+0 -> parsers/start -> parsers/parse_ethernet -> parsers/null -> ingress/t_ingress_1 -> ingress/t_ingress_1/set_port -> ingress/t_ingress_2 -> ingress/t_ingress_2/_resubmit -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp: D
+        metadata._mymeta_f10: UUD
+    standard_metadata
+        egress_spec: D
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DU
+    set_port
+        port: PU
+
+0 -> parsers/start -> parsers/parse_ethernet -> parsers/null -> ingress/t_ingress_1 -> ingress/t_ingress_1/set_port -> ingress/t_ingress_2 -> ingress/t_ingress_2/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._mymeta_f10: UU
+    standard_metadata
+        egress_spec: D
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DU
+    set_port
+        port: PU
+
+0 -> parsers/start -> parsers/parse_ethernet -> parsers/null -> ingress/t_ingress_1 -> ingress/t_ingress_1/NoAction -> ingress/t_ingress_2 -> ingress/t_ingress_2/_nop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._mymeta_f10: UU
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DU
+
+0 -> parsers/start -> parsers/parse_ethernet -> parsers/null -> ingress/t_ingress_1 -> ingress/t_ingress_1/NoAction -> ingress/t_ingress_2 -> ingress/t_ingress_2/_resubmit -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp: D
+        metadata._mymeta_f10: UUD
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DU
+
+0 -> parsers/start -> parsers/parse_ethernet -> parsers/null -> ingress/t_ingress_1 -> ingress/t_ingress_1/NoAction -> ingress/t_ingress_2 -> ingress/t_ingress_2/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._mymeta_f10: UU
+    ethernet
+        dstAddr: DU
+        srcAddr: DU
+        etherType: DU

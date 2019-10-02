@@ -1,0 +1,42 @@
+
+GRAPH
+0 -> 1
+1 -> 2 3
+2 -> 4 3
+3 -> 5
+4 -> 3
+5 -> 6 7
+6 -> 8 10 11 12 13 14
+7 -> 15
+8 -> 9
+9 -> 16
+10 -> 9
+11 -> 9
+12 -> 9
+13 -> 9
+14 -> 9
+15 -> 9
+16 -> 17
+17 -> 18
+18 -> 
+
+LEGEND
+0 = 0
+1 = parsers/start
+2 = parsers/check_p4calc
+3 = parsers/null
+4 = parsers/parse_p4calc
+5 = ingress/node_2
+6 = ingress/MyIngress.calculate
+7 = ingress/tbl_operation_drop
+8 = ingress/MyIngress.calculate/MyIngress.operation_add
+9 = ingress/null
+10 = ingress/MyIngress.calculate/MyIngress.operation_sub
+11 = ingress/MyIngress.calculate/MyIngress.operation_and
+12 = ingress/MyIngress.calculate/MyIngress.operation_or
+13 = ingress/MyIngress.calculate/MyIngress.operation_xor
+14 = ingress/MyIngress.calculate/MyIngress.operation_drop
+15 = ingress/tbl_operation_drop/MyIngress.operation_drop
+16 = egress/null
+17 = compute_checksum
+18 = deparsers

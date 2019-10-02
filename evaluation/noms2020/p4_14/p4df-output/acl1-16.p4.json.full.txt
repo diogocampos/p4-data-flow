@@ -1,0 +1,382 @@
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/nop -> ingress/node_3 -> ingress/drop_stats -> ingress/drop_stats/drop_stats_update -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp: D
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+        metadata._ingress_metadata_drop_reason21: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/nop -> ingress/node_3 -> ingress/drop_stats -> ingress/drop_stats/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/nop -> ingress/node_3 -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/redirect_to_cpu -> ingress/node_3 -> ingress/drop_stats -> ingress/drop_stats/drop_stats_update -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp: D
+        metadata._acl_metadata_if_label8: U
+        metadata._fabric_metadata_reason_code13: D
+        metadata._ingress_metadata_drop_flag20: U
+        metadata._ingress_metadata_drop_reason21: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+    redirect_to_cpu
+        reason_code: PU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/redirect_to_cpu -> ingress/node_3 -> ingress/drop_stats -> ingress/drop_stats/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._acl_metadata_if_label8: U
+        metadata._fabric_metadata_reason_code13: D
+        metadata._ingress_metadata_drop_flag20: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+    redirect_to_cpu
+        reason_code: PU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/redirect_to_cpu -> ingress/node_3 -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._acl_metadata_if_label8: U
+        metadata._fabric_metadata_reason_code13: D
+        metadata._ingress_metadata_drop_flag20: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+    redirect_to_cpu
+        reason_code: PU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/copy_to_cpu -> ingress/node_3 -> ingress/drop_stats -> ingress/drop_stats/drop_stats_update -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp: D
+        metadata._acl_metadata_if_label8: U
+        metadata._fabric_metadata_reason_code13: D
+        metadata._ingress_metadata_drop_flag20: U
+        metadata._ingress_metadata_drop_reason21: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+    copy_to_cpu
+        reason_code: PU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/copy_to_cpu -> ingress/node_3 -> ingress/drop_stats -> ingress/drop_stats/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._acl_metadata_if_label8: U
+        metadata._fabric_metadata_reason_code13: D
+        metadata._ingress_metadata_drop_flag20: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+    copy_to_cpu
+        reason_code: PU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/copy_to_cpu -> ingress/node_3 -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._acl_metadata_if_label8: U
+        metadata._fabric_metadata_reason_code13: D
+        metadata._ingress_metadata_drop_flag20: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+    copy_to_cpu
+        reason_code: PU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/drop_packet -> ingress/node_3 -> ingress/drop_stats -> ingress/drop_stats/drop_stats_update -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp: D
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+        metadata._ingress_metadata_drop_reason21: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/drop_packet -> ingress/node_3 -> ingress/drop_stats -> ingress/drop_stats/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/drop_packet -> ingress/node_3 -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/drop_packet_with_reason -> ingress/node_3 -> ingress/drop_stats -> ingress/drop_stats/drop_stats_update -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp: D
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+        metadata._ingress_metadata_drop_reason21: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+    drop_packet_with_reason
+        drop_reason: P
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/drop_packet_with_reason -> ingress/node_3 -> ingress/drop_stats -> ingress/drop_stats/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+    drop_packet_with_reason
+        drop_reason: P
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/drop_packet_with_reason -> ingress/node_3 -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+    drop_packet_with_reason
+        drop_reason: P
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/negative_mirror -> ingress/node_3 -> ingress/drop_stats -> ingress/drop_stats/drop_stats_update -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp: D
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+        metadata._ingress_metadata_drop_reason21: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+    negative_mirror
+        session_id: P
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/negative_mirror -> ingress/node_3 -> ingress/drop_stats -> ingress/drop_stats/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+    negative_mirror
+        session_id: P
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/negative_mirror -> ingress/node_3 -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+    negative_mirror
+        session_id: P
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/congestion_mirror_set -> ingress/node_3 -> ingress/drop_stats -> ingress/drop_stats/drop_stats_update -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp: D
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+        metadata._ingress_metadata_drop_reason21: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/congestion_mirror_set -> ingress/node_3 -> ingress/drop_stats -> ingress/drop_stats/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/congestion_mirror_set -> ingress/node_3 -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/NoAction -> ingress/node_3 -> ingress/drop_stats -> ingress/drop_stats/drop_stats_update -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        tmp: D
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+        metadata._ingress_metadata_drop_reason21: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/NoAction -> ingress/node_3 -> ingress/drop_stats -> ingress/drop_stats/NoAction -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU
+
+0 -> parsers/start -> parsers/null -> ingress/system_acl -> ingress/system_acl/NoAction -> ingress/node_3 -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._acl_metadata_if_label8: U
+        metadata._ingress_metadata_drop_flag20: U
+    data
+        f1: DU
+        f2: DU
+        f3: DU
+        f4: DU
+        b1: DU
+        b2: DU
+        b3: DU
+        b4: DU

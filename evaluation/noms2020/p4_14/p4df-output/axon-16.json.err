@@ -1,0 +1,6 @@
+[parsers/parse_fwdHop] not implemented: type == 'stack'
+[parsers/parse_revHop] not implemented: type == 'stack'
+[ingress/route_pkt/route] not implemented: op == 'pop'
+[ingress/route_pkt/route] not implemented: op == 'push'
+0.03user 0.00system 0:00.03elapsed 100%CPU (0avgtext+0avgdata 10704maxresident)k
+0inputs+112outputs (0major+1588minor)pagefaults 0swaps

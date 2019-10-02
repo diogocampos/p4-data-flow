@@ -1,8 +1,0 @@
-
-CYCLE: 0 -> parsers/start -> parsers/parse_ethernet -> parsers/parse_ipv4 -> parsers/parse_ipv4_options -> parsers/parse_ipv4_option_EOL -> parsers/parse_ipv4_options
-
-CYCLE: 0 -> parsers/start -> parsers/parse_ethernet -> parsers/parse_ipv4 -> parsers/parse_ipv4_options -> parsers/parse_ipv4_option_NOP -> parsers/parse_ipv4_options
-
-CYCLE: 0 -> parsers/start -> parsers/parse_ethernet -> parsers/parse_ipv4 -> parsers/parse_ipv4_options -> parsers/parse_ipv4_option_security -> parsers/parse_ipv4_options
-
-CYCLE: 0 -> parsers/start -> parsers/parse_ethernet -> parsers/parse_ipv4 -> parsers/parse_ipv4_options -> parsers/parse_ipv4_option_timestamp -> parsers/parse_ipv4_options

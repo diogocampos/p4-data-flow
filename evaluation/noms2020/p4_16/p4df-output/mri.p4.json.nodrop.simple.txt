@@ -1,0 +1,856 @@
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/MyIngress.ipv4_forward -> ingress/null -> egress/node_6 -> egress/MyEgress.swtrace -> egress/MyEgress.swtrace/MyEgress.add_swtrace -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._parser_metadata_remaining1: D
+    standard_metadata
+        egress_spec: D
+        deq_qdepth: U
+    ethernet
+        srcAddr: DDU
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/MyIngress.ipv4_forward -> ingress/null -> egress/node_6 -> egress/MyEgress.swtrace -> egress/MyEgress.swtrace/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._parser_metadata_remaining1: D
+    standard_metadata
+        egress_spec: D
+    ethernet
+        srcAddr: DDU
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[0]
+        swid: U
+        qdepth: U
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/MyIngress.ipv4_forward -> ingress/null -> egress/node_6 -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._parser_metadata_remaining1: D
+    standard_metadata
+        egress_spec: D
+    ethernet
+        srcAddr: DDU
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[0]
+        swid: U
+        qdepth: U
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/MyIngress.drop -> ingress/null -> egress/node_6 -> egress/MyEgress.swtrace -> egress/MyEgress.swtrace/MyEgress.add_swtrace -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._parser_metadata_remaining1: D
+    standard_metadata
+        deq_qdepth: U
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/MyIngress.drop -> ingress/null -> egress/node_6 -> egress/MyEgress.swtrace -> egress/MyEgress.swtrace/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._parser_metadata_remaining1: D
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[0]
+        swid: U
+        qdepth: U
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/MyIngress.drop -> ingress/null -> egress/node_6 -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._parser_metadata_remaining1: D
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[0]
+        swid: U
+        qdepth: U
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/NoAction -> ingress/null -> egress/node_6 -> egress/MyEgress.swtrace -> egress/MyEgress.swtrace/MyEgress.add_swtrace -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._parser_metadata_remaining1: D
+    standard_metadata
+        deq_qdepth: U
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/NoAction -> ingress/null -> egress/node_6 -> egress/MyEgress.swtrace -> egress/MyEgress.swtrace/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._parser_metadata_remaining1: D
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[0]
+        swid: U
+        qdepth: U
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/NoAction -> ingress/null -> egress/node_6 -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._parser_metadata_remaining1: D
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[0]
+        swid: U
+        qdepth: U
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/null -> ingress/node_2 -> ingress/null -> egress/node_6 -> egress/MyEgress.swtrace -> egress/MyEgress.swtrace/MyEgress.add_swtrace -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._parser_metadata_remaining1: D
+    standard_metadata
+        deq_qdepth: U
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/null -> ingress/node_2 -> ingress/null -> egress/node_6 -> egress/MyEgress.swtrace -> egress/MyEgress.swtrace/NoAction -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._parser_metadata_remaining1: D
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[0]
+        swid: U
+        qdepth: U
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/null -> ingress/node_2 -> ingress/null -> egress/node_6 -> egress/null -> compute_checksum -> deparsers
+    scalars
+        metadata._parser_metadata_remaining1: D
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[0]
+        swid: U
+        qdepth: U
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/parse_swtrace -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/MyIngress.ipv4_forward -> ingress/null -> egress/node_6 -> egress/MyEgress.swtrace -> egress/MyEgress.swtrace/MyEgress.add_swtrace -> egress/null -> compute_checksum -> deparsers
+    standard_metadata
+        egress_spec: D
+        deq_qdepth: U
+    ethernet
+        srcAddr: DDU
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/parse_swtrace -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/MyIngress.ipv4_forward -> ingress/null -> egress/node_6 -> egress/MyEgress.swtrace -> egress/MyEgress.swtrace/NoAction -> egress/null -> compute_checksum -> deparsers
+    standard_metadata
+        egress_spec: D
+    ethernet
+        srcAddr: DDU
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[0]
+        swid: U
+        qdepth: U
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/parse_swtrace -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/MyIngress.ipv4_forward -> ingress/null -> egress/node_6 -> egress/null -> compute_checksum -> deparsers
+    standard_metadata
+        egress_spec: D
+    ethernet
+        srcAddr: DDU
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[0]
+        swid: U
+        qdepth: U
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/parse_swtrace -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/MyIngress.drop -> ingress/null -> egress/node_6 -> egress/MyEgress.swtrace -> egress/MyEgress.swtrace/MyEgress.add_swtrace -> egress/null -> compute_checksum -> deparsers
+    standard_metadata
+        deq_qdepth: U
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/parse_swtrace -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/MyIngress.drop -> ingress/null -> egress/node_6 -> egress/MyEgress.swtrace -> egress/MyEgress.swtrace/NoAction -> egress/null -> compute_checksum -> deparsers
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[0]
+        swid: U
+        qdepth: U
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/parse_swtrace -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/MyIngress.drop -> ingress/null -> egress/node_6 -> egress/null -> compute_checksum -> deparsers
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[0]
+        swid: U
+        qdepth: U
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/parse_swtrace -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/NoAction -> ingress/null -> egress/node_6 -> egress/MyEgress.swtrace -> egress/MyEgress.swtrace/MyEgress.add_swtrace -> egress/null -> compute_checksum -> deparsers
+    standard_metadata
+        deq_qdepth: U
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/parse_swtrace -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/NoAction -> ingress/null -> egress/node_6 -> egress/MyEgress.swtrace -> egress/MyEgress.swtrace/NoAction -> egress/null -> compute_checksum -> deparsers
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[0]
+        swid: U
+        qdepth: U
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/parse_swtrace -> parsers/null -> ingress/node_2 -> ingress/MyIngress.ipv4_lpm -> ingress/MyIngress.ipv4_lpm/NoAction -> ingress/null -> egress/node_6 -> egress/null -> compute_checksum -> deparsers
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[0]
+        swid: U
+        qdepth: U
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/parse_swtrace -> parsers/null -> ingress/node_2 -> ingress/null -> egress/node_6 -> egress/MyEgress.swtrace -> egress/MyEgress.swtrace/MyEgress.add_swtrace -> egress/null -> compute_checksum -> deparsers
+    standard_metadata
+        deq_qdepth: U
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/parse_swtrace -> parsers/null -> ingress/node_2 -> ingress/null -> egress/node_6 -> egress/MyEgress.swtrace -> egress/MyEgress.swtrace/NoAction -> egress/null -> compute_checksum -> deparsers
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[0]
+        swid: U
+        qdepth: U
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/parse_swtrace -> parsers/null -> ingress/node_2 -> ingress/null -> egress/node_6 -> egress/null -> compute_checksum -> deparsers
+    ipv4
+        hdrChecksum: DDU
+        $valid$: UU
+    mri
+        $valid$: UU
+    swtraces[0]
+        swid: U
+        qdepth: U
+    swtraces[1]
+        swid: U
+        qdepth: U
+    swtraces[2]
+        swid: U
+        qdepth: U
+    swtraces[3]
+        swid: U
+        qdepth: U
+    swtraces[4]
+        swid: U
+        qdepth: U
+    swtraces[5]
+        swid: U
+        qdepth: U
+    swtraces[6]
+        swid: U
+        qdepth: U
+    swtraces[7]
+        swid: U
+        qdepth: U
+    swtraces[8]
+        swid: U
+        qdepth: U
+
+CYCLE: 0 -> parsers/start -> parsers/parse_ipv4 -> parsers/parse_ipv4_option -> parsers/parse_mri -> parsers/parse_swtrace -> parsers/parse_swtrace

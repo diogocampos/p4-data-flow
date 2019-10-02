@@ -1,0 +1,216 @@
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_add -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_0
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_1
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    standard_metadata
+        ingress_port: U
+        egress_spec: D
+    p4calc
+        res: DDU
+        $valid$: UU
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_sub -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_0
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_1
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    standard_metadata
+        ingress_port: U
+        egress_spec: D
+    p4calc
+        res: DDU
+        $valid$: UU
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_and -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_0
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_1
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    standard_metadata
+        ingress_port: U
+        egress_spec: D
+    p4calc
+        res: DDU
+        $valid$: UU
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_or -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_0
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_1
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    standard_metadata
+        ingress_port: U
+        egress_spec: D
+    p4calc
+        res: DDU
+        $valid$: UU
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_xor -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_0
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_1
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    standard_metadata
+        ingress_port: U
+        egress_spec: D
+    p4calc
+        res: DDU
+        $valid$: UU
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/MyIngress.calculate -> ingress/MyIngress.calculate/MyIngress.operation_drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_0
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_1
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    p4calc
+        $valid$: UU
+
+0 -> parsers/start -> parsers/check_p4calc -> parsers/parse_p4calc -> parsers/null -> ingress/node_2 -> ingress/tbl_operation_drop -> ingress/tbl_operation_drop/MyIngress.operation_drop -> ingress/null -> egress/null -> compute_checksum -> deparsers
+    tmp
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_0
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    tmp_1
+        p: D
+        four: D
+        ver: D
+        op: D
+        operand_a: D
+        operand_b: D
+        res: D
+    p4calc
+        $valid$: UU

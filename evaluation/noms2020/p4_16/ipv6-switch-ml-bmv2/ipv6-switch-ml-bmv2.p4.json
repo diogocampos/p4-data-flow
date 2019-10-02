@@ -1,0 +1,932 @@
+{
+  "header_types" : [
+    {
+      "name" : "scalars_0",
+      "id" : 0,
+      "fields" : [
+        ["key_0", 1, false],
+        ["metadata_t._ingress_port0", 9, false],
+        ["metadata_t._egress_port1", 9, false],
+        ["metadata_t._tcp_length2", 16, false],
+        ["metadata_t._cast_length3", 32, false],
+        ["metadata_t._do_cksum4", 1, false],
+        ["metadata_t._l2_metadata_lkp_mac_sa5", 48, false],
+        ["metadata_t._l2_metadata_lkp_mac_da6", 48, false],
+        ["metadata_t._l2_metadata_lkp_pkt_type7", 3, false],
+        ["metadata_t._l2_metadata_lkp_mac_type8", 16, false],
+        ["metadata_t._l2_metadata_lkp_pcp9", 3, false],
+        ["metadata_t._l2_metadata_l2_nexthop10", 16, false],
+        ["metadata_t._l2_metadata_l2_nexthop_type11", 2, false],
+        ["metadata_t._l2_metadata_l2_redirect12", 1, false],
+        ["metadata_t._l2_metadata_l2_src_miss13", 1, false],
+        ["metadata_t._l2_metadata_l2_src_move14", 16, false],
+        ["metadata_t._l2_metadata_stp_group15", 10, false],
+        ["metadata_t._l2_metadata_stp_state16", 3, false],
+        ["metadata_t._l2_metadata_bd_stats_idx17", 16, false],
+        ["metadata_t._l2_metadata_learning_enabled18", 1, false],
+        ["metadata_t._l2_metadata_port_vlan_mapping_miss19", 1, false],
+        ["metadata_t._l2_metadata_same_if_check20", 16, false],
+        ["metadata_t._l3_metadata_lkp_ip_type21", 2, false],
+        ["metadata_t._l3_metadata_lkp_ip_version22", 4, false],
+        ["metadata_t._l3_metadata_lkp_ip_proto23", 8, false],
+        ["metadata_t._l3_metadata_lkp_dscp24", 8, false],
+        ["metadata_t._l3_metadata_lkp_ip_ttl25", 8, false],
+        ["metadata_t._l3_metadata_lkp_l4_sport26", 16, false],
+        ["metadata_t._l3_metadata_lkp_l4_dport27", 16, false],
+        ["metadata_t._l3_metadata_lkp_outer_l4_sport28", 16, false],
+        ["metadata_t._l3_metadata_lkp_outer_l4_dport29", 16, false],
+        ["metadata_t._l3_metadata_vrf30", 16, false],
+        ["metadata_t._l3_metadata_rmac_group31", 10, false],
+        ["metadata_t._l3_metadata_rmac_hit32", 1, false],
+        ["metadata_t._l3_metadata_urpf_mode33", 2, false],
+        ["metadata_t._l3_metadata_urpf_hit34", 1, false],
+        ["metadata_t._l3_metadata_urpf_check_fail35", 1, false],
+        ["metadata_t._l3_metadata_urpf_bd_group36", 16, false],
+        ["metadata_t._l3_metadata_fib_hit37", 1, false],
+        ["metadata_t._l3_metadata_fib_nexthop38", 16, false],
+        ["metadata_t._l3_metadata_fib_nexthop_type39", 2, false],
+        ["metadata_t._l3_metadata_same_bd_check40", 16, false],
+        ["metadata_t._l3_metadata_nexthop_index41", 16, false],
+        ["metadata_t._l3_metadata_routed42", 1, false],
+        ["metadata_t._l3_metadata_outer_routed43", 1, false],
+        ["metadata_t._l3_metadata_mtu_index44", 8, false],
+        ["metadata_t._l3_metadata_l3_copy45", 1, false],
+        ["metadata_t._l3_metadata_l3_mtu_check46", 16, false],
+        ["metadata_t._l3_metadata_egress_l4_sport47", 16, false],
+        ["metadata_t._l3_metadata_egress_l4_dport48", 16, false],
+        ["metadata_t._ipv6_metadata_lkp_ipv6_sa49", 128, false],
+        ["metadata_t._ipv6_metadata_lkp_ipv6_da50", 128, false],
+        ["metadata_t._ipv6_metadata_ipv6_unicast_enabled51", 1, false],
+        ["metadata_t._ipv6_metadata_ipv6_src_is_link_local52", 1, false],
+        ["metadata_t._ipv6_metadata_ipv6_urpf_mode53", 2, false],
+        ["metadata_t._tunnel_metadata_ingress_tunnel_type54", 5, false],
+        ["metadata_t._tunnel_metadata_tunnel_vni55", 24, false],
+        ["metadata_t._tunnel_metadata_egress_tunnel_type56", 5, false],
+        ["metadata_t._tunnel_metadata_tunnel_index57", 14, false],
+        ["metadata_t._tunnel_metadata_tunnel_src_index58", 9, false],
+        ["metadata_t._tunnel_metadata_tunnel_smac_index59", 9, false],
+        ["metadata_t._tunnel_metadata_tunnel_dst_index60", 14, false],
+        ["metadata_t._tunnel_metadata_tunnel_dmac_index61", 14, false],
+        ["metadata_t._tunnel_metadata_vnid62", 24, false],
+        ["metadata_t._tunnel_metadata_tunnel_terminate63", 1, false],
+        ["metadata_t._tunnel_metadata_tunnel_if_check64", 1, false],
+        ["metadata_t._tunnel_metadata_egress_header_count65", 4, false],
+        ["metadata_t._tunnel_metadata_inner_ip_proto66", 8, false],
+        ["metadata_t._tunnel_metadata_skip_encap_inner67", 1, false],
+        ["metadata_t._fwd_l2ptr68", 32, false],
+        ["metadata_t._fwd_out_bd69", 24, false],
+        ["_padding_0", 7, false]
+      ]
+    },
+    {
+      "name" : "standard_metadata",
+      "id" : 1,
+      "fields" : [
+        ["ingress_port", 9, false],
+        ["egress_spec", 9, false],
+        ["egress_port", 9, false],
+        ["instance_type", 32, false],
+        ["packet_length", 32, false],
+        ["enq_timestamp", 32, false],
+        ["enq_qdepth", 19, false],
+        ["deq_timedelta", 32, false],
+        ["deq_qdepth", 19, false],
+        ["ingress_global_timestamp", 48, false],
+        ["egress_global_timestamp", 48, false],
+        ["mcast_grp", 16, false],
+        ["egress_rid", 16, false],
+        ["checksum_error", 1, false],
+        ["parser_error", 32, false],
+        ["priority", 3, false],
+        ["_padding", 3, false]
+      ]
+    },
+    {
+      "name" : "ethernet_t",
+      "id" : 2,
+      "fields" : [
+        ["dstAddr", 48, false],
+        ["srcAddr", 48, false],
+        ["etherType", 16, false]
+      ]
+    },
+    {
+      "name" : "icmp6_t",
+      "id" : 3,
+      "fields" : [
+        ["type", 8, false],
+        ["code", 8, false],
+        ["checksum", 16, false]
+      ]
+    },
+    {
+      "name" : "ipv6_t",
+      "id" : 4,
+      "fields" : [
+        ["version", 4, false],
+        ["traffic_class", 8, false],
+        ["flow_label", 20, false],
+        ["payload_length", 16, false],
+        ["nextHdr", 8, false],
+        ["hopLimit", 8, false],
+        ["srcAddr", 128, false],
+        ["dstAddr", 128, false]
+      ]
+    },
+    {
+      "name" : "tcp_t",
+      "id" : 5,
+      "fields" : [
+        ["srcPort", 16, false],
+        ["dstPort", 16, false],
+        ["seqNo", 32, true],
+        ["ackNo", 32, true],
+        ["data_offset", 4, false],
+        ["res", 4, false],
+        ["cwr", 1, false],
+        ["ece", 1, false],
+        ["urg", 1, false],
+        ["ack", 1, false],
+        ["psh", 1, false],
+        ["rst", 1, false],
+        ["syn", 1, false],
+        ["fin", 1, false],
+        ["window", 16, false],
+        ["checksum", 16, false],
+        ["urgentPtr", 16, false]
+      ]
+    },
+    {
+      "name" : "udp_t",
+      "id" : 6,
+      "fields" : [
+        ["srcPort", 16, false],
+        ["dstPort", 16, false],
+        ["length_", 16, false],
+        ["checksum", 16, false]
+      ]
+    }
+  ],
+  "headers" : [
+    {
+      "name" : "scalars",
+      "id" : 0,
+      "header_type" : "scalars_0",
+      "metadata" : true,
+      "pi_omit" : true
+    },
+    {
+      "name" : "standard_metadata",
+      "id" : 1,
+      "header_type" : "standard_metadata",
+      "metadata" : true,
+      "pi_omit" : true
+    },
+    {
+      "name" : "inner_ethernet",
+      "id" : 2,
+      "header_type" : "ethernet_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "inner_icmp6",
+      "id" : 3,
+      "header_type" : "icmp6_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "inner_ipv6",
+      "id" : 4,
+      "header_type" : "ipv6_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "inner_tcp",
+      "id" : 5,
+      "header_type" : "tcp_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "inner_udp",
+      "id" : 6,
+      "header_type" : "udp_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "ethernet",
+      "id" : 7,
+      "header_type" : "ethernet_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "icmp6",
+      "id" : 8,
+      "header_type" : "icmp6_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "ipv6",
+      "id" : 9,
+      "header_type" : "ipv6_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "tcp",
+      "id" : 10,
+      "header_type" : "tcp_t",
+      "metadata" : false,
+      "pi_omit" : true
+    },
+    {
+      "name" : "udp",
+      "id" : 11,
+      "header_type" : "udp_t",
+      "metadata" : false,
+      "pi_omit" : true
+    }
+  ],
+  "header_stacks" : [],
+  "header_union_types" : [],
+  "header_unions" : [],
+  "header_union_stacks" : [],
+  "field_lists" : [],
+  "errors" : [
+    ["NoError", 1],
+    ["PacketTooShort", 2],
+    ["NoMatch", 3],
+    ["StackOutOfBounds", 4],
+    ["HeaderTooShort", 5],
+    ["ParserTimeout", 6],
+    ["ParserInvalidArgument", 7]
+  ],
+  "enums" : [],
+  "parsers" : [
+    {
+      "name" : "parser",
+      "id" : 0,
+      "init_state" : "start",
+      "parse_states" : [
+        {
+          "name" : "start",
+          "id" : 0,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "ethernet"
+                }
+              ],
+              "op" : "extract"
+            }
+          ],
+          "transitions" : [
+            {
+              "type" : "hexstr",
+              "value" : "0x86dd",
+              "mask" : null,
+              "next_state" : "ipv6"
+            },
+            {
+              "value" : "default",
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : [
+            {
+              "type" : "field",
+              "value" : ["ethernet", "etherType"]
+            }
+          ]
+        },
+        {
+          "name" : "ipv6",
+          "id" : 1,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "ipv6"
+                }
+              ],
+              "op" : "extract"
+            }
+          ],
+          "transitions" : [
+            {
+              "type" : "hexstr",
+              "value" : "0x11",
+              "mask" : null,
+              "next_state" : "parse_udp"
+            },
+            {
+              "type" : "hexstr",
+              "value" : "0x3a",
+              "mask" : null,
+              "next_state" : "icmp6"
+            },
+            {
+              "value" : "default",
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : [
+            {
+              "type" : "field",
+              "value" : ["ipv6", "nextHdr"]
+            }
+          ]
+        },
+        {
+          "name" : "icmp6",
+          "id" : 2,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "icmp6"
+                }
+              ],
+              "op" : "extract"
+            }
+          ],
+          "transitions" : [
+            {
+              "value" : "default",
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : []
+        },
+        {
+          "name" : "parse_udp",
+          "id" : 3,
+          "parser_ops" : [
+            {
+              "parameters" : [
+                {
+                  "type" : "regular",
+                  "value" : "udp"
+                }
+              ],
+              "op" : "extract"
+            }
+          ],
+          "transitions" : [
+            {
+              "value" : "default",
+              "mask" : null,
+              "next_state" : null
+            }
+          ],
+          "transition_key" : []
+        }
+      ]
+    }
+  ],
+  "parse_vsets" : [],
+  "deparsers" : [
+    {
+      "name" : "deparser",
+      "id" : 0,
+      "source_info" : {
+        "filename" : "ipv6-switch-ml-bmv2.p4",
+        "line" : 113,
+        "column" : 8,
+        "source_fragment" : "MyDeparser"
+      },
+      "order" : ["ethernet", "ipv6", "icmp6", "udp"]
+    }
+  ],
+  "meter_arrays" : [],
+  "counter_arrays" : [],
+  "register_arrays" : [],
+  "calculations" : [],
+  "learn_lists" : [],
+  "actions" : [
+    {
+      "name" : "NoAction",
+      "id" : 0,
+      "runtime_data" : [],
+      "primitives" : []
+    },
+    {
+      "name" : "ingress.set_mcast_grp",
+      "id" : 1,
+      "runtime_data" : [
+        {
+          "name" : "mcast_grp",
+          "bitwidth" : 16
+        },
+        {
+          "name" : "port",
+          "bitwidth" : 9
+        }
+      ],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["standard_metadata", "mcast_grp"]
+            },
+            {
+              "type" : "runtime_data",
+              "value" : 0
+            }
+          ],
+          "source_info" : {
+            "filename" : "ipv6-switch-ml-bmv2.p4",
+            "line" : 61,
+            "column" : 8,
+            "source_fragment" : "standard_metadata.mcast_grp = mcast_grp"
+          }
+        },
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata_t._egress_port1"]
+            },
+            {
+              "type" : "runtime_data",
+              "value" : 1
+            }
+          ],
+          "source_info" : {
+            "filename" : "ipv6-switch-ml-bmv2.p4",
+            "line" : 62,
+            "column" : 1,
+            "source_fragment" : "meta.egress_port = port"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "act",
+      "id" : 2,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "key_0"]
+            },
+            {
+              "type" : "expression",
+              "value" : {
+                "type" : "expression",
+                "value" : {
+                  "op" : "b2d",
+                  "left" : null,
+                  "right" : {
+                    "type" : "expression",
+                    "value" : {
+                      "op" : "==",
+                      "left" : {
+                        "type" : "expression",
+                        "value" : {
+                          "op" : "&",
+                          "left" : {
+                            "type" : "expression",
+                            "value" : {
+                              "op" : "&",
+                              "left" : {
+                                "type" : "expression",
+                                "value" : {
+                                  "op" : "&",
+                                  "left" : {
+                                    "type" : "expression",
+                                    "value" : {
+                                      "op" : ">>",
+                                      "left" : {
+                                        "type" : "field",
+                                        "value" : ["ipv6", "dstAddr"]
+                                      },
+                                      "right" : {
+                                        "type" : "hexstr",
+                                        "value" : "0x78"
+                                      }
+                                    }
+                                  },
+                                  "right" : {
+                                    "type" : "hexstr",
+                                    "value" : "0xffffffffffffffffffffffffffffffff"
+                                  }
+                                }
+                              },
+                              "right" : {
+                                "type" : "hexstr",
+                                "value" : "0xff"
+                              }
+                            }
+                          },
+                          "right" : {
+                            "type" : "hexstr",
+                            "value" : "0xff"
+                          }
+                        }
+                      },
+                      "right" : {
+                        "type" : "hexstr",
+                        "value" : "0xff"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "source_info" : {
+            "filename" : "ipv6-switch-ml-bmv2.p4",
+            "line" : 66,
+            "column" : 13,
+            "source_fragment" : "hdr.ipv6.dstAddr[127:120] == 8w0xff"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "NoAction",
+      "id" : 3,
+      "runtime_data" : [],
+      "primitives" : []
+    },
+    {
+      "name" : "egress.set_out_bd",
+      "id" : 4,
+      "runtime_data" : [
+        {
+          "name" : "bd",
+          "bitwidth" : 24
+        }
+      ],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["scalars", "metadata_t._fwd_out_bd69"]
+            },
+            {
+              "type" : "runtime_data",
+              "value" : 0
+            }
+          ],
+          "source_info" : {
+            "filename" : "ipv6-switch-ml-bmv2.p4",
+            "line" : 81,
+            "column" : 8,
+            "source_fragment" : "meta.fwd.out_bd = bd"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "egress.drop",
+      "id" : 5,
+      "runtime_data" : [],
+      "primitives" : [
+        {
+          "op" : "mark_to_drop",
+          "parameters" : [
+            {
+              "type" : "header",
+              "value" : "standard_metadata"
+            }
+          ],
+          "source_info" : {
+            "filename" : "ipv6-switch-ml-bmv2.p4",
+            "line" : 92,
+            "column" : 8,
+            "source_fragment" : "mark_to_drop(standard_metadata)"
+          }
+        }
+      ]
+    },
+    {
+      "name" : "egress.rewrite_mac",
+      "id" : 6,
+      "runtime_data" : [
+        {
+          "name" : "smac",
+          "bitwidth" : 48
+        }
+      ],
+      "primitives" : [
+        {
+          "op" : "assign",
+          "parameters" : [
+            {
+              "type" : "field",
+              "value" : ["ethernet", "srcAddr"]
+            },
+            {
+              "type" : "runtime_data",
+              "value" : 0
+            }
+          ],
+          "source_info" : {
+            "filename" : "ipv6-switch-ml-bmv2.p4",
+            "line" : 95,
+            "column" : 8,
+            "source_fragment" : "hdr.ethernet.srcAddr = smac"
+          }
+        }
+      ]
+    }
+  ],
+  "pipelines" : [
+    {
+      "name" : "ingress",
+      "id" : 0,
+      "source_info" : {
+        "filename" : "ipv6-switch-ml-bmv2.p4",
+        "line" : 58,
+        "column" : 8,
+        "source_fragment" : "ingress"
+      },
+      "init_table" : "node_2",
+      "tables" : [
+        {
+          "name" : "tbl_act",
+          "id" : 0,
+          "source_info" : {
+            "filename" : "ipv6-switch-ml-bmv2.p4",
+            "line" : 66,
+            "column" : 13,
+            "source_fragment" : "hdr.ipv6.dstAddr[127:120] == 8w0xff"
+          },
+          "key" : [],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [2],
+          "actions" : ["act"],
+          "base_default_next" : "ingress.ipv6_tbl",
+          "next_tables" : {
+            "act" : "ingress.ipv6_tbl"
+          },
+          "default_entry" : {
+            "action_id" : 2,
+            "action_const" : true,
+            "action_data" : [],
+            "action_entry_const" : true
+          }
+        },
+        {
+          "name" : "ingress.ipv6_tbl",
+          "id" : 1,
+          "source_info" : {
+            "filename" : "ipv6-switch-ml-bmv2.p4",
+            "line" : 64,
+            "column" : 10,
+            "source_fragment" : "ipv6_tbl"
+          },
+          "key" : [
+            {
+              "match_type" : "exact",
+              "name" : "mcast_key",
+              "target" : ["scalars", "key_0"],
+              "mask" : null
+            }
+          ],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [1, 0],
+          "actions" : ["ingress.set_mcast_grp", "NoAction"],
+          "base_default_next" : null,
+          "next_tables" : {
+            "ingress.set_mcast_grp" : null,
+            "NoAction" : null
+          },
+          "default_entry" : {
+            "action_id" : 0,
+            "action_const" : false,
+            "action_data" : [],
+            "action_entry_const" : false
+          }
+        }
+      ],
+      "action_profiles" : [],
+      "conditionals" : [
+        {
+          "name" : "node_2",
+          "id" : 0,
+          "source_info" : {
+            "filename" : "ipv6-switch-ml-bmv2.p4",
+            "line" : 72,
+            "column" : 12,
+            "source_fragment" : "hdr.ipv6.isValid()"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "d2b",
+              "left" : null,
+              "right" : {
+                "type" : "field",
+                "value" : ["ipv6", "$valid$"]
+              }
+            }
+          },
+          "false_next" : null,
+          "true_next" : "tbl_act"
+        }
+      ]
+    },
+    {
+      "name" : "egress",
+      "id" : 1,
+      "source_info" : {
+        "filename" : "ipv6-switch-ml-bmv2.p4",
+        "line" : 78,
+        "column" : 8,
+        "source_fragment" : "egress"
+      },
+      "init_table" : "node_7",
+      "tables" : [
+        {
+          "name" : "egress.get_multicast_copy_out_bd",
+          "id" : 2,
+          "source_info" : {
+            "filename" : "ipv6-switch-ml-bmv2.p4",
+            "line" : 83,
+            "column" : 10,
+            "source_fragment" : "get_multicast_copy_out_bd"
+          },
+          "key" : [
+            {
+              "match_type" : "exact",
+              "name" : "standard_metadata.mcast_grp",
+              "target" : ["standard_metadata", "mcast_grp"],
+              "mask" : null
+            },
+            {
+              "match_type" : "exact",
+              "name" : "standard_metadata.egress_rid",
+              "target" : ["standard_metadata", "egress_rid"],
+              "mask" : null
+            }
+          ],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [4, 3],
+          "actions" : ["egress.set_out_bd", "NoAction"],
+          "base_default_next" : "egress.send_frame",
+          "next_tables" : {
+            "egress.set_out_bd" : "egress.send_frame",
+            "NoAction" : "egress.send_frame"
+          },
+          "default_entry" : {
+            "action_id" : 3,
+            "action_const" : false,
+            "action_data" : [],
+            "action_entry_const" : false
+          }
+        },
+        {
+          "name" : "egress.send_frame",
+          "id" : 3,
+          "source_info" : {
+            "filename" : "ipv6-switch-ml-bmv2.p4",
+            "line" : 97,
+            "column" : 10,
+            "source_fragment" : "send_frame"
+          },
+          "key" : [
+            {
+              "match_type" : "exact",
+              "name" : "meta.fwd.out_bd",
+              "target" : ["scalars", "metadata_t._fwd_out_bd69"],
+              "mask" : null
+            }
+          ],
+          "match_type" : "exact",
+          "type" : "simple",
+          "max_size" : 1024,
+          "with_counters" : false,
+          "support_timeout" : false,
+          "direct_meters" : null,
+          "action_ids" : [6, 5],
+          "actions" : ["egress.rewrite_mac", "egress.drop"],
+          "base_default_next" : null,
+          "next_tables" : {
+            "egress.rewrite_mac" : null,
+            "egress.drop" : null
+          },
+          "default_entry" : {
+            "action_id" : 5,
+            "action_const" : false,
+            "action_data" : [],
+            "action_entry_const" : false
+          }
+        }
+      ],
+      "action_profiles" : [],
+      "conditionals" : [
+        {
+          "name" : "node_7",
+          "id" : 1,
+          "source_info" : {
+            "filename" : "ipv6-switch-ml-bmv2.p4",
+            "line" : 106,
+            "column" : 13,
+            "source_fragment" : "standard_metadata.instance_type == BMV2_V1MODEL_INSTANCE_TYPE_REPLICATION"
+          },
+          "expression" : {
+            "type" : "expression",
+            "value" : {
+              "op" : "==",
+              "left" : {
+                "type" : "field",
+                "value" : ["standard_metadata", "instance_type"]
+              },
+              "right" : {
+                "type" : "hexstr",
+                "value" : "0x00000005"
+              }
+            }
+          },
+          "false_next" : null,
+          "true_next" : "egress.get_multicast_copy_out_bd"
+        }
+      ]
+    }
+  ],
+  "checksums" : [],
+  "force_arith" : [],
+  "extern_instances" : [],
+  "field_aliases" : [
+    [
+      "queueing_metadata.enq_timestamp",
+      ["standard_metadata", "enq_timestamp"]
+    ],
+    [
+      "queueing_metadata.enq_qdepth",
+      ["standard_metadata", "enq_qdepth"]
+    ],
+    [
+      "queueing_metadata.deq_timedelta",
+      ["standard_metadata", "deq_timedelta"]
+    ],
+    [
+      "queueing_metadata.deq_qdepth",
+      ["standard_metadata", "deq_qdepth"]
+    ],
+    [
+      "intrinsic_metadata.ingress_global_timestamp",
+      ["standard_metadata", "ingress_global_timestamp"]
+    ],
+    [
+      "intrinsic_metadata.egress_global_timestamp",
+      ["standard_metadata", "egress_global_timestamp"]
+    ],
+    [
+      "intrinsic_metadata.mcast_grp",
+      ["standard_metadata", "mcast_grp"]
+    ],
+    [
+      "intrinsic_metadata.egress_rid",
+      ["standard_metadata", "egress_rid"]
+    ],
+    [
+      "intrinsic_metadata.priority",
+      ["standard_metadata", "priority"]
+    ]
+  ],
+  "program" : "ipv6-switch-ml-bmv2.p4",
+  "__meta__" : {
+    "version" : [2, 18],
+    "compiler" : "https://github.com/p4lang/p4c"
+  }
+}
