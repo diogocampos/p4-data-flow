@@ -37,7 +37,7 @@ def main(argv):
     flow = get_flow(p4)
 
     if args.graph:
-        print_graph(flow)
+        print_graph(flow, args)
     else:
         print_flow(flow, args)
 
@@ -57,8 +57,8 @@ def print_flow(flow, options):
         if result: print('', result, sep='\n')
 
 
-def print_graph(flow):
-    graph = flow.format_graph()
+def print_graph(flow, options):
+    graph = flow.format_graph(options)
     print(graph)
 
 
