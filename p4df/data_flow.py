@@ -141,7 +141,7 @@ class DataFlow:
         if options.verbose:
             for node, i in index.items():
                 next_nodes = ' '.join(index[n] for n in self._transitions[node])
-                lines.append(f'\n{i} ({node.key}) -> {next_nodes}')
+                lines.append(f'\n{i} ({node.key}) -> {next_nodes or "."}')
 
                 for header_name, field_names in node._headers.items():
                     for field_name in field_names:
@@ -152,7 +152,7 @@ class DataFlow:
             lines.append('\nGRAPH')
             for node, i in index.items():
                 next_nodes = ' '.join(index[n] for n in self._transitions[node])
-                lines.append(f'{i} -> {next_nodes}')
+                lines.append(f'{i} -> {next_nodes or "."}')
 
             lines.append('\nLEGEND')
             for node, i in index.items():
