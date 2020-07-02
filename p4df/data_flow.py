@@ -139,15 +139,22 @@ class DataFlow:
         index = { node: str(i) for i, node in enumerate(self._nodes.values()) }
 
         lines.append('\nGRAPH')
-        for node, i in index.items():
-            next_nodes = ' '.join(index[n] for n in self._transitions[node])
-            lines.append(f'{i} -> {next_nodes}')
 
-            if (options.verbose):
-                for header_name, field_names in node._headers.items():
-                    for field_name in field_names:
-                        seq = node.get(header_name, field_name)
-                        lines.append(f'    {header_name}.{field_name}: {seq}')
+        for node, i in index.items():
+            if options.verbose: lines.append('')
+
+            next_nodes = ' '.join(index[n] for n in self._transitions[node])
+            if options.verbose:
+                lines.append(f'{i} ({node.key}) -> {next_nodes}')
+            else:
+                lines.append(f'{i} -> {next_nodes}')
+
+            if not options.verbose: continue
+
+            for header_name, field_names in node._headers.items():
+                for field_name in field_names:
+                    seq = node.get(header_name, field_name)
+                    lines.append(f'    {header_name}.{field_name}: {seq}')
 
         lines.append('\nLEGEND')
         for node, i in index.items():
