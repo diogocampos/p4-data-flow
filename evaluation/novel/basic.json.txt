@@ -1,0 +1,73 @@
+
+0 (0) -> 1
+
+1 (parsers/start) -> 2 3
+    ethernet.dstAddr: D
+    ethernet.srcAddr: D
+    ethernet.etherType: DU
+
+2 (parsers/parse_ipv4) -> 3
+    ipv4.version: D
+    ipv4.ihl: D
+    ipv4.diffserv: D
+    ipv4.totalLen: D
+    ipv4.identification: D
+    ipv4.flags: D
+    ipv4.fragOffset: D
+    ipv4.ttl: D
+    ipv4.protocol: D
+    ipv4.hdrChecksum: D
+    ipv4.srcAddr: D
+    ipv4.dstAddr: D
+
+3 (parsers/null) -> 4
+
+4 (ingress/MyIngress.ipv4_lpm) -> 5 7 8
+    ipv4.dstAddr: U
+
+5 (ingress/MyIngress.ipv4_lpm/MyIngress.ipv4_forward) -> 6
+    MyIngress.ipv4_forward.dstAddr: PU
+    MyIngress.ipv4_forward.port: PU
+    standard_metadata.egress_spec: D
+    ethernet.dstAddr: UD
+    ethernet.srcAddr: D
+    ipv4.ttl: UD
+
+6 (ingress/null) -> 9
+
+7 (ingress/MyIngress.ipv4_lpm/MyIngress.drop) -> 6
+
+8 (ingress/MyIngress.ipv4_lpm/NoAction) -> 6
+
+9 (egress/null) -> 10
+
+10 (compute_checksum) -> 11
+    ipv4.version: U
+    ipv4.ihl: U
+    ipv4.diffserv: U
+    ipv4.totalLen: U
+    ipv4.identification: U
+    ipv4.flags: U
+    ipv4.fragOffset: U
+    ipv4.ttl: U
+    ipv4.protocol: U
+    ipv4.srcAddr: U
+    ipv4.dstAddr: U
+    ipv4.hdrChecksum: D
+
+11 (deparsers) -> .
+    ethernet.dstAddr: U
+    ethernet.srcAddr: U
+    ethernet.etherType: U
+    ipv4.version: U
+    ipv4.ihl: U
+    ipv4.diffserv: U
+    ipv4.totalLen: U
+    ipv4.identification: U
+    ipv4.flags: U
+    ipv4.fragOffset: U
+    ipv4.ttl: U
+    ipv4.protocol: U
+    ipv4.hdrChecksum: U
+    ipv4.srcAddr: U
+    ipv4.dstAddr: U

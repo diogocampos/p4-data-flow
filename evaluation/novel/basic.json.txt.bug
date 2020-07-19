@@ -1,0 +1,14 @@
+#### bug description:
+#### ipv4.dstAddr not defined in parser path 0 - 1 - 3
+
+0 (0) -> 1
+
+1 (parsers/start) -> 3
+    ethernet.dstAddr: D
+    ethernet.srcAddr: D
+    ethernet.etherType: DU
+
+3 (parsers/null) -> 4
+
+4 (ingress/MyIngress.ipv4_lpm) -> 5 7 8
+    ipv4.dstAddr: U
